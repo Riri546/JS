@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,13 @@
 <body>
 
     <script>
-        let celsius = 25;
+        let celsius = Number(prompt('Введите градусы по цельсию'));;
         let fahrenheit;
+        // document.writeln(`Вы ввели градусы по цельсию: ${celsius}`)
         fahrenheit = (9 / 5) * celsius + 32;
-
+        console.log(`Градусы по фарингейту: ${fahrenheit}`);
+        document.writeln(`Вы ввели градусы по цельсию: ${celsius} <br \/>
+        Градусы по фарингейту: ${fahrenheit}`);
     </script>
 </body>
 
