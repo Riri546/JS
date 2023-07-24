@@ -17,7 +17,7 @@
 
         (userNum % 1000 >= 1) ? hundreds = Math.floor((userNum % 1000) / 100) : hundreds = 0;
         (userNum % 100 >= 1) ? dozens = Math.floor((userNum % 100) / 10) : dozens = 0;
-        (userNum % 10 >= 1)
+        (userNum % 10 >= 1) ? units = userNum % 10 : units = 0;
 
         // if (userNum % 1000 >= 1) {
         //     hundreds = Math.floor((userNum % 1000) / 100);
