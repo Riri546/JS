@@ -11,21 +11,29 @@
 
     <script>
         let userNum = Number(prompt('Введите число'));
-        let hundreds;
-        let dozens;
-        let units;
 
-        if (userNum % 10 >= 1) {
-            units = userNum % 10;
+        if (userNum % 1000 >= 1) {
+            let hundreds = Math.floor((userNum % 1000) / 100);
+        } else {
+            hundreds = 0;
         }
         if (userNum % 100 >= 1) {
-            dozens = Math.floor((userNum % 100) / 10);
+            let dozens = Math.floor((userNum % 100) / 10);
+        } else {
+            dozens = 0;
         }
-        if (userNum % 1000 >= 1) {
-            hundreds = Math.floor((userNum % 1000) / 100);
+        if (userNum % 10 >= 1) {
+            let units = userNum % 10;
+        } else {
+            units = 0;
         }
 
-        console.log(object);
+        console.log(`В числе ${userNum} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`);
+        alert(`В числе ${userNum} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`);
+
+
+
+
 
     </script>
 </body>
