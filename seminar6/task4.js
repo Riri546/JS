@@ -22,6 +22,14 @@ const buttonTask4Mult = () => {
     console.log(`Произведение чисел = ${multiplication(useNumA, useNumB)}`);
 }
 
+const buttonTask4Divis = () => {
+    let useNumA = Number(prompt('Введите первое число'));
+    let useNumB = Number(prompt('Введите второе число'));
+    const division = (a, b) => a / b;
+    alert(`Частное чисел = ${division(useNumA, useNumB)}`)
+    console.log(`Частное чисел = ${division(useNumA, useNumB)}`);
+}
+
 // summa()
 // difference()
 // multiplication()
