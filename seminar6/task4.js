@@ -29,8 +29,3 @@ const buttonTask4Divis = () => {
     alert(`Частное чисел = ${division(useNumA, useNumB)}`)
     console.log(`Частное чисел = ${division(useNumA, useNumB)}`);
 }
-
-// summa()
-// difference()
-// multiplication()
-// division()
