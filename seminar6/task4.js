@@ -2,16 +2,24 @@ const buttonTask4Sum = () => {
     let useNumA = Number(prompt('Введите первое число'));
     let useNumB = Number(prompt('Введите второе число'));
     const summa = (a, b) => a + b;
-    alert(`Сумма = ${summa(useNumA, useNumB)}`)
-    console.log(`Сумма = ${summa(useNumA, useNumB)}`);
+    alert(`Сумма чисел = ${summa(useNumA, useNumB)}`)
+    console.log(`Сумма чисел = ${summa(useNumA, useNumB)}`);
 }
 
 const buttonTask4Dif = () => {
     let useNumA = Number(prompt('Введите первое число'));
     let useNumB = Number(prompt('Введите второе число'));
     const difference = (a, b) => a - b;
-    alert(`Разность = ${difference(useNumA, useNumB)}`)
-    console.log(`Разность = ${difference(useNumA, useNumB)}`);
+    alert(`Разность чисел = ${difference(useNumA, useNumB)}`)
+    console.log(`Разность чисел = ${difference(useNumA, useNumB)}`);
+}
+
+const buttonTask4Mult = () => {
+    let useNumA = Number(prompt('Введите первое число'));
+    let useNumB = Number(prompt('Введите второе число'));
+    const multiplication = (a, b) => a * b;
+    alert(`Произведение чисел = ${multiplication(useNumA, useNumB)}`)
+    console.log(`Произведение чисел = ${multiplication(useNumA, useNumB)}`);
 }
 
 // summa()
