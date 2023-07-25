@@ -10,17 +10,20 @@
 <body>
 
     <script>
-        let mony = Number(prompt('Введите сумму вашего зароботка до вычита НДФЛ(13%)'));
+        let useMony = Number(prompt('Введите сумму вашего зароботка до вычита НДФЛ(13%)'));
+        const salary = (mony) => mony * 0.87;
+
         function typeCheck(mony) {
-            if (mony !== String) {
-                const salary = (mony) => mony * 0.87;
-                alert(`Ваш заработок за вычетом НДФЛ, составляет: ${mony}`);
-                console.log(`Ваш заработок за вычетом НДФЛ, составляет: ${mony}`);
-            } else {
+            if (isNaN(mony)) {
                 alert('Значение задано не верно!');
                 console.log('Значение задано не верно!');
+            } else {
+                alert(`Ваш заработок за вычетом НДФЛ, составляет: ${salary(useMony)}`);
+                console.log(`Ваш заработок за вычетом НДФЛ, составляет: ${salary(useMony)}`);
             }
         }
+
+        typeCheck(useMony);
     </script>
 </body>
 
