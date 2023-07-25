@@ -8,23 +8,11 @@
 </head>
 
 <body>
+    <button onclick="cubing()">Задание 1</button>
 
-    <script>
-        let useMony = Number(prompt('Введите сумму вашего зароботка до вычита НДФЛ(13%)'));
-        const salary = (mony) => mony * 0.87;
-
-        function typeCheck(mony) {
-            if (isNaN(mony)) {
-                alert('Значение задано не верно!');
-                console.log('Значение задано не верно!');
-            } else {
-                alert(`Ваш заработок за вычетом НДФЛ, составляет: ${salary(useMony)}`);
-                console.log(`Ваш заработок за вычетом НДФЛ, составляет: ${salary(useMony)}`);
-            }
-        }
-
-        typeCheck(useMony);
-    </script>
+    <script src="task1.js"></script>
+    <scrip src="task2.js"></script>
+    <script src="task3.js"></script>
 </body>
 
 </html>
