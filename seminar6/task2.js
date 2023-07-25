@@ -1,4 +1,4 @@
-// const buttonTask2 = () => {
+const buttonTask2 = () => {
     let useMony = Number(prompt('Введите сумму вашего зароботка до вычита НДФЛ(13%)'));
     const salary = (mony) => mony * 0.87;
 
@@ -12,7 +12,7 @@
         }
     }
     typeCheck(useMony);
-// }
+}
     
 
 
