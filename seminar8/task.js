@@ -39,10 +39,11 @@ const task3 = () => {
     function add(accumulator, a) {
         return accumulator + a;
     }
-    
+
     console.log(`Сумма чисел массива: ${sum}`);
     console.log(`Минимальное значение в массиве: ${Math.min.apply(Math, array)}`);
 
-
-
+    if (array.indexOf(3) !== -1) {
+        console.log(`В массиве есть число 3`);
+    }
 } 
