@@ -17,15 +17,19 @@ const task1 = () => {
 
 // Задание 2
 const task2 = () => {
-    const a = [1, 2, 3, 4, 5, 6, 7];
-    console.log(`Данн массив ${a}, удалим эллементы 4 и 5`);
-    alert(`Данн массив ${a}, удалим эллементы 4 и 5`);
-    a.splice(3, 2);
-    alert(`Измененный массив ${a}`);
-    console.log(`Измененный массив ${a}`);
+    const array = [1, 2, 3, 4, 5, 6, 7];
+    console.log(`Данн массив ${array}, удалим эллементы 4 и 5`);
+    alert(`Данн массив ${array}, удалим эллементы 4 и 5`);
+    array.splice(3, 2);
+    alert(`Измененный массив ${array}`);
+    console.log(`Измененный массив ${array}`);
 }
 
 // Задание 3
 const task3 = () => {
+    const array = [];
+    for (let i = 0; i <= 4; i++) {
+        Math.random(0, 9)
 
+    }
 }
