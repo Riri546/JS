@@ -46,9 +46,15 @@ const task3 = () => {
     if (array.indexOf(3) !== -1) {
         console.log(`В массиве есть число 3`);
     }
-} 
+}
 
 // Задание 4 *Необязательное*
-const task4 = () =>{
-
+const task4 = () => {
+    for (let i = 1; i < 21; i++) {
+        let slide = ""
+        for (let j = 1; j <= i; j++) {
+            slide += "x";
+        }
+        console.log(slide);
+    }
 }
