@@ -33,14 +33,15 @@ const task3 = () => {
 
     }
     console.log(`Сгененрированный массив: ${array}`);
-    console.log(`Минимальное значение в массиве: ${Math.min.apply(Math, array)}`);
 
     const sum = array.reduce(add, 0);
 
     function add(accumulator, a) {
         return accumulator + a;
     }
+    
     console.log(`Сумма чисел массива: ${sum}`);
+    console.log(`Минимальное значение в массиве: ${Math.min.apply(Math, array)}`);
 
 
 
