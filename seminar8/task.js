@@ -29,7 +29,19 @@ const task2 = () => {
 const task3 = () => {
     const array = [];
     for (let i = 0; i <= 4; i++) {
-        Math.random(0, 9)
+        array.push(Math.ceil(Math.random() * (9 - 0) + 0));
 
     }
-}
+    console.log(`Сгененрированный массив: ${array}`);
+    console.log(`Минимальное значение в массиве: ${Math.min.apply(Math, array)}`);
+
+    const sum = array.reduce(add, 0);
+
+    function add(accumulator, a) {
+        return accumulator + a;
+    }
+    console.log(`Сумма чисел массива: ${sum}`);
+
+
+
+} 
