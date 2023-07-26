@@ -1,7 +1,17 @@
 // Задание 1
 const task1 = () => {
-    for (let i = 0; i < array.length; i++) {
-        const element = array[i];
+    function isEven(a) {
+        return a % 2 === 0;
+    }
+
+    for (let i = 0; i < 11; i++) {
+        if (i === 0) {
+            console.log(`${i} - это ноль`);
+        } else if (isEven(i)) {
+            console.log(`${i} - четное число`);
+        } else {
+            console.log(`${i} - нечетное число`);
+        }
     }
 }
 
@@ -11,9 +21,6 @@ const task2 = () => {
     console.log(`Данн массив ${a}, удалим эллементы 4 и 5`);
     alert(`Данн массив ${a}, удалим эллементы 4 и 5`);
     a.splice(3, 2);
-    alert(a);
-    // const arr = [1, 2, 3, 4, 5, 6, 7];
-    // console.log(`Данн массив ${arr}`);
-    // alert(`Данн массив ${arr}`);
-    // alert(`Измененный массив ${arr}`);
+    alert(`Измененный массив ${a}`);
+    console.log(`Измененный массив ${a}`);
 }
