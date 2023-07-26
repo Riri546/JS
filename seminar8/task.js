@@ -19,9 +19,7 @@ const task1 = () => {
 const task2 = () => {
     const array = [1, 2, 3, 4, 5, 6, 7];
     console.log(`Данн массив ${array}, удалим эллементы 4 и 5`);
-    alert(`Данн массив ${array}, удалим эллементы 4 и 5`);
     array.splice(3, 2);
-    alert(`Измененный массив ${array}`);
     console.log(`Измененный массив ${array}`);
 }
 
