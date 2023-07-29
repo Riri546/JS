@@ -44,6 +44,13 @@ const task2 = () => {
             },
         ],
     };
+
+    // const dislikesCount = comments.find((count) => count.dislikes)
+
+    console.log(`Автор: ${post.author}
+    Не понравился: ${post.comments.dislikes} 
+    Идентификатор пользователя: ${post.comments.userId} 
+    Текст: ${post.comments.text}`);
 }
 
 // Задание 3
