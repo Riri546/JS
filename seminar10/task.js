@@ -9,6 +9,8 @@ const task1 = () => {
         keyin6: 6,
         keyin7: 7,
     }
+
+    const answer = numbers.filter(item => item >= 3)
 }
 
 // Задание 2
