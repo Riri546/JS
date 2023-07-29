@@ -10,7 +10,9 @@ const task1 = () => {
         keyin7: 7,
     }
 
-    const numbersUP = numbers.map(item => item *2);
+    console.log(numbers.keyin3);
+
+    const numbersUP = numbers.map(a => a * 2);
     console.log(numbersUP);
 
     console.log(numbers);
