@@ -70,10 +70,10 @@ const task3 = () => {
         },
     ];
 
-    // const productSale = products.price.forEach(element => element * 0.85);
-    const productSale = Object.entries(products).forEach(price * 0.85);
-    // const productSale = products.price.forEach(element => element * 0.85)
-    console.log(productSale);
+//     // const productSale = products.price.forEach(element => element * 0.85);
+//     const productSale = Object.entries(products).forEach(price * 0.85);
+//     // const productSale = products.price.forEach(element => element * 0.85)
+//     console.log(productSale);
 }
 
 // Задание 4
