@@ -10,7 +10,13 @@ const task1 = () => {
         keyin7: 7,
     }
 
-    const answer = numbers.filter(item => item >= 3)
+    const numbersUP = numbers.map(item => item *2);
+    console.log(numbersUP);
+
+    console.log(numbers);
+
+
+    // console.log(numbers.filter(item => item >= 3));
 }
 
 // Задание 2
