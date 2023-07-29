@@ -10,15 +10,12 @@ const task1 = () => {
         keyin7: 7,
     }
 
-    console.log(numbers.keyin3);
+    for (const key in numbers) {
 
-    const numbersUP = numbers.map(a => a * 2);
-    console.log(numbersUP);
-
-    console.log(numbers);
-
-
-    // console.log(numbers.filter(item => item >= 3));
+        if (numbers[key] >= 3) {
+            console.log(numbers[key]);
+        }
+    }
 }
 
 // Задание 2
