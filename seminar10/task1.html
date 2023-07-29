@@ -20,13 +20,12 @@
             keyin7: 7,
         }
 
-        console.log(numbers.keyin3);
+        for (const key in numbers) {
 
-        const numbersUP = numbers.map(a => a * 2);
-        console.log(numbersUP);
-
-        console.log(numbers);
-
+            if (numbers[key] >= 3) {
+                console.log(numbers[key]);
+            }
+        }
 
     // console.log(numbers.filter(item => item >= 3));
     </script>
