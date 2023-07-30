@@ -130,11 +130,9 @@ const task5 = () => {
     const en = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
     const ru = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"];
 
-    var weekday = {}
-    for (var i = 0; i < en.length; i++) {
-        //or check with: if (b.length > i) { assignment }
+    const weekday = {}
+    for (let i = 0; i < en.length; i++) {
         weekday[en[i]] = ru[i]
     }
-
     console.log(weekday);
 }
