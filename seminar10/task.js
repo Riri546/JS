@@ -112,4 +112,20 @@ const task4 = () => {
             price: 78,
         },
     ];
+
+    const productPhoto = products.filter((item) => {
+        if (item.photos !== false) return item.photos;
+    });
+    console.log(productPhoto);
+
+    const productSort = products.sort((a, b) => {
+        return a.price - b.price;
+    }
+    );
+    console.log([productSort]);
+}
+
+// Задание 5 *Необязательное задание*
+const task5 = () => {
+
 }
