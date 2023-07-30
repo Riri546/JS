@@ -44,9 +44,7 @@ const task2 = () => {
             },
         ],
     };
-
-    // const dislikesCount = comments.find((count) => count.dislikes)
-
+    
     console.log(`
     Автор: ${post.author}
     Не понравился: ${post.comments[0].rating.dislikes} 
