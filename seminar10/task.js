@@ -44,7 +44,7 @@ const task2 = () => {
             },
         ],
     };
-    
+
     console.log(`
     Автор: ${post.author}
     Не понравился: ${post.comments[0].rating.dislikes} 
@@ -69,10 +69,27 @@ const task3 = () => {
         },
     ];
 
+    console.log(`Изначальная цена
+    Цена продукта под номером ${products[0].id} = ${products[0].price} ед;
+    Цена продукта под номером ${products[1].id} = ${products[1].price} ед;
+    Цена продукта под номером ${products[2].id} = ${products[2].price} ед;`);
+
+    products.forEach(element => {
+        element.price = (element.price * 0.85);
+    });
+
+    console.log(`С учетом скидки
+    Цена продукта под номером ${products[0].id} = ${products[0].price} ед;
+    Цена продукта под номером ${products[1].id} = ${products[1].price} ед;
+    Цена продукта под номером ${products[2].id} = ${products[2].price} ед;`);
     //     // const productSale = products.price.forEach(element => element * 0.85);
     //     const productSale = Object.entries(products).forEach(price * 0.85);
-    //     // const productSale = products.price.forEach(element => element * 0.85)
-    //     console.log(productSale);
+    // const productSale = products.price.price.forEach(element => {
+
+    // });(element => {
+    //     element * 0.85
+    // })
+    // console.log(productSale);
 }
 
 // Задание 4
