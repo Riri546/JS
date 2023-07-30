@@ -47,10 +47,11 @@ const task2 = () => {
 
     // const dislikesCount = comments.find((count) => count.dislikes)
 
-    console.log(`Автор: ${post.author}
-    Не понравился: ${post.comments.dislikes} 
-    Идентификатор пользователя: ${post.comments.userId} 
-    Текст: ${post.comments.text}`);
+    console.log(`
+    Автор: ${post.author}
+    Не понравился: ${post.comments[0].rating.dislikes} 
+    Идентификатор пользователя: ${post.comments[1].userId} 
+    Текст: ${post.comments[1].text}`);
 }
 
 // Задание 3
@@ -70,10 +71,10 @@ const task3 = () => {
         },
     ];
 
-//     // const productSale = products.price.forEach(element => element * 0.85);
-//     const productSale = Object.entries(products).forEach(price * 0.85);
-//     // const productSale = products.price.forEach(element => element * 0.85)
-//     console.log(productSale);
+    //     // const productSale = products.price.forEach(element => element * 0.85);
+    //     const productSale = Object.entries(products).forEach(price * 0.85);
+    //     // const productSale = products.price.forEach(element => element * 0.85)
+    //     console.log(productSale);
 }
 
 // Задание 4
