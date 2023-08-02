@@ -3,6 +3,7 @@ const task1 = () => {
     const arr = [1, 5, 7, 9];
     console.log(Math.min(...arr));
 }
+
 // Задание 2
 const task2 = () => {
     const createCounter = () => {
@@ -29,7 +30,6 @@ const task2 = () => {
     counterbutton.increment(); // 1
     counterbutton.increment(); // 2
     counterbutton.decrement(); // 1
-
 }
 
 // Задание 3
