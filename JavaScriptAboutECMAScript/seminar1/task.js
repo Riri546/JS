@@ -7,25 +7,29 @@ const task1 = () => {
 const task2 = () => {
     const createCounter = () => {
         let counter = 0;
-        const increment = () => {
-            return ++counter;
-        }
-        decrement = () => {
-            return ++counter;
+
+        function increment() {
+            counter++;
+            console.log(counter);
         }
 
-        const result = {
-            increment: increment(),
-            decrement: decrement ()
+        function decrement() {
+            counter--;
+            console.log(counter);
         }
-        return result;
+
+        return {
+            increment: increment,
+            decrement: decrement
+        };
+
     }
 
     // Создаем счетчик.
-    const counter1 = createCounter();
-    console.log(counter1()); // 1
-    console.log(counter1());// 2
-    console.log(counter1());
+    const counterbutton = createCounter();
+    counterbutton.increment(); // 1
+    counterbutton.increment(); // 2
+    counterbutton.decrement(); // 1
 
 }
 
