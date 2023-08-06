@@ -69,9 +69,24 @@ const task2 = () => {
 
 // Задание 3
 const task3 = () => {
-    class Bank{
+    class Bank {
         constructor(name) {
             this.name = name;
+            console.log(name);
+        }
+
+        addClient = (client) => {
+            this.client = client;
+        }
+
+        openAccount = (client, balance) => {
+            this.client = client;
+            this.balance = balance;
+
+        }
+
+        displayinof() {
+            console.log(`Открытие счета ... ${this.openAccount()}`);
         }
     }
 
@@ -80,6 +95,8 @@ const task3 = () => {
             this.nameClient = nameClient;
             this.ageClient = ageClient;
         }
+
+
 
         // deposit(amount) {
         //     this.balance += amount;
@@ -97,9 +114,16 @@ const task3 = () => {
     }
 
     const bank = new Bank('Мой Банк');
-    const client1  = new Client('Иван', 25);
-    client1.deposit(500);
-    client1.withdraw(200);
-    client1.withdraw(1500);
+    const client1 = new Client('Иван', 25);
+    const client2 = new Client('Мария', 30);
+    bank.addClient(client1);
+    bank.addClient(client2);
+    bank.openAccount(client1, 1000);
+    bank.openAccount(client2, 500);
+    bank.displayinof();
+
+    // client1.deposit(500);
+    // client1.withdraw(200);
+    // client1.withdraw(1500);
 }
 
