@@ -52,21 +52,23 @@ const task2 = () => {
         // Методы класса
         displayinof = () => {
             console.log(`
-            Имя: ${this.title}
-            Возраст: ${this.author}
-            Класс: ${this.publishingHouse}
-            `);
+            Name: ${this.name}
+            Age: ${this.age}
+            Grade: ${this.grade}`);
         }
     }
 
-    // Создаем экземпляр класса
-    const student = new Student();
+    // Создаем экземпляры класса
+    const student1 = new Student();
+    const student2 = new Student('John Smith', 16, '10th');
+    // const student3 = new Student();
 
-    // Обращение к объекту класса
-    console.log(Mara.title);
 
     // Отложенный вызов методов объекта
-    setTimeout(Mara.displayinof(), 2000);
+    setTimeout(student1.displayinof(), 1000);
+    setTimeout(student2.displayinof(), 10000);
+    // setTimeout(student3.displayinof(), 5000);
+
 }
 
 // Задание 3
