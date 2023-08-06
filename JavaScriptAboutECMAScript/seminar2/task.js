@@ -69,16 +69,23 @@ const task2 = () => {
 
 // Задание 3
 const task3 = () => {
+    useName = prompt(String('Введите ваше имя'));
+    useAge = prompt(Number('Ваш возраст'))
+
+    // Класс для работы с банком
     class Bank {
+        // Добвление названия банка
         constructor(name) {
             this.name = name;
             console.log(name);
         }
 
+        // Метод добавления нового клиента
         addClient = (client) => {
             this.client = client;
         }
 
+        // Метод открытия счета
         openAccount = (client, accountNumber, balance) => {
             this.client = client;
             this.accountNumber = accountNumber;
@@ -86,11 +93,13 @@ const task3 = () => {
             console.log('Клиент: ', this.client,'Номер счета: ', this.accountNumber);
         }
 
+        // Метод внесения денежных средств на счет
         deposit = (amount) => {
             this.balance += amount;
             console.log(`Пополнение счета ${this.accountNumber} на сумму ${amount}`);
         }
 
+        // Метод снятия денежных средств со счета
         withdraw = (amount) => {
             if (amount > this.balance) {
                 console.log(`Недостаточно средств на счете ${this.accountNumber}`);
@@ -100,11 +109,13 @@ const task3 = () => {
             }
         }
 
+        // Метод просмотра баланса
         checkBalance = () => {
             console.log(`Текущий баланс: ${this.balance}`);
         }
     }
 
+    // Класс с методами принимающими имя и возраст клиента
     class Client {
         constructor(name, age) {
             this.name = name;
@@ -119,13 +130,17 @@ const task3 = () => {
     const bank = new Bank('Мой Банк');
     const client1 = new Client('Иван', 25);
     const client2 = new Client('Мария', 30);
+    const client3 = new Client(useName, useAge);
     bank.addClient(client1);
     bank.addClient(client2);
+    bank.addClient(client3);
     bank.openAccount(client1, 1000, 123456789);
     bank.deposit(200);
     bank.checkBalance();
     bank.openAccount(client2, 500, 987654321);
     bank.withdraw(100);
     bank.checkBalance();
+    bank.openAccount(client3, 150, 1200);
+    bank.withdraw(500);
+    bank.checkBalance();
 }
-
