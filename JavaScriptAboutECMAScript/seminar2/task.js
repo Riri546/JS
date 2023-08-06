@@ -79,40 +79,40 @@ const task3 = () => {
             this.client = client;
         }
 
-        openAccount = (client, accountNumber) => {
+        openAccount = (client, accountNumber, balance) => {
             this.client = client;
             this.accountNumber = accountNumber;
+            this.balance = balance;
+            console.log('Клиент: ', this.client,'Номер счета: ', this.accountNumber);
         }
 
-        deposit(balance, amount) {
+        deposit = (amount) => {
             this.balance += amount;
-            console.log(`Deposited ${amount} into account ${this.accountNumber}. New balance: ${this.balance}`);
+            console.log(`Пополнение счета ${this.accountNumber} на сумму ${amount}`);
         }
 
-        // withdraw(amount) {
-        //     if (amount > this.balance) {
-        //         console.log(`Insufficient funds in account ${this.accountNumber}`);
-        //     } else {
-        //         this.balance -= amount;
-        //         console.log(`Withdrawn ${amount} from account ${this.accountNumber}. New balance: ${this.balance}`);
-        //     }
-        // }
+        withdraw = (amount) => {
+            if (amount > this.balance) {
+                console.log(`Недостаточно средств на счете ${this.accountNumber}`);
+            } else {
+                this.balance -= amount;
+                console.log(`Снято ${amount} со счета ${this.accountNumber}`);
+            }
+        }
 
-        displayinof = () => {
-            console.log(this.client, this.balance);
-            // console.log(`Клиент: ${this.nameClient}
-            // Баланс: ${this.balance}`);
+        checkBalance = () => {
+            console.log(`Текущий баланс: ${this.balance}`);
         }
     }
 
     class Client {
-        constructor(nameClient, ageClient) {
-            this.nameClient = nameClient;
-            this.ageClient = ageClient;
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
 
             console.log(`
-            Имя клиента: ${nameClient} 
-            Возраст: ${ageClient}`);
+            Имя клиента: ${name} 
+            Возраст: ${age}`);
         }
     }
 
@@ -121,13 +121,11 @@ const task3 = () => {
     const client2 = new Client('Мария', 30);
     bank.addClient(client1);
     bank.addClient(client2);
-    bank.openAccount(client1, 1000);
-    bank.displayinof();
-    bank.openAccount(client2, 500);
-    bank.displayinof();
-
-    // client1.deposit(500);
-    // client1.withdraw(200);
-    // client1.withdraw(1500);
+    bank.openAccount(client1, 1000, 123456789);
+    bank.deposit(200);
+    bank.checkBalance();
+    bank.openAccount(client2, 500, 987654321);
+    bank.withdraw(100);
+    bank.checkBalance();
 }
 
