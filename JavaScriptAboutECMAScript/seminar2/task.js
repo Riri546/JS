@@ -17,7 +17,8 @@ const task1 = () => {
 
         // Методы класса
         displayinof = () => {
-            console.log(`Название книги: ${this.title}
+            console.log(`
+            Название книги: ${this.title}
             Автор: ${this.author}
             Издательство: ${this.publishingHouse}
             Серия: ${this.series}
@@ -25,7 +26,7 @@ const task1 = () => {
             Количество страниц: ${this.pages} `);
         }
     }
-    
+
     // Создаем экземпляр класса
     const Mara = new Book();
 
