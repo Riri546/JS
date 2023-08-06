@@ -25,7 +25,7 @@ const task1 = () => {
             Количество страниц: ${this.pages} `);
         }
     }
-
+    
     // Создаем экземпляр класса
     const Mara = new Book();
 
@@ -62,9 +62,9 @@ const task2 = () => {
     const student3 = new Student('Jane Doe', 17, '11th grade');
 
     // Вызов методов объекта
-    setTimeout(student1.displayinof(), 1000);
-    setTimeout(student2.displayinof(), 3000);
-    setTimeout(student3.displayinof(), 5000);
+    student1.displayinof();
+    student2.displayinof();
+    student3.displayinof();
 }
 
 // Задание 3
