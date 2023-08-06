@@ -11,8 +11,7 @@ const task1 = () => {
         pages = 352;
 
         // Конструктор класса 
-        constructor(){
-
+        constructor() {
         }
 
         // Методы класса
@@ -39,11 +38,39 @@ const task1 = () => {
 
 // Задание 2
 const task2 = () => {
-   
+    // Класс студент
+    class Student {
+        // Свойства класса
+        name = '';
+        age = ;
+        grade = 'Эксмо';
+
+        // Конструктор класса 
+        constructor() {
+        }
+
+        // Методы класса
+        displayinof = () => {
+            console.log(`
+            Имя: ${this.title}
+            Возраст: ${this.author}
+            Класс: ${this.publishingHouse}
+            `);
+        }
+    }
+
+    // Создаем экземпляр класса
+    const Mara = new Book();
+
+    // Обращение к объекту класса
+    console.log(Mara.title);
+
+    // Отложенный вызов методов объекта
+    setTimeout(Mara.displayinof(), 2000);
 }
 
 // Задание 3
 const task3 = () => {
-    
+
 }
 
