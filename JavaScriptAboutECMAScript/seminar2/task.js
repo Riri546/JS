@@ -82,11 +82,12 @@ const task3 = () => {
         openAccount = (client, balance) => {
             this.client = client;
             this.balance = balance;
-
         }
 
-        displayinof() {
-            console.log(`Открытие счета ... ${this.openAccount()}`);
+        displayinof = () => {
+            console.log(this.client, this.balance);
+            // console.log(`Клиент: ${this.nameClient}
+            // Баланс: ${this.balance}`);
         }
     }
 
@@ -94,6 +95,10 @@ const task3 = () => {
         constructor(nameClient, ageClient) {
             this.nameClient = nameClient;
             this.ageClient = ageClient;
+
+            console.log(`
+            Имя клиента: ${nameClient} 
+            Возраст: ${ageClient}`);
         }
 
 
@@ -119,6 +124,7 @@ const task3 = () => {
     bank.addClient(client1);
     bank.addClient(client2);
     bank.openAccount(client1, 1000);
+    bank.displayinof();
     bank.openAccount(client2, 500);
     bank.displayinof();
 
