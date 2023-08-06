@@ -79,10 +79,24 @@ const task3 = () => {
             this.client = client;
         }
 
-        openAccount = (client, balance) => {
+        openAccount = (client, accountNumber) => {
             this.client = client;
-            this.balance = balance;
+            this.accountNumber = accountNumber;
         }
+
+        deposit(balance, amount) {
+            this.balance += amount;
+            console.log(`Deposited ${amount} into account ${this.accountNumber}. New balance: ${this.balance}`);
+        }
+
+        // withdraw(amount) {
+        //     if (amount > this.balance) {
+        //         console.log(`Insufficient funds in account ${this.accountNumber}`);
+        //     } else {
+        //         this.balance -= amount;
+        //         console.log(`Withdrawn ${amount} from account ${this.accountNumber}. New balance: ${this.balance}`);
+        //     }
+        // }
 
         displayinof = () => {
             console.log(this.client, this.balance);
