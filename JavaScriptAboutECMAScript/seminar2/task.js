@@ -40,13 +40,11 @@ const task1 = () => {
 const task2 = () => {
     // Класс студент
     class Student {
-        // Свойства класса
-        name = 'Lilia Loshakova';
-        age = 17;
-        grade = '11th';
-
         // Конструктор класса 
-        constructor() {
+        constructor(name, age, grade) {
+            this.name = name;
+            this.age = age;
+            this.grade = grade;
         }
 
         // Методы класса
@@ -59,16 +57,15 @@ const task2 = () => {
     }
 
     // Создаем экземпляры класса
-    const student1 = new Student();
+    const student1 = new Student('Lilia Loshakova', 17, '11th');
     const student2 = new Student('John Smith', 16, '10th');
-    student2.displayinof();
-    // const student3 = new Student();
+    const student3 = new Student('John Smith', 16, '10th');
 
 
     // Отложенный вызов методов объекта
     setTimeout(student1.displayinof(), 1000);
-    setTimeout(student2.displayinof(), 10000);
-    // setTimeout(student3.displayinof(), 5000);
+    setTimeout(student2.displayinof(), 3000);
+    setTimeout(student3.displayinof(), 5000);
 
 }
 
