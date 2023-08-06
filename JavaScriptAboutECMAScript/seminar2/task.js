@@ -41,9 +41,9 @@ const task2 = () => {
     // Класс студент
     class Student {
         // Свойства класса
-        name = '';
-        age = ;
-        grade = 'Эксмо';
+        name = 'Lilia Loshakova';
+        age = 17;
+        grade = '11th';
 
         // Конструктор класса 
         constructor() {
@@ -60,7 +60,7 @@ const task2 = () => {
     }
 
     // Создаем экземпляр класса
-    const Mara = new Book();
+    const student = new Student();
 
     // Обращение к объекту класса
     console.log(Mara.title);
