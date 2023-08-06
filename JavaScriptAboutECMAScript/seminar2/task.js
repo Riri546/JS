@@ -83,7 +83,11 @@ account1.withdraw(200); // Вывод: Withdrawn 200 from account
 account1.withdraw(1500); // Вывод: Insufficient funds in account
 1234567890 */
 
-    class BankAccount {
+    class Bank {
+        constructor (){
+
+        }
+
         constructor(accountNumber, balance) {
             this.accountNumber = accountNumber;
             this.balance = balance;
