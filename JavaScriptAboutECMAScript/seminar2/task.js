@@ -14,7 +14,7 @@ const task1 = () => {
         constructor() {
         }
 
-        // Методы класса
+        // Метод класса
         displayinof = () => {
             console.log(`
             Название книги: ${this.title}
@@ -32,8 +32,8 @@ const task1 = () => {
     // Обращение к объекту класса
     console.log(Mara.title);
 
-    // Отложенный вызов методов объекта
-    setTimeout(Mara.displayinof(), 2000);
+    // Вызов метода объекта
+    Mara.displayinof();
 }
 
 // Задание 2
@@ -47,7 +47,7 @@ const task2 = () => {
             this.grade = grade;
         }
 
-        // Методы класса
+        // Метод класса
         displayinof = () => {
             console.log(`
             Name: ${this.name}
@@ -57,16 +57,14 @@ const task2 = () => {
     }
 
     // Создаем экземпляры класса
-    const student1 = new Student('Lilia Loshakova', 17, '11th');
-    const student2 = new Student('John Smith', 16, '10th');
-    const student3 = new Student('John Smith', 16, '10th');
+    const student1 = new Student('Lilia Loshakova', 17, '11th grade');
+    const student2 = new Student('John Smith', 16, '10th grade');
+    const student3 = new Student('Jane Doe', 17, '11th grade');
 
-
-    // Отложенный вызов методов объекта
+    // Вызов методов объекта
     setTimeout(student1.displayinof(), 1000);
     setTimeout(student2.displayinof(), 3000);
     setTimeout(student3.displayinof(), 5000);
-
 }
 
 // Задание 3
