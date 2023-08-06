@@ -61,6 +61,7 @@ const task2 = () => {
     // Создаем экземпляры класса
     const student1 = new Student();
     const student2 = new Student('John Smith', 16, '10th');
+    student2.displayinof();
     // const student3 = new Student();
 
 
