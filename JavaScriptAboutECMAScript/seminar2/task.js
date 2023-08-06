@@ -3,10 +3,10 @@ const task1 = () => {
     // Класс книги 
     class Book {
         // Свойства класса
-        title = 'Mara and Morok';
-        author = 'Leah Arden';
-        publishingHouse = 'Eksmo';
-        series = 'Hunters of the Worlds';
+        title = 'Мара и Морок';
+        author = 'Лия Арден';
+        publishingHouse = 'Эксмо';
+        series = 'Охотники за мирами';
         yearPublication = 2022;
         pages = 352;
 
@@ -16,10 +16,24 @@ const task1 = () => {
         }
 
         // Методы класса
-        displayinof(){
-            console.log(this);
+        displayinof = () => {
+            console.log(`Название книги: ${this.title}
+            Автор: ${this.author}
+            Издательство: ${this.publishingHouse}
+            Серия: ${this.series}
+            Год публикации: ${this.yearPublication}
+            Количество страниц: ${this.pages} `);
         }
     }
+    
+    // Создаем экземпляр класса
+    const Mara = new Book();
+
+    // Обращение к объекту класса
+    console.log(Mara.title);
+
+    // Отложенный вызов методов объекта
+    setTimeout(Mara.displayinof(), 2000);
 }
 
 // Задание 2
