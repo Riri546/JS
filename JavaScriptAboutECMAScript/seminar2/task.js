@@ -100,22 +100,6 @@ const task3 = () => {
             Имя клиента: ${nameClient} 
             Возраст: ${ageClient}`);
         }
-
-
-
-        // deposit(amount) {
-        //     this.balance += amount;
-        //     console.log(`Deposited ${amount} into account ${this.accountNumber}. New balance: ${this.balance}`);
-        // }
-
-        // withdraw(amount) {
-        //     if (amount > this.balance) {
-        //         console.log(`Insufficient funds in account ${this.accountNumber}`);
-        //     } else {
-        //         this.balance -= amount;
-        //         console.log(`Withdrawn ${amount} from account ${this.accountNumber}. New balance: ${this.balance}`);
-        //     }
-        // }
     }
 
     const bank = new Bank('Мой Банк');
