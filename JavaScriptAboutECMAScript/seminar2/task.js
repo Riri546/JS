@@ -131,15 +131,19 @@ const task3 = () => {
     const client1 = new Client('Иван', 25);
     const client2 = new Client('Мария', 30);
     const client3 = new Client(useName, useAge);
+
     bank.addClient(client1);
     bank.addClient(client2);
     bank.addClient(client3);
+
     bank.openAccount(client1, 1000, 123456789);
     bank.deposit(200);
     bank.checkBalance();
+
     bank.openAccount(client2, 500, 987654321);
     bank.withdraw(100);
     bank.checkBalance();
+    
     bank.openAccount(client3, 150, 1200);
     bank.withdraw(500);
     bank.checkBalance();
