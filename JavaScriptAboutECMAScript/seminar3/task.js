@@ -57,9 +57,6 @@ const task2 = () => {
           }
     }
 
-
-
-
     const order = new Order(12345);
     console.log(`Заказ №${order.orderNumber}`);
     
@@ -70,7 +67,6 @@ const task2 = () => {
     const product2 = new Product('Headphones', 100);
     order.addProduct(product2);
     console.log(`Товар 2: ${order.products[1].name} цена ${order.products[1].price}`);
-    
     
     console.log(`Общая цена заказа: ${order.getTotalPrice()}`);
 }
