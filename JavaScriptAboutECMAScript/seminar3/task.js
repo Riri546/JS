@@ -80,34 +80,34 @@ const task3 = () => {
             this._averageGrade = _averageGrade;
         }
 
-        set name(value) {
+        setName(value) {
             return this._name = value;
         }
 
-        get name() {
+        getName() {
             return this._name;
         }
 
-        set age(value) {
+        setAge(value) {
             this._age = value;
         }
 
-        get age() {
+        getAge() {
             return this._age;
         }
 
-        set averageGrade(value) {
+        setAverageGrade(value) {
             this._averageGrade = value;
         }
 
-        get averageGrade() {
+        getAverageGrade() {
             return this._averageGrade;
         }
 
         displayInfo = () => {
-            console.log(`Имя: ${Student.getName()}`);
-            console.log(`Возраст: ${Student.getAge()}`);
-            console.log(`Средний балл: ${Student.getAverageGrade()}`);
+            console.log(`Имя: ${this.getName()}`);
+            console.log(`Возраст: ${this.getAge()}`);
+            console.log(`Средний балл: ${this.getAverageGrade()}`);
         }
 
     }
@@ -116,7 +116,5 @@ const task3 = () => {
     student.setName('Питер Паркер');
     student.setAge(20);
     student.setAverageGrade(85);
-    // console.log(`Имя: ${Student.getAge()}`);
-    student.getName();
-    // student.displayInfo();
+    student.displayInfo();
 }
