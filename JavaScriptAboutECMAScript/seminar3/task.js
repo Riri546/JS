@@ -74,6 +74,15 @@ const task2 = () => {
 // Задание 3
 const task3 = () => {
     class Student {
-
+        constructor(_name, _age, _averageGrade) {
+            this._name = _name;
+            this._age = _age;
+            this._averageGrade = _averageGrade;
+        }
     }
+    const student = new Student();
+    student.setName('Питер Паркер');
+    student.setAge(20);
+    student.setAverageGrade(85);
+    student.displayInfo();
 }
