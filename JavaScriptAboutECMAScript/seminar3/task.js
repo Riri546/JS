@@ -38,21 +38,24 @@ const task2 = () => {
             this.price = price;
         }
     }
-    
-    class Order {
-        product = this.addProducts;
 
+    class Order {
         constructor(orderNumber) {
             this.orderNumber = orderNumber;
+            this.amount = 0;
+            this.products = [];
+            this.addProduct = function (newObject) {
+              this.products.push(newObject);
+            };
         }
 
-        addProducts = () => {
-
-        }
-
-        getTotalPrice = () => {
-
-        }
+        getTotalPrice() {
+            for (let i = 0; i < this.products.length; i++) {
+              this.amount += this.products[i].price;
+            }
+            return this.amount;
+          }
+  
     }
 
 
