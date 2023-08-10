@@ -109,7 +109,6 @@ const task3 = () => {
             console.log(`Возраст: ${this.getAge()}`);
             console.log(`Средний балл: ${this.getAverageGrade()}`);
         }
-
     }
 
     const student = new Student();
