@@ -74,19 +74,38 @@ const task2 = () => {
 // Задание 3
 const task3 = () => {
     class Student {
-        set waterAmount(value) {
-            if (value < 0) throw new Error("Отрицательное количество воды");
-            this._waterAmount = value;
+        constructor(name, age, averageGrade) {
+            this._name = name;
+            this._age = age;
+            this._averageGrade = averageGrade;
         }
 
-        get waterAmount() {
-            return this._waterAmount;
+        set name(value) {
+            this._name = value;
         }
 
-        constructor(_name, _age, _averageGrade) {
-            this._name = _name;
-            this._age = _age;
-            this._averageGrade = _averageGrade;
+        get name() {
+            return this._name;
+        }
+
+        set age(value) {
+            this._age = value;
+        }
+
+        get age() {
+            return this._age;
+        }
+
+        set averageGrade(value) {
+            this._averageGrade = value;
+        }
+
+        get averageGrade() {
+            return this._averageGrade;
+        }
+
+        displayInfo = () => {
+
         }
 
     }
