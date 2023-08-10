@@ -10,29 +10,24 @@ const task1 = () => {
         }
     }
 
+    class Manager extends Employee {
+        constructor(name,department) {
+            super();
+            this.name = name;
+            this.department = department;
+          }
+        
+        displayInfo = () => {
+            console.log(`Name: ${this.name}`);
+            console.log(`Department: ${this.department}`);
+        }
+    }    
+    
     const employee = new Employee('John Smith')
     employee.displayInfo();
 
-    class Manager extends Employee {
-        // name = Employee.prototype.name;
-        department = this.department;
-        // constructor(department) {
-        //     this.department = department;
-        //     // this.name = name;
-        // }
-        
-
-        displayInfo = () => {
-            // console.log(`Name: ${this.name}`);
-            console.log(`Department: ${this.department}`);
-        }
-        __proto__ = Employee;
-    }
-    const manager = Manager('jdkk', 'dkdk');
-    // Object.getPrototypeOf(Manager);
-    // console.log(Object.getPrototypeOf(Manager));
+    const manager = new Manager("Jane Doe", "Sales");
     manager.displayInfo();
-    // console.log(Manager.prototype.displayInfo());;
 }
 
 // Задание 2
