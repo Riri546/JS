@@ -105,13 +105,18 @@ const task3 = () => {
         }
 
         displayInfo = () => {
-
+            console.log(`Имя: ${Student.getName()}`);
+            console.log(`Имя: ${Student.getAge()}`);
+            console.log(`Имя: ${Student.getAverageGrade()}`);
         }
 
     }
+    
     const student = new Student();
     student.setName('Питер Паркер');
     student.setAge(20);
     student.setAverageGrade(85);
+    // console.log(`Имя: ${Student.getAge()}`);
+
     student.displayInfo();
 }
