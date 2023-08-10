@@ -1,12 +1,16 @@
 // Задание 1
 const task1 = () => {
-    class Employee{
+    class Employee {
         name = this.name;
 
-        displayInfo = () =>{
-            console.log();
+        displayInfo = (name) => {
+            name = this.name;
+            console.log(name);
         }
     }
+
+    const employee = new Employee('John Smith')
+    employee.displayInfo();
 }
 
 // Задание 2
