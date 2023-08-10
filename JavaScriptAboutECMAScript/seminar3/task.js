@@ -45,21 +45,21 @@ const task2 = () => {
             this.amount = 0;
             this.products = [];
             this.addProduct = function (newObject) {
-              this.products.push(newObject);
+                this.products.push(newObject);
             };
         }
 
         getTotalPrice() {
             for (let i = 0; i < this.products.length; i++) {
-              this.amount += this.products[i].price;
+                this.amount += this.products[i].price;
             }
             return this.amount;
-          }
+        }
     }
 
     const order = new Order(12345);
     console.log(`Заказ №${order.orderNumber}`);
-    
+
     const product1 = new Product('Phone', 500);
     order.addProduct(product1);
     console.log(`Товар 1: ${order.products[0].name} цена ${order.products[0].price}`);
@@ -67,11 +67,13 @@ const task2 = () => {
     const product2 = new Product('Headphones', 100);
     order.addProduct(product2);
     console.log(`Товар 2: ${order.products[1].name} цена ${order.products[1].price}`);
-    
+
     console.log(`Общая цена заказа: ${order.getTotalPrice()}`);
 }
 
 // Задание 3
 const task3 = () => {
+    class Student {
 
+    }
 }
