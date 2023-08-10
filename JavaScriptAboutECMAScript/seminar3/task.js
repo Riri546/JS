@@ -74,14 +74,14 @@ const task2 = () => {
 // Задание 3
 const task3 = () => {
     class Student {
-        constructor(name, age, averageGrade) {
-            this._name = name;
-            this._age = age;
-            this._averageGrade = averageGrade;
+        constructor(_name, _age, _averageGrade) {
+            this._name = _name;
+            this._age = _age;
+            this._averageGrade = _averageGrade;
         }
 
         set name(value) {
-            this._name = value;
+            return this._name = value;
         }
 
         get name() {
@@ -106,12 +106,12 @@ const task3 = () => {
 
         displayInfo = () => {
             console.log(`Имя: ${Student.getName()}`);
-            console.log(`Имя: ${Student.getAge()}`);
-            console.log(`Имя: ${Student.getAverageGrade()}`);
+            console.log(`Возраст: ${Student.getAge()}`);
+            console.log(`Средний балл: ${Student.getAverageGrade()}`);
         }
 
     }
-    
+
     const student = new Student();
     student.setName('Питер Паркер');
     student.setAge(20);
