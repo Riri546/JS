@@ -1,11 +1,12 @@
 // Задание 1
 const task1 = () => {
     class Employee {
-        name = this.name;
+        constructor(name) {
+            this.name = name;
+        }
 
-        displayInfo = (name) => {
-            name = this.name;
-            console.log(name);
+        displayInfo = () => {
+            console.log(`Name: ${this.name}`);
         }
     }
 
