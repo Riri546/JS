@@ -11,7 +11,8 @@ const task1 = () => {
 
 
     try {
-        const newData = await getAsyncAwaitData(api);
+        const newData = getAsyncAwaitData(api);
+        // const newData = await getAsyncAwaitData(api);
         console.log(newData);
         const pictureBoxEl = document.querySelector('.cards-box');
         newData.forEach((element) => {
