@@ -1,13 +1,23 @@
-.head {
+.top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
 
-.head {
+.top .head {
   padding-top: 53px;
-  padding-bottom: 19px;
 }
-.head__icon {
+.top .head__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.top .head__icon {
+  display: flex;
+  gap: 40px;
+}
+.top .head__icon_link {
   color: #292F36;
   text-align: center;
   font-size: 20px;

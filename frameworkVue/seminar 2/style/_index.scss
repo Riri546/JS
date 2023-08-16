@@ -1,14 +1,29 @@
-.head {
-    @extend %center;
-    padding-top: 53px;
-    padding-bottom: 19px;
+.top {
+    .head {
+        @extend %center;
+        padding-top: 53px;
 
-    &__icon {
-        color: $colorSelectText;
-        text-align: center;
-        font-size: $fontSizeSmal;
-        font-style: $fontStyle;
-        font-weight: $fontWeightRegular;
-        line-height: $lineHeight;
+        &__navigation {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__icon {
+            display: flex;
+            gap: 40px;
+
+            &_link {
+                color: $colorSelectText;
+                text-align: center;
+                font-size: $fontSizeSmal;
+                font-style: $fontStyle;
+                font-weight: $fontWeightRegular;
+                line-height: $lineHeight;
+            }
+        }
     }
+
 }
