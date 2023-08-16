@@ -1,4 +1,4 @@
-.top .catalog, .top .products, .top__info, .top .head {
+.top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -141,6 +141,42 @@
   letter-spacing: 0.5px;
 }
 .top .catalog__text {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+.top .company {
+  display: grid;
+  grid-template-columns: repeat(4, 246px);
+  justify-content: space-between;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-color: #F4F0EC;
+}
+.top .company .item {
+  border-right: 1px solid #CDA274;
+  max-width: 246px;
+}
+.top .company .item__none {
+  border-right: none;
+}
+.top .company__title {
+  padding-bottom: 16px;
+  max-width: 192px;
+  text-align: center;
+  color: #CDA274;
+  font-family: "DM Serif Display", serif;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 1.7px;
+}
+.top .company__text {
   color: #4D5053;
   font-family: "Jost", sans-serif;
   font-size: 22px;

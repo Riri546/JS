@@ -175,4 +175,46 @@
             letter-spacing: 0.22px;
         }
     }
+
+    .company {
+        @extend %center;
+        display: grid;
+        grid-template-columns: repeat(4, 246px);
+        justify-content: space-between;
+        padding-top: 151px;
+        padding-bottom: 151px;
+        background-color: #F4F0EC;
+
+        .item {
+            border-right: 1px solid #CDA274;
+            max-width: 246px;
+
+            &__none {
+                border-right: none;
+            }
+        }
+
+        &__title {
+            padding-bottom: 16px;
+            max-width: 192px;
+            text-align: center;
+            color: #CDA274;
+            font-family: $fontTitle;
+            font-size: 85px;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeight;
+            letter-spacing: 1.7px;
+        }
+
+        &__text {
+            color: $colortext;
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: 150%;
+            letter-spacing: 0.22px;
+        }
+    }
 }
