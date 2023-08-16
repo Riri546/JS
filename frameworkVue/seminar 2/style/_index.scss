@@ -1,4 +1,8 @@
 .head {
+    @extend %center;
+    padding-top: 53px;
+    padding-bottom: 19px;
+
     &__icon {
         color: $colorSelectText;
         text-align: center;
