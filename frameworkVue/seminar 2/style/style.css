@@ -29,8 +29,7 @@
 }
 .top__info_content {
   background: url(../img/top__info_bac.svg), lightgray 50%/cover no-repeat;
-  padding-top: 200px;
-  padding-bottom: 304px;
+  padding: 200px 0px 259px 35px;
 }
 .top__info_title {
   color: #292F36;
@@ -53,16 +52,19 @@
   letter-spacing: 0.22px;
   max-width: 434px;
 }
-.top__info_button {
+.top__info .button {
+  border-radius: 18px;
+  background: #292F36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  padding: 26px 49px;
   color: #FFF;
   text-align: center;
   font-family: "Jost", sans-serif;
   font-size: 18px;
-  font-style: 18px;
+  font-style: normal;
   font-weight: 600;
   letter-spacing: 0.36px;
 }
-
 * {
   margin: 0;
   padding: 0;
