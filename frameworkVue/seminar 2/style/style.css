@@ -28,8 +28,9 @@
   line-height: 125%;
 }
 .top__info_content {
+  border-radius: 70px;
   background: url(../img/top__info_bac.svg), lightgray 50%/cover no-repeat;
-  padding: 200px 0px 259px 35px;
+  padding: 200px 0px 210px 35px;
 }
 .top__info_title {
   color: #292F36;
@@ -64,6 +65,31 @@
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.36px;
+}
+.top__info .button__img {
+  padding-left: 10px;
+}
+.top .products__title {
+  color: #292F36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 62.5px */
+  letter-spacing: 1px;
+}
+.top .products__text {
+  color: #4D5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
 }
 
 * {
