@@ -52,7 +52,7 @@
   letter-spacing: 0.22px;
   max-width: 434px;
 }
-.top__info .button {
+.top__info .button__top__info {
   border-radius: 18px;
   background: #292F36;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
@@ -65,6 +65,7 @@
   font-weight: 600;
   letter-spacing: 0.36px;
 }
+
 * {
   margin: 0;
   padding: 0;
