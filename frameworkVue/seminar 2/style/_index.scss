@@ -220,28 +220,33 @@
 
     .news {
         @extend %center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding-top: 96px;
+        padding-bottom: 52px;
 
         &__title {
-            color: #292F36;
+            color: $colorSelectText;
             text-align: center;
-            font-family: DM Serif Display;
+            font-family: $fontTitle;
             font-size: 50px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 125%;
-            /* 62.5px */
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeight;
             letter-spacing: 1px;
         }
 
         &__text {
-            color: #4D5053;
+            max-width: 811px;
+            color: $colortext;
             text-align: center;
-            font-family: Jost;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 150%;
-            /* 33px */
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
         }
     }
