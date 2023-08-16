@@ -1,4 +1,4 @@
-.top .head {
+.top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -26,7 +26,17 @@
   line-height: 125%;
 }
 .top__info {
+  padding-top: 265px;
   background: url(../img/top__info_bac.svg), lightgray 50%/cover no-repeat;
+}
+.top__info_title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  max-width: 434px;
 }
 
 * {

@@ -26,7 +26,22 @@
         }
     }
 
-    &__info{
+    &__info {
+        @extend %center;
+        padding-top: 265px;
         background: url(../img/top__info_bac.svg), lightgray 50% / cover no-repeat;
+
+        // &_content {
+        // }
+
+        &_title {
+            color: $colorSelectText;
+            font-family: DM Serif Display;
+            font-size: 65px;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeight;
+            max-width: 434px;
+        }
     }
 }
