@@ -79,6 +79,7 @@
   line-height: 125%;
   /* 62.5px */
   letter-spacing: 1px;
+  max-width: 737px;
 }
 .top .products__text {
   color: #4D5053;
@@ -90,6 +91,7 @@
   line-height: 150%;
   /* 33px */
   letter-spacing: 0.22px;
+  max-width: 737px;
 }
 
 * {
