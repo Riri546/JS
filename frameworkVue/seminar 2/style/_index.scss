@@ -19,7 +19,7 @@
             &_link {
                 color: $colorSelectText;
                 text-align: center;
-                font-size: $fontSizeSmal;
+                font-size: $fontSizeMedium;
                 font-style: $fontStyle;
                 font-weight: $fontWeightRegular;
                 line-height: $lineHeight;
@@ -30,7 +30,8 @@
     &__info {
         @extend %center;
         padding-top: 265px;
-        background: url(../img/top__info_bac.svg), lightgray 50% / cover no-repeat;
+        padding-bottom: 304px;
+        background: url(../img/top__info_bac.svg), lightgray 50%/ cover no-repeat;
 
         // &_content {
         // }
@@ -46,14 +47,25 @@
         }
 
         &_text {
-            color: #4D5053;
-            font-family: Jost;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
+            color: $colortext;
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
             line-height: 150%;
-            /* 33px */
             letter-spacing: 0.22px;
+            max-width: 434px;
+        }
+
+        &_button {
+            color: $colorButton;
+            text-align: center;
+            font-family: $fontText;
+            font-size: $fontSizeSmal;
+            font-style: $fontSizeSmal;
+            font-weight: $fontWeightSemiBold;
+            $lineHeight: 125%;
+            letter-spacing: 0.36px;
         }
     }
 }

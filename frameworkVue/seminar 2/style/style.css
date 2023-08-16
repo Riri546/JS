@@ -21,13 +21,14 @@
 .top .head__icon_link {
   color: #292F36;
   text-align: center;
-  font-size: 20px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
 }
 .top__info {
   padding-top: 265px;
+  padding-bottom: 304px;
   background: url(../img/top__info_bac.svg), lightgray 50%/cover no-repeat;
 }
 .top__info_title {
@@ -41,13 +42,24 @@
 }
 .top__info_text {
   color: #4D5053;
-  font-family: Jost;
+  font-family: "Jost", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
+  max-width: 434px;
+}
+.top__info_button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 22.5px */
+  letter-spacing: 0.36px;
 }
 
 * {
