@@ -2,6 +2,7 @@
     .head {
         @extend %center;
         padding-top: 53px;
+        padding-bottom: 65px;
 
         &__navigation {
             font-family: $fontText;
@@ -29,12 +30,12 @@
 
     &__info {
         @extend %center;
-        padding-top: 265px;
-        padding-bottom: 304px;
-        background: url(../img/top__info_bac.svg), lightgray 50%/ cover no-repeat;
-
-        // &_content {
-        // }
+        
+        &_content {
+            background: url(../img/top__info_bac.svg), lightgray 50%/ cover no-repeat;
+            padding-top: 200px;
+            padding-bottom: 304px;
+        }
 
         &_title {
             color: $colorSelectText;
@@ -44,9 +45,11 @@
             font-weight: $fontWeightRegular;
             line-height: $lineHeight;
             max-width: 434px;
+            padding-bottom: 18px;
         }
 
         &_text {
+            padding-bottom: 21px;
             color: $colortext;
             font-family: $fontText;
             font-size: $fontSizeMedium;
