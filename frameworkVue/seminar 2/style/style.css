@@ -1,4 +1,4 @@
-.top__info, .top .head {
+.top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -69,27 +69,34 @@
 .top__info .button__img {
   padding-left: 10px;
 }
+.top .products {
+  padding-top: 95px;
+  padding-bottom: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .top .products__title {
+  padding-bottom: 8px;
   color: #292F36;
   text-align: center;
-  font-family: DM Serif Display;
+  font-family: "DM Serif Display", serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 62.5px */
   letter-spacing: 1px;
   max-width: 737px;
 }
 .top .products__text {
+  padding-bottom: 93px;
   color: #4D5053;
   text-align: center;
-  font-family: Jost;
+  font-family: "Jost", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
   max-width: 737px;
 }

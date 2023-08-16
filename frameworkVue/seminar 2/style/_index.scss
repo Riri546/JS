@@ -83,31 +83,37 @@
     }
 
     .products {
+        @extend %center;
+        padding-top: 95px;
+        padding-bottom: 95px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
         &__title {
-            color: #292F36;
+            padding-bottom: 8px;
+            color: $colorSelectText;
             text-align: center;
-            font-family: DM Serif Display;
+            font-family: $fontTitle;
             font-size: 50px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 125%;
-            /* 62.5px */
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeight;
             letter-spacing: 1px;
             max-width: 737px;
         }
 
         &__text {
-            color: #4D5053;
+            padding-bottom: 93px;
+            color: $colortext;
             text-align: center;
-            font-family: Jost;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
             line-height: 150%;
-            /* 33px */
             letter-spacing: 0.22px;
             max-width: 737px;
-
         }
     }
 }
