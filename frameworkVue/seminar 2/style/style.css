@@ -1,4 +1,4 @@
-.top .company, .top .catalog, .top .products, .top__info, .top .head {
+.top .news, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -185,7 +185,6 @@
   line-height: 150%;
   letter-spacing: 0.22px;
 }
-
 * {
   margin: 0;
   padding: 0;

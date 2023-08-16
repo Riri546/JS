@@ -217,4 +217,12 @@
             letter-spacing: 0.22px;
         }
     }
+
+    .news {
+        @extend %center;
+
+        &__title {}
+
+        &__text {}
+    }
 }
