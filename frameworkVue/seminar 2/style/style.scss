@@ -8,7 +8,8 @@
 }
 
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: $fontText;
+    font-family: $fontTitle;
 }
 
 a {
