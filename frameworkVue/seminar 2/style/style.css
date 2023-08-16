@@ -1,4 +1,4 @@
-.top .news, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.top .news__info, .top .news, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -213,6 +213,12 @@
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.22px;
+}
+.top .news__info {
+  padding-bottom: 96px;
+}
+.top .news__img__photo {
+  border-radius: 30px 30px 0px 0px;
 }
 
 * {
