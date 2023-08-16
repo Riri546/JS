@@ -25,6 +25,9 @@
   font-weight: 400;
   line-height: 125%;
 }
+.top__info {
+  background: url(<>), lightgray 50%/cover no-repeat;
+}
 
 * {
   margin: 0;
