@@ -119,12 +119,43 @@
     .catalog {
         @extend %center;
         padding-bottom: 95px;
+        display: grid;
+        grid-template-columns: repeat(2, 552px);
+        justify-content: space-between;
+        justify-items: center;
+        gap: 56px;
 
-        // &__about{
+        &__img1 {
+            border-radius: 0px 70px 0px 0px;
+        }
 
-        // }
+        &__img2 {
+            border-radius: 70px 0px 0px 0px;
+        }
+
+        &__img3 {
+            border-radius: 0px 0px 70px 0px;
+        }
+
+        &__img4 {
+            border-radius: 0px 0px 0px 70px;
+        }
+
+        &__about {
+            padding-top: 24px;
+            max-width: 547px;
+
+            &__link {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
 
         &__title {
+            padding-bottom: 4px;
             color: $colorSelectText;
             font-family: $fontTitle;
             font-size: 25px;

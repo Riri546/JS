@@ -101,8 +101,37 @@
 }
 .top .catalog {
   padding-bottom: 95px;
+  display: grid;
+  grid-template-columns: repeat(2, 552px);
+  justify-content: space-between;
+  justify-items: center;
+  gap: 56px;
+}
+.top .catalog__img1 {
+  border-radius: 0px 70px 0px 0px;
+}
+.top .catalog__img2 {
+  border-radius: 70px 0px 0px 0px;
+}
+.top .catalog__img3 {
+  border-radius: 0px 0px 70px 0px;
+}
+.top .catalog__img4 {
+  border-radius: 0px 0px 0px 70px;
+}
+.top .catalog__about {
+  padding-top: 24px;
+  max-width: 547px;
+}
+.top .catalog__about__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 .top .catalog__title {
+  padding-bottom: 4px;
   color: #292F36;
   font-family: "DM Serif Display", serif;
   font-size: 25px;
