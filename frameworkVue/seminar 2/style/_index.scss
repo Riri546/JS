@@ -24,6 +24,11 @@
                 font-style: $fontStyle;
                 font-weight: $fontWeightRegular;
                 line-height: $lineHeight;
+                transition: 0.7s;
+            }
+
+            &_link:hover{
+                color: #CDA274;
             }
         }
     }
@@ -187,6 +192,22 @@
             line-height: $lineHeightMax;
             letter-spacing: 0.22px;
         }
+
+        &__link{
+            transition: 0.7s;
+
+            &_color{
+                transition: 0.7s;
+            }
+        }
+
+        &__link:hover{
+            stroke: $colorSelectText;
+
+            .catalog__link_color{
+                fill:$colorButton; 
+            }
+        }
     }
 
     .company {
@@ -289,6 +310,11 @@
             border-radius: 70px;
             border: 1px solid #E7E7E7;
             box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+            transition: 0.7s;
+        }
+        
+        &__link{
+            transition: 0.7s;
         }
 
         &__element:hover {
@@ -360,7 +386,7 @@
     .foot {
         @extend %center;
         display: grid;
-        grid-template-columns: repeat(3, 382px);
+        grid-template-columns: repeat(3, 340px);
         justify-content: space-between;
         padding-bottom: 134px;
 
@@ -380,12 +406,24 @@
             max-width: 393px;
         }
 
+        &__navigation{
+            padding-left: 80px;
+        }
+
         &__social {
             display: flex;
             align-items: center;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 54px;
+
+            &_icon{
+                transition: 0.7s;
+            }
+
+            &_icon:hover{
+                fill: #CDA274;;
+            }
         }
 
         &__title {
@@ -399,15 +437,35 @@
         }
 
         &__link {
-            color: #4D5053;
-            font-family: Jost;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 400;
+            color: $colortext;
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
             line-height: 300%;
-            /* 66px */
             letter-spacing: 0.22px;
+            transition: 0.7s;
         }
 
+        &__link:hover{
+            color: #CDA274;
+        }
+
+
+        &__contact{
+            padding-left: 90px;
+        }
+
+        &__info {
+            padding-top: 17px;
+            color: $colortext;
+            font-family: $fontText;
+            font-size: $fontSizeMedium;
+            font-style: $fontStyle;
+            font-weight: $fontWeightRegular;
+            line-height: $lineHeightMax;
+            letter-spacing: 0.22px;
+            max-width: 258px;
+        }
     }
 }
