@@ -76,7 +76,7 @@
                 letter-spacing: 0.36px;
             }
 
-            &__top__info:hover{
+            &__top__info:hover {
                 background: $colorButton;
                 color: $colorSelectText;
             }
@@ -129,6 +129,14 @@
         justify-content: space-between;
         justify-items: center;
         gap: 56px;
+
+        .element {
+            transition: 1.2s;
+        }
+
+        .element:hover {
+            transform: scale(1.1);
+        }
 
         &__img1 {
             border-radius: 0px 70px 0px 0px;
@@ -289,7 +297,7 @@
             background: #F4F0EC;
             box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
 
-            .news__link{
+            .news__link {
                 fill: $colorButton;
             }
         }

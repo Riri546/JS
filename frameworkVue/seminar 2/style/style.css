@@ -116,6 +116,12 @@
   justify-items: center;
   gap: 56px;
 }
+.top .catalog .element {
+  transition: 1.2s;
+}
+.top .catalog .element:hover {
+  transform: scale(1.1);
+}
 .top .catalog__img1 {
   border-radius: 0px 70px 0px 0px;
 }
