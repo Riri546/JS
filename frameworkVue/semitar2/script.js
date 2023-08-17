@@ -4,3 +4,11 @@ var app = new Vue({
       message: 'Привет, Vue!'
     }
   })
+
+const task1 = new Vue({
+    el: '#task1',
+    data: {
+        text: 'Lorem ipsum dolor sit amet.',
+        button: 'Flip over'
+    }
+})
