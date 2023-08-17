@@ -18,5 +18,10 @@ var app4 = new Vue({
         { text: 'Изучить Vue' },
         { text: 'Создать что-нибудь классное' }
       ]
-    }
+    },
+    methods: {
+        adding: function () {
+            app4.todos.push({ text: 'Добавлен новый элемент' })
+        }
+      }
   })
