@@ -8,19 +8,83 @@
 </head>
 
 <body>
-    <div id="app">
+    <div class="flip-box">
+
+        <div class="card">
+            <div class="flip-box-front">
+                <h2>Front Side</h2>
+                <p> some text </p>
+                <p> some text </p>
+                <button> click to flip </button>
+            </div>
+
+            <div class="flip-box-back">
+                <h2>Back Side</h2>
+                <p> some text </p>
+                <p> some text </p>
+                <button> click to flip </button>
+            </div>
+
+        </div>
+
+        <br />
+        <div class="card">
+            <div class="flip-box-front">
+                <h2>Front Side</h2>
+                <p> some text </p>
+                <p> some text </p>
+                <button> click to flip </button>
+            </div>
+
+            <div class="flip-box-back">
+                <h2>Back Side</h2>
+                <p> some text </p>
+                <p> some text </p>
+                <button> click to flip </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div id="app">
         {{ message }}
     </div>
 
     <div id="task1">
         <h1>{{ text }}</h1>
         <button @@click="flipOve()">{{ button }}</button>
-    </div>
+    </div> -->
 
 
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        cards = someRoot.querySelectorAll(".card");
+        cards.forEach(card => {
+            // For each card
+            card.querySelectorAll("div > button").forEach(btn => {
+                // For each button on the card sides
+                btn.addEventListener("click", ev => {
+                    // Toggle the "is-flipped" class
+                    ev.target.parentElement.parentElement.classList.toggle("is-flipped");
+                });
+            });
+        });
+        // Get all cards
+        var cards = document.querySelectorAll(".card");
+        cards.forEach(card => {
+            // For each card
+            card.querySelectorAll("div > button").forEach(btn => {
+                // For each button on the card sides
+                btn.addEventListener("click", ev => {
+                    // Toggle the "is-flipped" class of the button parent's parent
+                    ev.target.parentElement.parentElement.classList.toggle("is-flipped");
+                });
+            });
+        });
+    </script>
 
 </body>
 
