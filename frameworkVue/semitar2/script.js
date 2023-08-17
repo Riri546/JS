@@ -1,4 +1,4 @@
-const app5 = new Vue({
+const app1 = new Vue({
     el: '#app-1',
     data: {
         message: 'Привет, Vue.js!'
@@ -10,7 +10,7 @@ const app5 = new Vue({
     }
 })
 
-var app4 = new Vue({
+var app2 = new Vue({
     el: '#app-2',
     data: {
         todos: [
@@ -21,23 +21,7 @@ var app4 = new Vue({
     },
     methods: {
         adding: function () {
-            app4.todos.push({ text: 'Добавлен новый элемент' })
+            app2.todos.push({ text: 'Добавлен новый элемент' })
         },
-        remove: function (el) {
-            var element = el;
-            element.remove();
-            }
-        // removing: function (el) {
-        //     var element = el;
-        //     element.remove();
-        // }
     }
 })
-
-
-
-
-// removing: function () {
-//     this.element = el;
-//     element.remove();
-// }
