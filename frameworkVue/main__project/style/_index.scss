@@ -79,6 +79,7 @@
                 font-weight: $fontWeightSemiBold;
                 $lineHeight: 125%;
                 letter-spacing: 0.36px;
+                transition: 0.7s;
             }
 
             &__top__info:hover {
