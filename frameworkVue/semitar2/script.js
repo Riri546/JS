@@ -12,11 +12,11 @@ const task1 = new Vue({
         button: 'Flip over'
     },
     method: {
-        flipOver(text){
+        flipOver(){
             this.text = text;
             text = text.split("").reverse().join("");
+            return text;
         }
     }
-    // text = 'abcd';
-    // str = 
 })
+
