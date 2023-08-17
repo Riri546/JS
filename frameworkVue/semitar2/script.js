@@ -1,5 +1,5 @@
 const app5 = new Vue({
-  el: '#app-5',
+  el: '#app-1',
   data: {
     message: 'Привет, Vue.js!'
   },
@@ -9,3 +9,14 @@ const app5 = new Vue({
     }
   }
 })
+
+var app4 = new Vue({
+    el: '#app-2',
+    data: {
+      todos: [
+        { text: 'Изучить JavaScript' },
+        { text: 'Изучить Vue' },
+        { text: 'Создать что-нибудь классное' }
+      ]
+    }
+  })

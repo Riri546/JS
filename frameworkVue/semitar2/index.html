@@ -9,9 +9,17 @@
 </head>
 
 <body>
-    <div id="app-5">
+    <div id="app-1">
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+      </div>
+
+      <div id="app-2">
+        <ol>
+          <li v-for="todo in todos">
+            {{ todo.text }}
+          </li>
+        </ol>
       </div>
    
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
