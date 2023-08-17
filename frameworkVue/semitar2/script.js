@@ -23,9 +23,21 @@ var app4 = new Vue({
         adding: function () {
             app4.todos.push({ text: 'Добавлен новый элемент' })
         },
-        removing: function remove(el) {
+        remove: function (el) {
             var element = el;
             element.remove();
-        }
+            }
+        // removing: function (el) {
+        //     var element = el;
+        //     element.remove();
+        // }
     }
 })
+
+
+
+
+// removing: function () {
+//     this.element = el;
+//     element.remove();
+// }

@@ -12,20 +12,27 @@
     <div id="app-1">
         <p>{{ message }}</p>
         <button v-on:click="reverseMessage">Перевернуть сообщение</button>
-      </div>
+    </div>
 
-      <div id="app-2">
+    <div id="app-2">
         <ol>
-          <li v-for="todo in todos">
-            {{ todo.text }}
-          </li>
+            <li onclick="remove(this)" v-for="todo in todos" >
+                {{ todo.text }}
+            </li>
         </ol>
         <button v-on:click="adding">Добавить</button>
-      </div>
-   
+        <div id="i" onclick="remove(this)">Sample text</div>
+    </div>
+
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script.js"></script>
+    <script>
+        // function remove(el) {
+        // var element = el;
+        // element.remove();
+        // }
+    </script>
 
 </body>
 
