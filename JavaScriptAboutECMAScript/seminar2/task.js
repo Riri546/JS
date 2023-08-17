@@ -69,8 +69,8 @@ const task2 = () => {
 
 // Задание 3
 const task3 = () => {
-    useName = prompt(String('Введите ваше имя'));
-    useAge = prompt(Number('Ваш возраст'))
+    useName = prompt('Введите ваше имя');
+    useAge = Number(prompt('Ваш возраст'));
 
     // Класс для работы с банком
     class Bank {
