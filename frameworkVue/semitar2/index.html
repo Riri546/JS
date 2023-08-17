@@ -9,7 +9,11 @@
 </head>
 
 <body>
-    <div class="flip-box">
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+      </div>
+    <!-- <div class="flip-box">
         <div class="card">
             <div class="flip-box-front">
                 <h2>Front Side</h2>
@@ -21,7 +25,7 @@
                 <button onclick="task1();" class="button-back"> click to flip </button>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
