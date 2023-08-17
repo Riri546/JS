@@ -63,7 +63,7 @@
         .button {
             &__top__info {
                 border-radius: 18px;
-                background: #292F36;
+                background: $colorSelectText;
                 box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
                 padding: 26px 49px;
                 color: $colorButton;
@@ -74,6 +74,11 @@
                 font-weight: $fontWeightSemiBold;
                 $lineHeight: 125%;
                 letter-spacing: 0.36px;
+            }
+
+            &__top__info:hover{
+                background: $colorButton;
+                color: $colorSelectText;
             }
 
             &__img {
@@ -276,6 +281,17 @@
             border-radius: 70px;
             border: 1px solid #E7E7E7;
             box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+        }
+
+        &__element:hover {
+            border-radius: 62px;
+            border: 1px solid #E7E7E7;
+            background: #F4F0EC;
+            box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+
+            .news__link{
+                fill: $colorButton;
+            }
         }
 
         &__img {
