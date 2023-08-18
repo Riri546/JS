@@ -1,49 +1,56 @@
 // Задание 1
 const task1 = () => {
-    const getAsyncAwaitData = async (api) => {
-        const res = await fetch(api);
-        const json = await res.json();
-        localStorage.setItem('users', JSON.stringify(json)); // Сохраняем
-        return json;
-    };
+    // Задача №1
 
-    const api = 'https://jsonplaceholder.typicode.com/users';
+const urlUsers = 'https://jsonplaceholder.typicode.com/users';
+const wrapUsers = document.querySelector('.users');
+
+const dataUsers = await getData(urlUsers);
+console.log(dataUsers);
 
 
-    try {
-        const newData = getAsyncAwaitData(api);
-        // const newData = await getAsyncAwaitData(api);
-        console.log(newData);
-        const pictureBoxEl = document.querySelector('.cards-box');
-        newData.forEach((element) => {
-            const picture = `
-              <div class="card" id="${element.id}"><!-- Добавили ID -->
-                  <h3>Пользователь ${element.id}</h3>
-                  <p class="name">Имя: ${element.name}</p>
-                  <p class="username">Ник: ${element.username}</p>
-                  <p class="email">Email: ${element.email}</p>
-                  <button class="btn__del">Удалить пользователя</button>
-              </div>
-              `
-
-            pictureBoxEl.insertAdjacentHTML("beforeend", picture)
-        })
-        const deleteBtn = document.querySelectorAll('.btn__del');
-        deleteBtn.forEach((button) => {
-            button.addEventListener('click', () => {
-                const product = button.closest('.card');
-                product.remove();
-                // Отфильтровали массив
-                const filterData = newData.filter(item => item.id !== product.id);
-                localStorage.setItem('users', JSON.stringify(filterData)); // Сохранили
-            })
-        })
-    } catch (error) {
-        console.error('что-то пошло не так');
-    }
+async function getData(url) {
+  const response = await fetch(url);
+  const result = response.json();
+  return result;
 }
+
+const showUser = (element) => {
+  wrapUsers.insertAdjacentHTML("beforeend",
+  `<figure class="user" id="${element.id}">
+  <img src="./img/no_photo.jpg" alt="photo">
+  <a href='#'><h2 class="user__name" id="${element.id}">${element.name}</a></h2></a>
+  <button class="button__del">Удалить</button>
+</figure>`);
+  localStorage.setItem(element.id, element);
+}
+
+const deleteButton = (button) => button.addEventListener('click', () => {
+  const id = button.parentElement.id;
+  localStorage.removeItem(id);
+  document.getElementById(id).remove();
+})
+
+dataUsers.forEach(element => showUser(element));
+
+const arrayButtons = document.querySelectorAll('.button__del');
+arrayButtons.forEach(element => deleteButton(element));
+
+
+
 
 // Задание 2
 const task2 = () => {
+// Задача №2
 
+const COUNT_DOGS = 10;
+const urlRandomDog = 'https://dog.ceo/api/breeds/image/random';
+
+const wrapDogs = document.querySelector('.dogs');
+
+setInterval(async () => {
+  const conreteDog = await getData(urlRandomDog);
+  wrapDogs.innerHTML = `<img src='${conreteDog.message}' alt='dog photo'>`;
+}, 3000);   
+}
 }
