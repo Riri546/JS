@@ -8,25 +8,69 @@
 </head>
 
 <body>
-    <div id="app-1">
+
+    <body>
+        <div id="app">
+            <table>
+                <tr>
+                    <td><a @click="sortParam='title'">Модель</a></td>
+                    <td><a @click="sortParam='company'">Компания</a></td>
+                    <td><a @click="sortParam='price'">Цена</a></td>
+                </tr>
+                <tr v-for="phone in sortedList">
+                    <td>{{phone.title}}</td>
+                    <td>{{phone.company}}</td>
+                    <td>{{phone.price}}</td>
+                </tr>
+            </table>
+        </div>
+        <script src="https://unpkg.com/vue@2.7.14/dist/vue.js"></script>
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    sortParam: '',
+                    phones: [
+                        { title: 'Galaxy S8', company: 'Samsung', price: 45000 },
+                        { title: 'iPhone 7', company: 'Apple', price: 49000 },
+                        { title: 'Nokia N8', company: 'HMD Global', price: 25000 },
+                        { title: 'Galaxy Note 8', company: 'Samsung', price: 50000 },
+                        { title: 'iPhone 8', company: 'Apple', price: 60000 }]
+                },
+                computed: {
+                    sortedList() {
+                        switch (this.sortParam) {
+                            case 'title': return this.phones.sort(sortByTitle);
+                            case 'company': return this.phones.sort(sortByCompany);
+                            case 'price': return this.phones.sort(sortByPrice);
+                            default: return this.phones;
+                        }
+                    }
+                }
+            });
+            var sortByTitle = function (d1, d2) { return (d1.title.toLowerCase() > d2.title.toLowerCase()) ? 1 : -1; };
+            var sortByCompany = function (d1, d2) { return (d1.company.toLowerCase() > d2.company.toLowerCase()) ? 1 : -1; };
+            var sortByPrice = function (d1, d2) { return (d1.price > d2.price) ? 1 : -1; };
+        </script>
+        <!-- <div id="app-1">
         <h1>Задание 2</h1>
         <ol>
             <li v-for="product in products">
                 {{ product }}
             </li>
-        </ol>
+        </ol> -->
         <!-- <button v-on:click="sortSize">Сортировка по размеру</button>
         <button v-on:click="sortSize">Сортировка цены по возрастанию</button>
         <button v-on:click="sortSize">Сортировка цены по убыванию</button> -->
-        <select v-model="selectSort">
+        <!-- <select v-model="selectSort">
             <option v-for="rule in sortRules" :key="rule.key" :value="rule.key">{{ rule.title }}</option>
-        </select>
+        </select> -->
 
-    </div>
+        </div>
 
-    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="script.js"></script>
-</body>
+        <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="script.js"></script>
+    </body>
 
 </html>
