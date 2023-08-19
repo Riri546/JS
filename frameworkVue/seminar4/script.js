@@ -3,21 +3,21 @@ const products = [
         name: 'Куртка',
         details: {
             price: 50,
-            priority: 'high'
+            size: 'high'
         },
     },
     {
         name: 'Джинсы',
         details: {
             price: 30,
-            priority: 'low'
+            size: 'low'
         },
     },
     {
         name: 'Футболка',
         details: {
             price: 20,
-            priority: 'medium'
+            size: 'medium'
         },
     },
 ];
@@ -28,7 +28,7 @@ const customSortOrder = {
     low: 3,
 };
 
-products.sort((a, b) => customSortOrder[a.priority] - customSortOrder[b.priority]);
+products.sort((a, b) => customSortOrder[a.size] - customSortOrder[b.size]);
 
 console.log(products);
 
