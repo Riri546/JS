@@ -9,21 +9,24 @@
 </head>
 
 <body>
-    <div class="main">
-        <div id="app-1">
-            <h1>Задание 1</h1>
-            <p>{{ message }}</p>
-            <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
+    <div id="example-1">
+        <ul>
+            <input type="text" v-model="searchString" placeholder="Filter" />
+            <p>sortKey = {{sortKey}}</p>
+            <li v-for="item in sortedItems">
+                <input class="checkbox-align" type="checkbox" :value="item.name" id="productname"
+                    v-model="item.checked" />
+                {{ item.price }} - {{ item.name }}
+            </li>
+        </ul>
+        <div class="cecont" v-if="!checked">
+            <p>text content</p>
         </div>
-
-        <div id="app-2">
-            <h1>Задание 2 и 3</h1>
-            <ol>
-                <li v-for="(todo, index) in todos" v-on:click="remove(index)">
-                    {{ todo.text }}
-                  </li>
-            </ol>
-            <button v-on:click="adding">Добавить</button>
+        <hr />
+        <div class="bbb">
+            <button @click="sortKey = 'name'">name</buttton><br />
+                <button @click="sortKey = 'price'">price</buttton>
         </div>
     </div>
 
