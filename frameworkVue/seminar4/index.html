@@ -11,13 +11,15 @@
     <div id="app-1">
         <h1>Задание 2</h1>
         <ol>
-            <li>
-                {{ name }}
+            <li v-for="product in products">
+                {{ product }}
             </li>
         </ol>
-        <button>Добавить</button>
+        <button v-on:click="sortSize">Сортировка по размеру</button>
     </div>
 
+     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script.js"></script>
 </body>
 

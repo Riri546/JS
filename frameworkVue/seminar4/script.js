@@ -58,7 +58,9 @@ const app1 = new Vue({
         ]
     },
     methods: {
-        sortSize: products.sort((a, b) => customSortOrder[a.details.size] - customSortOrder[b.details.size])
+        sortSize: function (a, b){
+            products.sort(customSortOrder[a.details.size] - customSortOrder[b.details.size])
+        }
     }
 })
 
