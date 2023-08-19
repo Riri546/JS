@@ -23,8 +23,8 @@ var app2 = new Vue({
         adding: function () {
             app2.todos.push({ text: 'Добавлен новый элемент' })
         },
-    },
-    remove: {
-
+        remove: function(index) {
+            this.todos.splice(index, 1);
+          }
     }
 })

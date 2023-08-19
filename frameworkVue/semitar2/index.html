@@ -19,9 +19,9 @@
         <div id="app-2">
             <h1>Задание 2 и 3</h1>
             <ol>
-                <li v-for="todo, index in todos" onclick="remove(index)">
+                <li v-for="(todo, index) in todos" v-on:click="remove(index)">
                     {{ todo.text }}
-                </li>
+                  </li>
             </ol>
             <button v-on:click="adding">Добавить</button>
         </div>
@@ -30,11 +30,6 @@
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script.js"></script>
-    <!-- <script>
-        function remove(text) {
-            text.remove();
-        }
-    </script> -->
 </body>
 
 </html>
