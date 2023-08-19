@@ -39,8 +39,15 @@
 // Функция сортировки товаров
 function sortCatalog(products, section, reverse = false) {
     // Переменные
-    var arProductsList = [];
-    var strHtml = '';
+    var arProductsList = [
+        { price: '1100', name: 'Футболка' },
+        { price: '2500', name: 'Джинсы' },
+        { price: '7000', name: 'Куртка зимняя' },
+        { price: '3000', name: 'Свитер' },
+        { price: '2300', name: 'Кеды' },
+        { price: '700', name: 'Цепочка' },
+    ];
+    // var strHtml = '';
 
     // Переделываем в массив
     products.each(function (e) {
@@ -55,7 +62,7 @@ function sortCatalog(products, section, reverse = false) {
     // Очищаем каталог
     section.html('');
     // Добовляем элементы на страницу
-    for(var i = 0; i < arProductsList.length; i++) {
+    for (var i = 0; i < arProductsList.length; i++) {
         $('.catalog_list').append(arProductsList[i]);
     }
 }
