@@ -11,22 +11,16 @@
 <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
     <div id="example-1">
-        <ul>
-            <input type="text" v-model="searchString" placeholder="Filter" />
-            <p>sortKey = {{sortKey}}</p>
+        <ol>
+            <p>Сортировка по {{ sortKey }}</p>
             <li v-for="item in sortedItems">
-                <input class="checkbox-align" type="checkbox" :value="item.name" id="productname"
-                    v-model="item.checked" />
-                {{ item.price }} - {{ item.name }}
+                {{ item.name }}: {{ item.price }}р.
             </li>
-        </ul>
-        <div class="cecont" v-if="!checked">
-            <p>text content</p>
-        </div>
-        <hr />
-        <div class="bbb">
-            <button @click="sortKey = 'name'">name</buttton><br />
-                <button @click="sortKey = 'price'">price</buttton>
+        </ol>
+        <div>
+            <button @click="sortKey = 'name'">name</buttton>
+
+            <button @click="sortKey = 'price'">price</buttton>
         </div>
     </div>
 

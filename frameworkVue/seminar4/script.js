@@ -6,7 +6,7 @@ var example1 = new Vue({
       checked: false,
       searchString: "",
       items: [
-        { price: '1', name: 'mm' },
+        { price: '1100', name: 'Футболка' },
         { price: '22', name: 'aa' },
         { price: '55', name: 'dd' },
         { price: '77', name: 'gg' },
