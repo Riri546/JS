@@ -2,7 +2,22 @@
 var app = new Vue({
     el: '#app',
     data: {
-        products: []
+        computed: {
+            filteredProducts: function () {
+                var that = this;
+                return this.products.filter(function (product) {
+                    return product.good.toLowerCase().indexOf(that.inputSearch.toLowerCase()) !== -1;
+                });
+            }
+        },
+        products: [],
+        categories: [
+            { id: 1, category: 'Ноутбуки' },
+            { id: 2, category: 'Смартфоны' },
+            { id: 3, category: 'Видеокарты' }
+        ],
+        inputSearch: '',
+        selectCategory: 0
     },
     mounted: function () {
         var that = this;

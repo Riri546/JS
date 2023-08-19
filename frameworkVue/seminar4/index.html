@@ -39,9 +39,15 @@
             </tr>
         </thead>
         <tbody>
-            <tr is="ProductItem" v-for="product in products" :product="product" :key="product.good_id"></tr>
+            <tr is="ProductItem" v-for="product in filteredProducts" :product="product" :key="product.good_id"></tr>
         </tbody>
     </table>
+    <input v-model.trim="inputSearch" type="text" placeholder="Поиск по названию товара">
+    <select v-model="selectCategory">
+        <option value="0">Все категории</option>
+        <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.category }}</option>
+    </select>
+
 </body>
 
 <!-- версия для разработки, отображает полезные предупреждения в консоли -->
