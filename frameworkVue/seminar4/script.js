@@ -1,36 +1,69 @@
-const products = [
-    {
-        name: 'Куртка',
-        details: {
-            price: 50,
-            size: ' large'
-        },
+// const products = [
+//     {
+//         name: 'Куртка',
+//         details: {
+//             price: 50,
+//             size: 'large'
+//         },
+//     },
+//     {
+//         name: 'Джинсы',
+//         details: {
+//             price: 30,
+//             size: 'small'
+//         },
+//     },
+//     {
+//         name: 'Футболка',
+//         details: {
+//             price: 20,
+//             size: 'medium'
+//         },
+//     },
+//     methods: {
+
+//     },
+// ];
+
+
+
+
+// console.log(products.sort((a, b) => a.details.price - b.details.price));
+
+const app1 = new Vue({
+    el: '#app-1',
+    data: {
+        products: [
+            {
+                name: 'Куртка',
+                details: {
+                    price: 50,
+                    size: 'large'
+                },
+            },
+            {
+                name: 'Джинсы',
+                details: {
+                    price: 30,
+                    size: 'small'
+                },
+            },
+            {
+                name: 'Футболка',
+                details: {
+                    price: 20,
+                    size: 'medium'
+                },
+            },
+        ]
     },
-    {
-        name: 'Джинсы',
-        details: {
-            price: 30,
-            size: 'small'
-        },
-    },
-    {
-        name: 'Футболка',
-        details: {
-            price: 20,
-            size: 'medium'
-        },
-    },
-];
+    methods: {
+        sortSize: products.sort((a, b) => customSortOrder[a.details.size] - customSortOrder[b.details.size])
+    }
+})
 
 const customSortOrder = {
-    high: 1,
+    small: 1,
     medium: 2,
-    low: 3,
+    large: 3,
 };
-
-products.sort((a, b) => customSortOrder[a.size] - customSortOrder[b.size]);
-
-console.log(products);
-
-products.sort((a, b) => a.details.price - b.details.price);
-

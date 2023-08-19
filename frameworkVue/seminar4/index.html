@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seminar3</title>
+    <title>Seminar 4</title>
 </head>
 
 <body>
-    <button onclick="task1();">Задание 1</button>
-    <button onclick="task2();">Задание 2</button>
-    <button onclick="task3();">Задание 3</button>
+    <div id="app-1">
+        <h1>Задание 2</h1>
+        <ol>
+            <li v-for="products in product">
+                {{ product.name  }}
+            </li>
+        </ol>
+        <button>Добавить</button>
+    </div>
 
     <script src="script.js"></script>
 </body>
