@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seminar 4</title>
+    <title>Компоненты Vue.js</title>
+    <meta charset="utf-8" />
+    <style>
+        a:hover {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-
-    <body>
-        <div id="app">
-            <table>
-                <tr>
-                    <td><a @click="sortParam='title'">Модель</a></td>
-                    <td><a @click="sortParam='company'">Компания</a></td>
-                    <td><a @click="sortParam='price'">Цена</a></td>
-                </tr>
-                <tr v-for="phone in sortedList">
-                    <td>{{phone.title}}</td>
-                    <td>{{phone.company}}</td>
-                    <td>{{phone.price}}</td>
-                </tr>
-            </table>
-        </div>
-        <script src="https://unpkg.com/vue@2.7.14/dist/vue.js"></script>
-        <script>
-            var app = new Vue({
-                el: '#app',
-                data: {
-                    sortParam: '',
-                    phones: [
-                        { title: 'Galaxy S8', company: 'Samsung', price: 45000 },
-                        { title: 'iPhone 7', company: 'Apple', price: 49000 },
-                        { title: 'Nokia N8', company: 'HMD Global', price: 25000 },
-                        { title: 'Galaxy Note 8', company: 'Samsung', price: 50000 },
-                        { title: 'iPhone 8', company: 'Apple', price: 60000 }]
-                },
-                computed: {
-                    sortedList() {
-                        switch (this.sortParam) {
-                            case 'title': return this.phones.sort(sortByTitle);
-                            case 'company': return this.phones.sort(sortByCompany);
-                            case 'price': return this.phones.sort(sortByPrice);
-                            default: return this.phones;
-                        }
+    <div id="app">
+        <table>
+            <tr>
+                <td><a @click="sortParam='title'">Модель</a></td>
+                <td><a @click="sortParam='company'">Компания</a></td>
+                <td><a @click="sortParam='price'">Цена</a></td>
+            </tr>
+            <tr v-for="phone in sortedList">
+                <td>{{phone.title}}</td>
+                <td>{{phone.company}}</td>
+                <td>{{phone.price}}</td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://unpkg.com/vue@2.7.14/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                sortParam: '',
+                phones: [
+                    { title: 'Galaxy S8', company: 'Samsung', price: 45000 },
+                    { title: 'iPhone 7', company: 'Apple', price: 49000 },
+                    { title: 'Nokia N8', company: 'HMD Global', price: 25000 },
+                    { title: 'Galaxy Note 8', company: 'Samsung', price: 50000 },
+                    { title: 'iPhone 8', company: 'Apple', price: 60000 }]
+            },
+            computed: {
+                sortedList() {
+                    switch (this.sortParam) {
+                        case 'title': return this.phones.sort(sortByTitle);
+                        case 'company': return this.phones.sort(sortByCompany);
+                        case 'price': return this.phones.sort(sortByPrice);
+                        default: return this.phones;
                     }
                 }
-            });
-            var sortByTitle = function (d1, d2) { return (d1.title.toLowerCase() > d2.title.toLowerCase()) ? 1 : -1; };
-            var sortByCompany = function (d1, d2) { return (d1.company.toLowerCase() > d2.company.toLowerCase()) ? 1 : -1; };
-            var sortByPrice = function (d1, d2) { return (d1.price > d2.price) ? 1 : -1; };
-        </script>
-        </div>
-
-    </body>
+            }
+        });
+        var sortByTitle = function (d1, d2) { return (d1.title.toLowerCase() > d2.title.toLowerCase()) ? 1 : -1; };
+        var sortByCompany = function (d1, d2) { return (d1.company.toLowerCase() > d2.company.toLowerCase()) ? 1 : -1; };
+        var sortByPrice = function (d1, d2) { return (d1.price > d2.price) ? 1 : -1; };
+    </script>
+</body>
 
 </html>
