@@ -3,11 +3,17 @@ var app = new Vue({
     el: '#app',
     data: {
         computed: {
-            filteredProducts: function () {
-                var that = this;
-                return this.products.filter(function (product) {
-                    return product.good.toLowerCase().indexOf(that.inputSearch.toLowerCase()) !== -1;
-                });
+            filteredProducts: function() {
+                return this.products
+                    // Фильтруем по категории
+                    .filter(product => {
+                        return this.selectCategory == 0 || product.category_id == this.selectCategory;
+                    })
+             
+                    // Фильтруем по полю поиска
+                    .filter(product => {
+                        return this.inputSearch == '' || product.good.toLowerCase().indexOf(this.inputSearch.toLowerCase()) !== -1;
+                    });
             }
         },
         products: [],
