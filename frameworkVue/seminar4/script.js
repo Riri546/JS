@@ -3,14 +3,14 @@ const products = [
         name: 'Куртка',
         details: {
             price: 50,
-            size: 'high'
+            size: ' large'
         },
     },
     {
         name: 'Джинсы',
         details: {
             price: 30,
-            size: 'low'
+            size: 'small'
         },
     },
     {
