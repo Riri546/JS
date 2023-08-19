@@ -5,60 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seminar 2</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <body>
-    <sort v-model="sortType"></sort>
-    <list :items="sortedItems"></list>
-    <!-- <ul>
-        <li @click="currentSorting = 'name'"> byName </li>
-        <li @click="currentSorting = 'price'"> byPrice </li>
-    </ul> -->
-
-    <app-product v-for="product in productsBy" :key="product.id" :product="product">
-    </app-product>
-</body>
-
-<script>
-    export default {
-      props: ['items'],
-      data() {
-        return {
-          sortType: 'byName'
-        }
-      },
-      computed: {
-        sortedItems() {
-          switch(this.sortType) {
-            case 'byName': return  // sort by name
-            case 'bySomething': return  // sort by something
-          } 
-        }
-      }
-    }
-    </script>
-
-
-<!-- <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.4/vue.js"></script>
-    <div id="example-1">
-        <ol>
-            <p>Сортировка по {{ sortKey }}</p>
-            <li v-for="arProductsList in product">
-                {{ product.name }}: {{ item.price }}р.
-            </li>
-        </ol>
-        <div>
-            <button @click="sortKey = 'name'">name</buttton>
-
-            <button @click="sortKey = 'price'">price</buttton>
+    <div id="app">
+        <div class="container">
+            <header class="sticky">
+                <a href="/" class="logo">Webdevkin</a>
+                <a href="./" class="button">Каталог</a>
+            </header>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <h1>Список товаров</h1>
+                    <!-- Список товаров -->
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <footer>
+                <p>Разработка <a href="https://webdevkin.ru" target="_blank">Webdevkin</a></p>
+            </footer>
         </div>
-    </div> -->
+    </div>
+</body>
 
 <!-- версия для разработки, отображает полезные предупреждения в консоли -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script src="script.js"></script>
-<!-- </body> -->
 
 </html>
