@@ -1,4 +1,4 @@
-.latestPost, .top .foot, .top .news__info, .top .news, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.articles, .latestPost, .top .foot, .top .news__info, .top .news, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -492,13 +492,20 @@
   letter-spacing: 0.22px;
 }
 
-.blog__title {
+.articles {
+  padding-bottom: 30px;
+}
+.articles__title {
   color: #292F36;
   font-family: "DM Serif Display", serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
+}
+
+.news__info {
+  gap: 30px;
 }
 
 * {

@@ -102,11 +102,20 @@
     }
 }
 
-.blog__title {
-    color: $colorSelectText;
-    font-family: $fontTitle;
-    font-size: 50px;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeight;
+.articles {
+    @extend %center;
+    padding-bottom: 30px;
+
+    &__title {
+        color: $colorSelectText;
+        font-family: $fontTitle;
+        font-size: 50px;
+        font-style: $fontStyle;
+        font-weight: $fontWeightRegular;
+        line-height: $lineHeight;
+    }
+}
+
+.news__info{
+    gap: 30px;
 }
