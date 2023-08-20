@@ -1,6 +1,26 @@
 .subhead {
-    &__section {
+    &__img {
         position: relative;
+        display: inline-block;
+
+        &_photo{
+            width: 100vw;
+        }
+
+    }
+
+    &__section {
+        border-radius: 37px 37px 0px 0px;
+        background: #FFF;
+        position: absolute;
+        bottom: 1px;
+        display: flex;
+        width: 503px;
+        margin-left: 28%;
+        padding: 41px 78px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
 
         &_title {
             color: $colorSelectText;
@@ -11,12 +31,6 @@
             line-height: $lineHeight;
             /* 62.5px */
         }
-    }
-
-    &__img {
-        position: absolute;
-        // background: url(../img/blog/Image_laceholder.jpg);
-        // min-height: 293px;
     }
 
 }
