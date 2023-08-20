@@ -428,7 +428,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 62.5px */
+}
+.subhead__link {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.22px;
 }
 
 * {

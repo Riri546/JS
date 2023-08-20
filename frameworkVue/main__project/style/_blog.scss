@@ -3,10 +3,9 @@
         position: relative;
         display: inline-block;
 
-        &_photo{
+        &_photo {
             width: 100vw;
         }
-
     }
 
     &__section {
@@ -29,8 +28,16 @@
             font-style: $fontStyle;
             font-weight: $fontWeightRegular;
             line-height: $lineHeight;
-            /* 62.5px */
         }
     }
 
+    &__link {
+        color: $colortext;
+        font-family: $fontText;
+        font-size: $fontSizeMedium;
+        font-style: $fontStyle;
+        font-weight: $fontWeightRegular;
+        line-height: $lineHeightMax;
+        letter-spacing: 0.22px;
+    }
 }
