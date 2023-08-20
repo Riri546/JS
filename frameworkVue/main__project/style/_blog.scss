@@ -101,3 +101,12 @@
         letter-spacing: 0.22px;
     }
 }
+
+.blog__title {
+    color: $colorSelectText;
+    font-family: $fontTitle;
+    font-size: 50px;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    line-height: $lineHeight;
+}

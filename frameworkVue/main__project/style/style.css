@@ -492,6 +492,15 @@
   letter-spacing: 0.22px;
 }
 
+.blog__title {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
 * {
   margin: 0;
   padding: 0;
