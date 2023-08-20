@@ -9,35 +9,21 @@
 </head>
 
 <body>
-    <div id="app">
-        <div class="container">
-            <header class="row">
-                <h1 class="title">Список товаров</h1>
-            </header>
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Название</th>
-                <th>Бренд</th>
-                <th>Цена</th>
-                <th>Рейтинг</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr is="ProductItem" v-for="product in filteredProducts" :product="product" :key="product.good_id"></tr>
-        </tbody>
-    </table>
-    <input v-model.trim="inputSearch" type="text" placeholder="Поиск по названию товара">
-    <select v-model="selectCategory">
-        <option value="0">Все категории</option>
-        <option v-for="category in categories" :key="category.id" :value="category.id">{{ category.category }}</option>
-    </select>
-
+    <div id="app-1">
+        <h1>Задание 1</h1>
+        <ol>
+            <li v-for="product in products">
+                {{ product.name}} {{ product.brands }}: {{ product.price }}р.
+            </li>
+        </ol>
+        <button v-on:click="sortedPriceIncreasing">Сортировка цены по возрастанию</button>
+        <button v-on:click="sortedPriceDecreasing">Сортировка цены по убыванию</button>
+        <button v-on:click="sortedName">Сортировка по имени</button>
+        <button v-on:click="sortedBrands">Сортировка по бренду</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="script.js"></script>
 </body>
 
-<!-- версия для разработки, отображает полезные предупреждения в консоли -->
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-<script src="script.js"></script>
 
 </html>
