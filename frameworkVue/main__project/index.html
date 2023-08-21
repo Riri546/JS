@@ -173,6 +173,27 @@
                     </div>
                 </div>
             </figure>
+            <figure id="app-1" class="news__element">
+                <div class="news__img">
+                    <div class="news__topic">
+                        <p class="news__topic_text" v-for="newArticle in newsArticles">{{ newArticle.topic }}</p>
+                    </div>
+                </div>
+                <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.title }}</h2>
+                <div class="news__date__link">
+                    <div class="date">
+                        <p class="date__text" v-for="newArticle in newsArticles">{{ newArticle.date }}</p>
+                    </div>
+                    <div class="link">
+                        <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="53"
+                                viewBox="0 0 52 53" fill="none">
+                                <circle class="news__link" cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                </div>
+            </figure>
             <!-- <figure class="news__element">
                 <div class="news__img2">
                     <div class="news__topic">
