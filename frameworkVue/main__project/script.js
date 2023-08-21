@@ -19,8 +19,8 @@ var app2 = new Vue({
         linkHref: "blog.html",
         post2: [{
             topic: 'Living Design',
-            title: 'Let’s Get Solution For Building Construction Work',
-            date: '26 December,2022',
+            title: 'Low Cost Latest Invented Interior Designing Ideas.',
+            date: '22 December,2022',
         }]
     }
 });
@@ -30,10 +30,10 @@ var app3 = new Vue({
 
     data: {
         linkHref: "blog.html",
-        post2: [{
+        post3: [{
             topic: 'Interior Design',
-            title: 'Let’s Get Solution For Building Construction Work',
-            date: '26 December,2022',
+            title: 'Best For Any Office & Business Interior Solution',
+            date: '25 December,2022',
         }]
     }
 });
