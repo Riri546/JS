@@ -158,7 +158,7 @@
                         <p class="news__topic_text" v-for="newArticle in newsArticles">{{ newArticle.topic }}</p>
                     </div>
                 </div>
-                <h2 class="news__info_title">Let’s Get Solution For Building Construction Work</h2>
+                <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.title }}</h2>
                 <div class="news__date__link">
                     <div class="date">
                         <p class="date__text">26 December,2022</p>
