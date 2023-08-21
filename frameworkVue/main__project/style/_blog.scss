@@ -147,9 +147,9 @@
             transition: all 0.7s;
         }
 
-        .articles__pagination-item:hover {
-            border-color: #F4F0EC;
-            background-color: #F4F0EC;
+        &-item:hover {
+            background: #F4F0EC;
+            border: 1px solid #F4F0EC;
         }
 
         &-svg {
@@ -157,6 +157,4 @@
             padding-right: 5px;
         }
     }
-
 }
-
