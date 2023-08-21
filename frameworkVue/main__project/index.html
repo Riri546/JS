@@ -158,7 +158,7 @@
                         <p class="news__topic_text" v-for="post1 in posts1">{{ post1.topic }}</p>
                     </div>
                 </div>
-                <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.title }}</h2>
+                <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.post1.title }}</h2>
                 <div class="news__date__link">
                     <div class="date">
                         <p class="date__text" v-for="newArticle in newsArticles">{{ newArticle.date }}</p>
@@ -174,7 +174,7 @@
                 </div>
             </figure>
             <figure id="app-1" class="news__element">
-                <div class="news__img">
+                <div class="news__img2">
                     <div class="news__topic">
                         <p class="news__topic_text" v-for="newArticle in newsArticles">{{ newArticle.topic }}</p>
                     </div>
