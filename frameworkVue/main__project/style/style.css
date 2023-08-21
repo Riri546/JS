@@ -430,6 +430,14 @@
   letter-spacing: 0.22px;
 }
 
+.news__date__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .latestPost {
   padding-top: 183px;
   padding-bottom: 150px;
@@ -494,11 +502,9 @@
   font-weight: 400;
   line-height: 125%;
 }
-
 .articles__pagination {
   margin-bottom: 200px;
   display: flex;
-  margin-bottom: 200px;
   justify-content: center;
   gap: 20px;
   flex-direction: row;
@@ -516,6 +522,10 @@
   font-weight: 500;
   line-height: 150%;
   text-transform: capitalize;
+}
+.articles__pagination-svg {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 * {
