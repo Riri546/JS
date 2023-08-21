@@ -278,7 +278,7 @@
             font-size: $fontSizeMedium;
             font-style: $fontStyle;
             font-weight: $fontWeightRegular;
-            line-height: 150%;
+            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
         }
 
@@ -307,14 +307,14 @@
                 width: 124px;
                 top: 247px;
                 left: 40px;
-                color: #4d5053;
-                font-family: Jost;
+                color: $colortext;
+                font-family: $fontText;
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 150%;
+                font-style: $fontStyle;
+                font-weight: $fontWeightRegular;
+                line-height: $lineHeightMax;
                 letter-spacing: 0.16px;
-                background-color: #fff;
+                background-color: $colorButton;
                 border-radius: 8px 8px 8px 0px;
                 padding: 7px 9px 10px 11px;
                 transition: 0.3s;
