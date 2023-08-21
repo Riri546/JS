@@ -255,6 +255,7 @@
 
     .blog {
         @extend %center;
+        margin-top: 96px;
         margin-bottom: 96px;
 
         &__title {
