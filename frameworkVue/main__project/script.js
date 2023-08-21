@@ -2,9 +2,9 @@ var app1 = new Vue({
     el: '#app-1',
     data: {
         topicTexts: [
-            { text: 'Kitchan Design' },
-            { text: 'Изучить Vue' },
-            { text: 'Создать что-нибудь классное' }
+            { kitchan: 'Kitchan Design' },
+            // { text: 'Изучить Vue' },
+            // { text: 'Создать что-нибудь классное' }
         ]
     },
     // methods: {
