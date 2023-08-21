@@ -36,6 +36,7 @@ var app3 = new Vue({
 
 
 // Хочу сделать так, что бы небыло зависимости от id
+
 // var postNews = {
 //     data() {
 //         return {
