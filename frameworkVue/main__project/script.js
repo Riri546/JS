@@ -1,15 +1,17 @@
 var app1 = new Vue({
     el: '#app-1',
     data: {
-        newsArticles: {
-            topics: [
-                { idTopic1: 'Kitchan Design' },
-                { idTopic2: 'Living Design' },
-                { idTopic3: 'Interior Design' },
+        // newsArticles: {
+            post1: [
+                { topic: 'Kitchan Design' },
             ]
-        }
+        // }
+    }
+})
 
 
+// { id2: 'Living Design' },
+// { id3: 'Interior Design' },
         // newsArticles: [
 
         //     {
@@ -29,9 +31,25 @@ var app1 = new Vue({
         //         app1.newsArticles.topic.push({idTopic1: 'Kitchan Design'})
         //     }
         // },
-    }
-})
+        // newsArticles: [
 
+        //     {
+        //         topic: {},
+        //         title: addTitle(),
+        //         date: addDate(),
+        //     },
+        // ],
+        // topics: [
+        //     {idTopic1: 'Kitchan Design'},
+        //     {idTopic2: 'Living Design'},
+        //     {idTopic3: 'Interior Design'},
+        // ],
+
+        // methods: {
+        //     addTopic: function () {
+        //         app1.newsArticles.topic.push({idTopic1: 'Kitchan Design'})
+        //     }
+        // },
 // post1: [
     //     {
     //         topic: 'Kitchan Design',
