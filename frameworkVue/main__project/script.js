@@ -12,8 +12,7 @@ const app = {
         };
     }
 };
-
-Vue.createApp(app).mount('#app1');
+Vue.createApp(app).mount('#app-1');
 
 
 // var app1 = new Vue({

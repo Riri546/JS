@@ -155,13 +155,13 @@
             <figure class="news__element" v-for="article in articlesData" :key="article.id">
                 <div class="news__img">
                     <div class="news__topic">
-                        <p class="news__topic_text" v-for="post in post1">{{ post.topic }}</p>
+                        <p class="news__topic_text" v-for="article in articlesData">{{ article.topic }}</p>
                     </div>
                 </div>
                 <h2 class="news__info_title">{{ article.title }}</h2>
                 <div class="news__date__link">
                     <div class="date">
-                        <p class="date__text" v-for="post in post1">{{ post.date }}</p>
+                        <p class="date__text">{{ article.date }}</p>
                     </div>
                     <div class="link">
                         <a :href="linkHref"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="53"
