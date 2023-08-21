@@ -152,10 +152,10 @@
                 content of a page when lookings at its layouts the points of using.</p>
         </header>
         <section class="news__info">
-            <figure class="news__element">
+            <figure id="app-1" class="news__element">
                 <div class="news__img">
                     <div class="news__topic">
-                        <p class="news__topic_text">Kitchan Design</p>
+                        <p class="news__topic_text" v-for="topicText in topicTexts">{{topicText.text}}</p>
                     </div>
                 </div>
                 <h2 class="news__info_title">Let’s Get Solution For Building Construction Work</h2>
@@ -254,6 +254,8 @@
                 </article>
             </sectionc>
         </footer>
+
+        
     </div>
 </body>
 
