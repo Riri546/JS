@@ -3,21 +3,20 @@ var app1 = new Vue({
 
     data: {
         linkHref: "blog.html",
-        post1: [
-            {
-                topic: 'Kitchan Design',
-                title: 'Let’s Get Solution For Building Construction Work',
-                date: '26 December,2022',
-            },
-        ],
+        post1: [{
+            topic: 'Kitchan Design',
+            title: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December,2022',
+        }],
         post2: [{
             topic: 'Kitchan Design',
             title: 'Let’s Get Solution For Building Construction Work',
             date: '26 December,2022',
-        },]
+        }]
 
     }
 })
+
 
 
 // { id2: 'Living Design' },
