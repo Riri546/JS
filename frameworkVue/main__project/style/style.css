@@ -256,6 +256,7 @@
 }
 .top .blog__item_img {
   margin-bottom: 21px;
+  border-radius: 60px 60px 0px 0px;
 }
 .top .blog__item_tag {
   position: absolute;
