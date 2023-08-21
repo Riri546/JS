@@ -161,7 +161,7 @@
                 <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.title }}</h2>
                 <div class="news__date__link">
                     <div class="date">
-                        <p class="date__text">26 December,2022</p>
+                        <p class="date__text" v-for="newArticle in newsArticles">{{ newArticle.date }}</p>
                     </div>
                     <div class="link">
                         <a href="blog.html"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="53"
@@ -173,7 +173,7 @@
                     </div>
                 </div>
             </figure>
-            <figure class="news__element">
+            <!-- <figure class="news__element">
                 <div class="news__img2">
                     <div class="news__topic">
                         <p class="news__topic_text">Living Design</p>
@@ -214,7 +214,7 @@
                             </svg></a>
                     </div>
                 </div>
-            </figure>
+            </figure> -->
         </section>
         <footer class="foot">
             <section class="foot__about">

@@ -5,6 +5,7 @@ var app1 = new Vue({
             {
                 topic: 'Kitchan Design',
                 title: 'Let’s Get Solution For Building Construction Work',
+                date: '26 December,2022'
             },
 
         ]
