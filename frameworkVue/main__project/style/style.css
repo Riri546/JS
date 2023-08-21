@@ -1,4 +1,4 @@
-.articles, .latestPost, .top .foot, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -309,14 +309,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  /* 24px */
   letter-spacing: 0.16px;
   text-transform: capitalize;
 }
-.top .blog__item:hover {
+.top .blog .blog__item:hover {
   background: #f4f0ec;
 }
-.top .blog__item:hover circle {
+.top .blog .blog__item:hover circle {
   fill: #fff;
 }
 .top .foot {
