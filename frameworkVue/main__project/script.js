@@ -1,8 +1,8 @@
 var app1 = new Vue({
-    el: '#app-1',
+    // el: '#app-1',
     data: {
         posts (){
-            return { topic: ['Kitchan Design', 'Living Design', 'Interior Design']}
+            return { topics: ['Kitchan Design', 'Living Design', 'Interior Design']}
         }
         // newsArticles: [
         //     {
@@ -33,4 +33,4 @@ var app1 = new Vue({
     //         this.todos.splice(index, 1);
     //       }
 // }
-})
+}).mount('#app-1');
