@@ -1,3 +1,4 @@
+// Работает только с определенным id
 var app1 = new Vue({
     el: '#app-1',
 
@@ -8,14 +9,34 @@ var app1 = new Vue({
             title: 'Let’s Get Solution For Building Construction Work',
             date: '26 December,2022',
         }],
+    }
+});
+
+var app2 = new Vue({
+    el: '#app-2',
+
+    data: {
+        linkHref: "blog.html",
         post2: [{
-            topic: 'Kitchan Design',
+            topic: 'Living Design',
             title: 'Let’s Get Solution For Building Construction Work',
             date: '26 December,2022',
         }]
-
     }
-})
+});
+
+var app3 = new Vue({
+    el: '#app-3',
+
+    data: {
+        linkHref: "blog.html",
+        post2: [{
+            topic: 'Interior Design',
+            title: 'Let’s Get Solution For Building Construction Work',
+            date: '26 December,2022',
+        }]
+    }
+});
 
 
 
