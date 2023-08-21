@@ -2,11 +2,13 @@ var app1 = new Vue({
     // el: '#app-1',
     // data: {
         posts (){
-            return { topics: ['Kitchan Design', 'Living Design', 'Interior Design']}
+            return { topics: ['Kitchan Design']}
         }
         
     },
 )
+
+// , 'Living Design', 'Interior Design'
 // newsArticles: [
         //     {
         //         post1: [
