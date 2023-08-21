@@ -18,19 +18,19 @@ const blogs = {
             title: 'Tags'
         };
     },
-    methods: {
-        sortArticles(e) {
-            console.log(e.target);
-            if (document.querySelector('.blog-details__button-active') !== null) {
-                document.querySelector('.blog-details__button-active').classList.remove('blog-details__button-active');
-            }
-            const divButton = e.target.closest('.blog-details__button');
-            divButton.classList.add('blog-details__button-active');
-        },
-        filters(e) {
-            this.sortedArray = this.articles.filter(article => article.id === e.target.dataset.id);
-        }
-    },
+    // methods: {
+    //     sortArticles(e) {
+    //         console.log(e.target);
+    //         if (document.querySelector('.blog-details__button-active') !== null) {
+    //             document.querySelector('.blog-details__button-active').classList.remove('blog-details__button-active');
+    //         }
+    //         const divButton = e.target.closest('.blog-details__button');
+    //         divButton.classList.add('blog-details__button-active');
+    //     },
+    //     filters(e) {
+    //         this.sortedArray = this.articles.filter(article => article.id === e.target.dataset.id);
+    //     }
+    // },
     template: `
             <div class="blog-details">
                 <article class="blog-detailsart" v-for="article in sortedArray" :key="article.id" :id="article.id">
