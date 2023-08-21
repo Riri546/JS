@@ -116,8 +116,27 @@
     }
 }
 
-.news__info {
-    gap: 30px;
+.articles__pagination {
+    @extend %center;
+    margin-bottom: 200px;
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &-item {
+        padding: 14px 17px;
+        border: 1px solid #CDA274;
+        box-sizing: border-box;
+        border-radius: 100%;
+        color: #292F36;
+        font-family: Jost;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: capitalize;
+    }
 }
-
-
