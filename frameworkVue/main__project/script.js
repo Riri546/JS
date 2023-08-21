@@ -1,10 +1,13 @@
 var app1 = new Vue({
     // el: '#app-1',
-    data: {
+    // data: {
         posts (){
             return { topics: ['Kitchan Design', 'Living Design', 'Interior Design']}
         }
-        // newsArticles: [
+        
+    },
+)
+// newsArticles: [
         //     {
         //         post1: [
         //             {
@@ -22,15 +25,3 @@ var app1 = new Vue({
         //         ]
         //     },
         // ]
-    },
-    // methods: {
-    //     post1: function () {
-    //     }
-    //     adding: function () {
-    //         app2.todos.push({ text: 'Добавлен новый элемент' })
-    //     },
-    //     remove: function(index) {
-    //         this.todos.splice(index, 1);
-    //       }
-// }
-}).mount('#app-1');

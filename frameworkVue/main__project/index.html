@@ -155,7 +155,7 @@
             <figure id="app-1" class="news__element">
                 <div class="news__img">
                     <div class="news__topic">
-                        <p class="news__topic_text"  v-for="(topic, index) in topics">{{index + 1}}. {{topics}}</p>
+                        <p class="news__topic_text"  v-for="(topic, index) in topics">{{index + 1}}. {{topic[0]}}</p>
                     </div>
                 </div>
                 <h2 class="news__info_title" v-for="newArticle in newsArticles">{{ newArticle.post1.title }}</h2>
