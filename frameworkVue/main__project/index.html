@@ -151,14 +151,14 @@
             <p class="news__text">It is a long established fact that a reader will be distracted by the of readable
                 content of a page when lookings at its layouts the points of using.</p>
         </header>
-        <section class="news__info">
-            <figure id="app-1" class="news__element">
+        <section class="news__info" id="app-1">
+            <figure class="news__element" v-for="article in articlesData" :key="article.id">
                 <div class="news__img">
                     <div class="news__topic">
                         <p class="news__topic_text" v-for="post in post1">{{ post.topic }}</p>
                     </div>
                 </div>
-                <h2 class="news__info_title" v-for="post in post1">{{ post.title }}</h2>
+                <h2 class="news__info_title">{{ article.title }}</h2>
                 <div class="news__date__link">
                     <div class="date">
                         <p class="date__text" v-for="post in post1">{{ post.date }}</p>
