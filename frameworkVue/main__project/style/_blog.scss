@@ -131,25 +131,32 @@
         gap: 20px;
         flex-direction: row;
         flex-wrap: nowrap;
-    
+
         &-item {
             padding: 14px 17px;
             border: 1px solid #CDA274;
             box-sizing: border-box;
             border-radius: 100%;
-            color: #292F36;
-            font-family: Jost;
+            color: $colorSelectText;
+            font-family: $fontText;
             font-size: 16px;
-            font-style: normal;
+            font-style: $fontStyle;
             font-weight: 500;
-            line-height: 150%;
+            line-height: $lineHeightMax;
             text-transform: capitalize;
+            transition: all 0.7s;
         }
-    
+
+        .articles__pagination-item:hover {
+            background-color: #F4F0EC;
+            background-color: #F4F0EC;
+        }
+
         &-svg {
             padding-left: 5px;
             padding-right: 5px;
         }
     }
+
 }
 
