@@ -5,6 +5,9 @@
 
 .content {
     @extend %center;
+    display: flex;
+    flex-direction: row;
+    gap: 53px;
     padding-bottom: 96px;
 
     .paper {
@@ -129,6 +132,25 @@
                 padding-top: 20px;
                 padding-bottom: 46px;
             }
+        }
+    }
+
+    .tags {
+        &__title {
+            @extend %mediumTitle;
+            padding-bottom: 24px;
+            letter-spacing: 0.5px;
+        }
+
+        &__button {
+            @extend %smallText;
+            color: #292F36;
+            text-align: center;
+            letter-spacing: 0.36px;
+            padding: 8px 30px;
+            border-radius: 10px;
+            background: #F4F0EC;
+            border-color: #F4F0EC;
         }
     }
 
