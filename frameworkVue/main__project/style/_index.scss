@@ -179,10 +179,10 @@
             letter-spacing: 0.22px;
         }
 
-        &__link {
+        .catalog__link {
             transition: 0.7s;
 
-            &_color {
+            .catalog__link_color {
                 transition: 0.7s;
             }
         }
@@ -235,7 +235,6 @@
 
     .blog {
         @extend %center;
-        // padding-top: 96px;
         margin-top: 96px;
         margin-bottom: 96px;
 
@@ -329,7 +328,7 @@
         }
 
         .blog__item:hover {
-            background: $colorButton;
+            background: #E7E7E7;
         }
 
         .blog__item:hover circle {

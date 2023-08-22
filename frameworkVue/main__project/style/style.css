@@ -164,10 +164,10 @@
 .top .catalog__text {
   letter-spacing: 0.22px;
 }
-.top .catalog__link {
+.top .catalog .catalog__link {
   transition: 0.7s;
 }
-.top .catalog__link_color {
+.top .catalog .catalog__link .catalog__link_color {
   transition: 0.7s;
 }
 .top .catalog__link:hover {
@@ -288,7 +288,7 @@
   text-transform: capitalize;
 }
 .top .blog .blog__item:hover {
-  background: #FFF;
+  background: #E7E7E7;
 }
 .top .blog .blog__item:hover circle {
   fill: #FFF;
