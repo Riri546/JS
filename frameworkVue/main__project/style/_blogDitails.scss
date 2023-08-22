@@ -142,15 +142,29 @@
             letter-spacing: 0.5px;
         }
 
+        .button {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
         &__button {
             @extend %smallText;
-            color: #292F36;
+            color: $colorSelectText;
             text-align: center;
             letter-spacing: 0.36px;
             padding: 8px 30px;
             border-radius: 10px;
             background: #F4F0EC;
             border-color: #F4F0EC;
+            transition: 0.7s;
+        }
+
+        &__button:hover{
+            color: $colorButton;
+            border-color: $colorSelectText;
+            background: $colorSelectText;
         }
     }
 

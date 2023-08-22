@@ -594,6 +594,12 @@
   padding-bottom: 24px;
   letter-spacing: 0.5px;
 }
+.content .tags .button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .content .tags__button {
   color: #292F36;
   text-align: center;
@@ -602,6 +608,12 @@
   border-radius: 10px;
   background: #F4F0EC;
   border-color: #F4F0EC;
+  transition: 0.7s;
+}
+.content .tags__button:hover {
+  color: #FFF;
+  border-color: #292F36;
+  background: #292F36;
 }
 
 * {
