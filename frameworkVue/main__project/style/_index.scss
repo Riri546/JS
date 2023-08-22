@@ -28,7 +28,7 @@
             }
 
             &_link:hover {
-                color: #CDA274;
+                color: $colorOrange;
             }
         }
     }
@@ -206,7 +206,7 @@
         background-color: #F4F0EC;
 
         .item {
-            border-right: 1px solid #CDA274;
+            border-right: 1px solid $colorOrange;
             max-width: 246px;
 
             &__none {
@@ -370,7 +370,7 @@
             }
 
             &_icon:hover {
-                fill: #CDA274;
+                fill: $colorOrange;
                 ;
             }
         }
@@ -397,7 +397,7 @@
         }
 
         &__link:hover {
-            color: #CDA274;
+            color: $colorOrange;
         }
 
 
