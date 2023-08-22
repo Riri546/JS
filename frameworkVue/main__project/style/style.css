@@ -1,3 +1,12 @@
+.top__info_title {
+  color: #292F36;
+  font-family: "DM Serif Display", serif;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+}
+
 .latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
   color: #4D5053;
   font-family: "Jost", sans-serif;
@@ -5,6 +14,15 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+.top .blog__item_content-date, .top .blog__item_tag {
+  color: #FFF;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .top .blog__item_content-date, .top .blog__item_tag {
@@ -55,12 +73,6 @@
   padding: 200px 0px 210px 35px;
 }
 .top__info_title {
-  color: #292F36;
-  font-family: "DM Serif Display", serif;
-  font-size: 65px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%;
   max-width: 434px;
   padding-bottom: 18px;
 }

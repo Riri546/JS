@@ -43,12 +43,7 @@
         }
 
         &_title {
-            color: $colorSelectText;
-            font-family: $fontTitle;
-            font-size: $fontSizeTitle;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
+            @extend %maxTitle;
             max-width: 434px;
             padding-bottom: 18px;
         }
