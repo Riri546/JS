@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .top__info_title {
   color: #292F36;
   font-family: "DM Serif Display", serif;
@@ -562,8 +563,21 @@
   max-width: 804px;
   letter-spacing: 0.22px;
 }
+.content .paper__second ol {
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: num;
+  /* Задаём имя счетчика */
+}
+.content .paper__second li::before {
+  content: counter(num) ". ";
+  /* Выводим число */
+  counter-increment: num;
+  /* Увеличиваем значение счётчика */
+  color: #CDA274;
+}
 .content .paper__second_list {
-  margin-left: 25px;
+  margin-left: 5px;
   padding-bottom: 35px;
   max-width: 804px;
   letter-spacing: 0.22px;

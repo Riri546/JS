@@ -101,9 +101,24 @@
                 letter-spacing: 0.22px;
             }
 
+            ol {
+                list-style-type: none;
+                /* Убираем исходные маркеры */
+                counter-reset: num;
+                /* Задаём имя счетчика */
+            }
+
+            li::before {
+                content: counter(num) '. ';
+                /* Выводим число */
+                counter-increment: num;
+                /* Увеличиваем значение счётчика */
+                color: $colorOrange;
+            }
+
             &_list {
                 @extend %text;
-                margin-left: 25px;
+                margin-left: 5px;
                 padding-bottom: 35px;
                 max-width: 804px;
                 letter-spacing: 0.22px;
