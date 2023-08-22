@@ -235,12 +235,13 @@
 
     .blog {
         @extend %center;
+        // padding-top: 96px;
         margin-top: 96px;
         margin-bottom: 96px;
 
         &__title {
             margin-bottom: 10px;
-            color: $colorSelectText2f36;
+            color: $colorSelectText;
             text-align: center;
             font-family: $fontTitle;
             font-size: 50px;

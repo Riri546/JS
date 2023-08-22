@@ -1,3 +1,21 @@
+.latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.top .blog__item_content-date, .top .blog__item_tag {
+  color: #4D5053;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
@@ -48,12 +66,6 @@
 }
 .top__info_text {
   padding-bottom: 21px;
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
   max-width: 434px;
 }
@@ -98,13 +110,7 @@
 }
 .top .products__text {
   padding-bottom: 93px;
-  color: #4D5053;
   text-align: center;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
   max-width: 737px;
 }
@@ -156,12 +162,6 @@
   letter-spacing: 0.5px;
 }
 .top .catalog__text {
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
 }
 .top .catalog__link {
@@ -204,22 +204,17 @@
   letter-spacing: 1.7px;
 }
 .top .company__text {
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
 }
 .top .blog {
+  margin-top: 96px;
   margin-bottom: 96px;
 }
 .top .blog__title {
   margin-bottom: 10px;
-  color: #292f36;
+  color: #292F36;
   text-align: center;
-  font-family: DM Serif Display;
+  font-family: "DM Serif Display", serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 400;
@@ -229,15 +224,7 @@
 .top .blog__text {
   margin-bottom: 52px;
   width: 811px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #4d5053;
   text-align: center;
-  font-family: Jost;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
 }
 .top .blog__items {
@@ -263,14 +250,8 @@
   width: 124px;
   top: 247px;
   left: 40px;
-  color: #4d5053;
-  font-family: Jost;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.16px;
-  background-color: #fff;
+  background-color: #FFF;
   border-radius: 8px 8px 8px 0px;
   padding: 7px 9px 10px 11px;
   transition: 0.3s;
@@ -282,12 +263,11 @@
   flex-direction: column;
   justify-content: center;
   color: #292F36;
-  font-family: DM Serif Display;
+  font-family: "DM Serif Display", serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 125%;
-  /* 31.25px */
   letter-spacing: 0.5px;
   margin-bottom: 30px;
 }
@@ -304,20 +284,14 @@
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #4D5053;
-  font-family: Jost;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.16px;
   text-transform: capitalize;
 }
 .top .blog .blog__item:hover {
-  background: #f4f0ec;
+  background: #FFF;
 }
 .top .blog .blog__item:hover circle {
-  fill: #fff;
+  fill: #FFF;
 }
 .top .foot {
   display: grid;
@@ -330,12 +304,6 @@
 }
 .top .foot__text {
   padding-bottom: 31px;
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
   max-width: 393px;
 }
@@ -382,12 +350,6 @@
 }
 .top .foot__info {
   padding-top: 17px;
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
   max-width: 258px;
 }
@@ -421,12 +383,6 @@
   line-height: 125%;
 }
 .subhead__link {
-  color: #4D5053;
-  font-family: "Jost", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
   letter-spacing: 0.22px;
 }
 
@@ -481,13 +437,6 @@
 }
 .latestPost__text {
   padding-bottom: 41px;
-  color: #4D5053;
-  font-family: Jost;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  /* 33px */
   letter-spacing: 0.22px;
 }
 
@@ -516,12 +465,17 @@
   box-sizing: border-box;
   border-radius: 100%;
   color: #292F36;
-  font-family: Jost;
+  font-family: "Jost", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   text-transform: capitalize;
+  transition: all 0.7s;
+}
+.articles__pagination-item:hover {
+  background: #F4F0EC;
+  border: 1px solid #F4F0EC;
 }
 .articles__pagination-svg {
   padding-left: 5px;
