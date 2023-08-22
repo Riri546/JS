@@ -10,6 +10,8 @@ $fontTitle: 'DM Serif Display', serif;
 $fontSizeVerySmal: 16px;
 $fontSizeSmal: 18px;
 $fontSizeMedium: 22px;
+$fontSizeMediumMax: 25px;
+$fontSizeSmallTitle: 50px;
 $fontSizeTitle: 65px;
 $fontStyle: normal;
 $fontWeightRegular: 400;
@@ -26,6 +28,24 @@ $lineHeightMax: 150%;
     line-height: $lineHeight;
 }
 
+%mediumTitle {
+    color: $colorSelectText;
+    font-family: $fontTitle;
+    font-size: $fontSizeMediumMax;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    line-height: $lineHeight;
+}
+
+%smallTitle {
+    color: $colorSelectText;
+    font-family: $fontTitle;
+    font-size: $fontSizeSmallTitle;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    line-height: $lineHeight;
+}
+
 %text {
     color: $colortext;
     font-family: $fontText;
@@ -37,7 +57,6 @@ $lineHeightMax: 150%;
 
 %smallText {
     color: $colorButton;
-    text-align: center;
     font-family: $fontText;
     font-size: $fontSizeSmal;
     font-style: $fontStyle;

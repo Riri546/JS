@@ -57,17 +57,12 @@
 
         .button {
             &__top__info {
+                @extend %smallText;
                 border-radius: 18px;
                 background: $colorSelectText;
                 box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
                 padding: 26px 49px;
-                color: $colorButton;
                 text-align: center;
-                font-family: $fontText;
-                font-size: $fontSizeSmal;
-                font-style: $fontStyle;
-                font-weight: $fontWeightSemiBold;
-                $lineHeight: $lineHeight;
                 letter-spacing: 0.36px;
                 transition: 0.7s;
             }
@@ -91,14 +86,9 @@
         align-items: center;
 
         &__title {
+            @extend %smallTitle;
             padding-bottom: 8px;
-            color: $colorSelectText;
             text-align: center;
-            font-family: $fontTitle;
-            font-size: 50px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
             letter-spacing: 1px;
             max-width: 737px;
         }
@@ -159,13 +149,8 @@
         }
 
         &__title {
+            @extend %mediumTitle;
             padding-bottom: 4px;
-            color: $colorSelectText;
-            font-family: $fontTitle;
-            font-size: 25px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
             letter-spacing: 0.5px;
         }
 
@@ -234,14 +219,9 @@
         margin-bottom: 96px;
 
         &__title {
+            @extend %smallTitle;
             margin-bottom: 10px;
-            color: $colorSelectText;
             text-align: center;
-            font-family: $fontTitle;
-            font-size: 50px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
             letter-spacing: 1px;
         }
 
@@ -287,17 +267,12 @@
             }
 
             &_text {
+                @extend %mediumTitle;
                 display: flex;
                 width: 305px;
                 height: 70px;
                 flex-direction: column;
                 justify-content: center;
-                color: $colorSelectText;
-                font-family: $fontTitle;
-                font-size: 25px;
-                font-style: $fontStyle;
-                font-weight: $fontWeightRegular;
-                line-height: $lineHeight;
                 letter-spacing: 0.5px;
                 margin-bottom: 30px;
             }
@@ -371,13 +346,8 @@
         }
 
         &__title {
+            @extend %mediumTitle;
             padding-bottom: 9px;
-            color: $colorSelectText;
-            font-family: $fontTitle;
-            font-size: 25px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
         }
 
         &__link {
