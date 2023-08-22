@@ -14,3 +14,12 @@ $fontWeightRegular: 400;
 $fontWeightSemiBold: 600;
 $lineHeight: 125%;
 $lineHeightMax: 150%;
+
+%text{
+    color: $colortext;
+    font-family: $fontText;
+    font-size: $fontSizeMedium;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    line-height: $lineHeightMax;
+}
