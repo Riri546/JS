@@ -315,18 +315,13 @@
             }
 
             &_content-date {
+                @extend %smallText;
                 display: flex;
                 width: 223px;
                 height: 33px;
                 flex-direction: column;
                 justify-content: center;
                 flex-shrink: 0;
-                color: $colortext;
-                font-family: $fontText;
-                font-size: 16px;
-                font-style: $fontStyle;
-                font-weight: $fontWeightRegular;
-                line-height: $lineHeightMax;
                 letter-spacing: 0.16px;
                 text-transform: capitalize;
             }
