@@ -25,7 +25,7 @@
   line-height: 125%;
 }
 
-.latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
+.content .paper__first_text, .latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
   color: #4D5053;
   font-family: "Jost", sans-serif;
   font-size: 22px;
@@ -34,7 +34,7 @@
   line-height: 150%;
 }
 
-.content .paper__first .date, .top .blog__item_content-date, .top .blog__item_tag, .top__info .button__top__info {
+.content .paper__first .date__breadcrumbs .breadcrumbs__link, .content .paper__first .date__breadcrumbs .date, .top .blog__item_content-date, .top .blog__item_tag, .top__info .button__top__info {
   color: #FFF;
   font-family: "Jost", sans-serif;
   font-size: 18px;
@@ -42,7 +42,7 @@
   font-weight: 600;
 }
 
-.content .paper__first .date, .top .blog__item_content-date, .top .blog__item_tag, .top__info .button__top__info {
+.content .paper__first .date__breadcrumbs .breadcrumbs__link, .content .paper__first .date__breadcrumbs .date, .top .blog__item_content-date, .top .blog__item_tag, .top__info .button__top__info {
   color: #4D5053;
   font-family: "Jost", sans-serif;
   font-size: 16px;
@@ -496,12 +496,34 @@
   letter-spacing: 1px;
 }
 .content .paper__first_img {
-  border-radius: 60px;
+  border-radius: 70px;
   padding-bottom: 46px;
 }
-.content .paper__first .date {
+.content .paper__first .date__breadcrumbs {
+  padding-bottom: 48px;
+  display: flex;
+  max-width: 804px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.content .paper__first .date__breadcrumbs .date {
   letter-spacing: 0.16px;
   text-transform: capitalize;
+}
+.content .paper__first .date__breadcrumbs .breadcrumbs__link {
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+  transition: 0.7s;
+}
+.content .paper__first .date__breadcrumbs .breadcrumbs__link:hover {
+  color: #CDA274;
+}
+.content .paper__first_text {
+  padding-bottom: 35px;
+  max-width: 804px;
+  letter-spacing: 0.22px;
 }
 
 * {
