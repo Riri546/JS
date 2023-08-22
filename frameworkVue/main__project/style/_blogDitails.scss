@@ -5,6 +5,7 @@
 
 .content {
     @extend %center;
+    padding-bottom: 96px;
 
     .paper {
         &__first {
@@ -14,6 +15,18 @@
                 max-width: 684px;
                 letter-spacing: 1px;
             }
+
+            &_img {
+                border-radius: 60px;
+                padding-bottom: 46px;
+            }
+
+            .date {
+                @extend %smallText;
+                letter-spacing: 0.16px;
+                text-transform: capitalize;
+            }
         }
     }
+
 }
