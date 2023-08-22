@@ -54,6 +54,35 @@
                 max-width: 804px;
                 letter-spacing: 0.22px;
             }
+
+            .quote {
+                padding-top: 53px;
+                padding-bottom: 53px;
+                border-radius: 50px;
+                background: #F4F0EC;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                max-width: 800px;
+
+                &__title {
+                    max-height: 86px;
+                }
+
+                &__text {
+                    max-width: 400px;
+                    color: $colorOrange;
+                    text-align: center;
+                    font-family:$fontTitle;
+                    font-size: $fontSizeMediumMax;
+                    font-style: italic;
+                    font-weight: $fontWeightRegular;
+                    line-height: $lineHeight;
+                    letter-spacing: 0.5px;
+                }
+
+            }
         }
     }
 

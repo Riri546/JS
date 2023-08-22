@@ -525,6 +525,31 @@
   max-width: 804px;
   letter-spacing: 0.22px;
 }
+.content .paper__first .quote {
+  padding-top: 53px;
+  padding-bottom: 53px;
+  border-radius: 50px;
+  background: #F4F0EC;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 800px;
+}
+.content .paper__first .quote__title {
+  max-height: 86px;
+}
+.content .paper__first .quote__text {
+  max-width: 400px;
+  color: #CDA274;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 125%;
+  letter-spacing: 0.5px;
+}
 
 * {
   margin: 0;
