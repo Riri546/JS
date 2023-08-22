@@ -16,7 +16,7 @@
   line-height: 125%;
 }
 
-.content .paper__first_title, .blog__header, .latestPost__title, .top .blog__title, .top .products__title {
+.content .paper__second_title, .content .paper__first_title, .blog__header, .latestPost__title, .top .blog__title, .top .products__title {
   color: #292F36;
   font-family: "DM Serif Display", serif;
   font-size: 50px;
@@ -25,7 +25,7 @@
   line-height: 125%;
 }
 
-.content .paper__first_text, .latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
+.content .paper__second_text, .content .paper__first_text, .latestPost__text, .subhead__link, .top .foot__info, .top .foot__text, .top .blog__text, .top .company__text, .top .catalog__text, .top .products__text, .top__info_text {
   color: #4D5053;
   font-family: "Jost", sans-serif;
   font-size: 22px;
@@ -549,6 +549,18 @@
   font-weight: 400;
   line-height: 125%;
   letter-spacing: 0.5px;
+}
+.content .paper__second {
+  padding-top: 73px;
+}
+.content .paper__second_title {
+  padding-bottom: 21px;
+  letter-spacing: 1px;
+}
+.content .paper__second_text {
+  padding-bottom: 35px;
+  max-width: 804px;
+  letter-spacing: 0.22px;
 }
 
 * {

@@ -74,7 +74,7 @@
                     max-width: 400px;
                     color: $colorOrange;
                     text-align: center;
-                    font-family:$fontTitle;
+                    font-family: $fontTitle;
                     font-size: $fontSizeMediumMax;
                     font-style: italic;
                     font-weight: $fontWeightRegular;
@@ -82,6 +82,23 @@
                     letter-spacing: 0.5px;
                 }
 
+            }
+        }
+
+        &__second {
+            padding-top: 73px;
+
+            &_title {
+                @extend %smallTitle;
+                padding-bottom: 21px;
+                letter-spacing: 1px;
+            }
+
+            &_text {
+                @extend %text;
+                padding-bottom: 35px;
+                max-width: 804px;
+                letter-spacing: 0.22px;
             }
         }
     }
