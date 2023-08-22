@@ -3,9 +3,11 @@ $paddingNone: 0;
 $widthSite: 1200px;
 $colorSelectText: #292F36;
 $colortext: #4D5053;
-$colorButton:#FFF;
+$colorButton: #FFF;
+$colorOrange: #CDA274;
 $fontText: 'Jost', sans-serif;
 $fontTitle: 'DM Serif Display', serif;
+$fontSizeVerySmal: 16px;
 $fontSizeSmal: 18px;
 $fontSizeMedium: 22px;
 $fontSizeTitle: 65px;
@@ -15,10 +17,19 @@ $fontWeightSemiBold: 600;
 $lineHeight: 125%;
 $lineHeightMax: 150%;
 
-%text{
+%text {
     color: $colortext;
     font-family: $fontText;
     font-size: $fontSizeMedium;
+    font-style: $fontStyle;
+    font-weight: $fontWeightRegular;
+    line-height: $lineHeightMax;
+}
+
+%smallText {
+    color: $colortext;
+    font-family: $fontText;
+    font-size: $fontSizeVerySmal;
     font-style: $fontStyle;
     font-weight: $fontWeightRegular;
     line-height: $lineHeightMax;

@@ -54,13 +54,8 @@
         }
 
         &_text {
+            @extend %text;
             padding-bottom: 21px;
-            color: $colortext;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
             max-width: 434px;
         }
@@ -114,14 +109,9 @@
         }
 
         &__text {
+            @extend %text;
             padding-bottom: 93px;
-            color: $colortext;
             text-align: center;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
             max-width: 737px;
         }
@@ -185,12 +175,7 @@
         }
 
         &__text {
-            color: $colortext;
-            font-family: $fontText;
-            font-size: 22px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
+            @extend %text;
             letter-spacing: 0.22px;
         }
 
@@ -233,7 +218,7 @@
             padding-bottom: 16px;
             max-width: 192px;
             text-align: center;
-            color: #CDA274;
+            color: $colorOrange;
             font-family: $fontTitle;
             font-size: 85px;
             font-style: $fontStyle;
@@ -243,12 +228,7 @@
         }
 
         &__text {
-            color: $colortext;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
+            @extend %text;
             letter-spacing: 0.22px;
         }
     }
@@ -271,15 +251,10 @@
         }
 
         &__text {
+            @extend %text;
             margin-bottom: 52px;
             width: 811px;
-            color: $colortext;
             text-align: center;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
         }
 
@@ -304,16 +279,11 @@
             }
 
             &_tag {
+                @extend %smallText;
                 position: absolute;
                 width: 124px;
                 top: 247px;
                 left: 40px;
-                color: $colortext;
-                font-family: $fontText;
-                font-size: 16px;
-                font-style: $fontStyle;
-                font-weight: $fontWeightRegular;
-                line-height: $lineHeightMax;
                 letter-spacing: 0.16px;
                 background-color: $colorButton;
                 border-radius: 8px 8px 8px 0px;
@@ -383,13 +353,8 @@
         }
 
         &__text {
+            @extend %text;
             padding-bottom: 31px;
-            color: $colortext;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
             max-width: 393px;
         }
@@ -446,13 +411,8 @@
         }
 
         &__info {
+            @extend %text;
             padding-top: 17px;
-            color: $colortext;
-            font-family: $fontText;
-            font-size: $fontSizeMedium;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeightMax;
             letter-spacing: 0.22px;
             max-width: 258px;
         }
