@@ -1,4 +1,10 @@
-.subhead__img{
+.subhead__img {
     width: 100vw;
     padding-bottom: 200px;
+}
+
+.content {
+    .paper {
+        &__first {}
+    }
 }
