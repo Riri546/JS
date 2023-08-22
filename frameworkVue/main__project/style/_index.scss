@@ -58,6 +58,7 @@
         .button {
             &__top__info {
                 @extend %smallText;
+                color: $colorButton;
                 border-radius: 18px;
                 background: $colorSelectText;
                 box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
@@ -246,7 +247,7 @@
             border-radius: 62px;
             border: 1px solid #e7e7e7;
             box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-            transition: 0.3s;
+            transition: 0.7s;
 
             &_img {
                 margin-bottom: 21px;
@@ -263,7 +264,7 @@
                 background-color: $colorButton;
                 border-radius: 8px 8px 8px 0px;
                 padding: 7px 9px 10px 11px;
-                transition: 0.3s;
+                transition: 0.7s;
             }
 
             &_text {
@@ -298,7 +299,7 @@
         }
 
         .blog__item:hover {
-            background: #E7E7E7;
+            background: #F4F0EC;
         }
 
         .blog__item:hover circle {
