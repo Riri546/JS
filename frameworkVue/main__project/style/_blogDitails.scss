@@ -4,7 +4,16 @@
 }
 
 .content {
+    @extend %center;
+
     .paper {
-        &__first {}
+        &__first {
+            &_title {
+                @extend %smallTitle;
+                padding-bottom: 21px;
+                max-width: 684px;
+                letter-spacing: 1px;
+            }
+        }
     }
 }

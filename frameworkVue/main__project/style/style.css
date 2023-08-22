@@ -16,7 +16,7 @@
   line-height: 125%;
 }
 
-.blog__header, .latestPost__title, .top .blog__title, .top .products__title {
+.content .paper__first_title, .blog__header, .latestPost__title, .top .blog__title, .top .products__title {
   color: #292F36;
   font-family: "DM Serif Display", serif;
   font-size: 50px;
@@ -51,7 +51,7 @@
   line-height: 150%;
 }
 
-.articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.content, .articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -485,6 +485,12 @@
 .subhead__img {
   width: 100vw;
   padding-bottom: 200px;
+}
+
+.content .paper__first_title {
+  padding-bottom: 21px;
+  max-width: 684px;
+  letter-spacing: 1px;
 }
 
 * {
