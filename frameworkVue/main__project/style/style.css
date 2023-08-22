@@ -288,6 +288,9 @@
   letter-spacing: 0.16px;
   text-transform: capitalize;
 }
+.top .blog circle {
+  transition: 0.7s;
+}
 .top .blog .blog__item:hover {
   background: #F4F0EC;
 }

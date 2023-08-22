@@ -298,6 +298,10 @@
             }
         }
 
+        circle {
+            transition: 0.7s;
+        }
+
         .blog__item:hover {
             background: #F4F0EC;
         }
@@ -305,6 +309,7 @@
         .blog__item:hover circle {
             fill: $colorButton;
         }
+
     }
 
     .foot {
