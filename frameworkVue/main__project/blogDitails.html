@@ -33,8 +33,9 @@
         <header class="subhead__img">
             <img src="img/blogDitails/subhead.jpg" alt="subhead img">
         </header>
-        <div class="content">
-            <section class="paper">
+        <div class="content" id="app">
+            <articles></articles>
+            <!-- <section class="paper">
                 <article class="paper__first">
                     <h1 class="paper__first_title">Let’s Get Solution for Building
                         Construction Work</h1>
@@ -91,9 +92,8 @@
                         turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem
                         Ipsum available, but the majority have suffered.</p>
                 </article>
-            </section>
-            <tags></tags>
-            <!-- <section class="tags">
+            </section> -->
+            <section class="tags">
                 <h2 class="tags__title">Tags</h2>
                 <div class="button">
                     <button class="tags__button">Kitchen</button>
@@ -103,7 +103,7 @@
                     <button class="tags__button">Kitchen Planning</button>
                     <button class="tags__button">Bedroom</button>
                 </div>
-            </section> -->
+            </section>
         </div>
         <footer class="foot">
             <section class="foot__about">
@@ -164,6 +164,26 @@
         <!-- версия для разработки, отображает полезные предупреждения в консоли -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="script/blogDitails.js"></script>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    massage: 'text massage'
+                },
+                methods: {
+                    newInfo() {
+                        console.log('hello methods');
+                    }
+                },
+                computed: {
+                    newCompy() {
+                        return this.massage;
+                    },
+
+                },
+            })
+
+        </script>
     </div>
 </body>
 
