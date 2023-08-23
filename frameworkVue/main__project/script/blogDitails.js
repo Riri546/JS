@@ -25,9 +25,8 @@ Vue.component('articles', {
     },
     template: `
     <section class="paper">
-    <article class="paper__first">
-        <h1 class="paper__first_title">Let’s Get Solution for Building
-            Construction Work</h1>
+    <article class="paper__first" v-for="article in sortedArray" :key="article.id" :id="article.id">
+        <h1 class="paper__first_title">{{ article.title }}</h1>
         <img class="paper__first_img" src="img/blogDitails/Photo.jpg
             " alt="photo">
         <div class="date__breadcrumbs">
