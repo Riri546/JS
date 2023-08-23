@@ -9,6 +9,14 @@ Vue.component('articles', {
                 img: "img/blogDitails/Photo.jpg",
                 alt: 'photo',
                 date: '26 December,2022',
+                link_interior: 'Interior',
+                linkHref_interior: 'index.html',
+                span: ' / ',
+                link_home: 'Home',
+                linkHref_home: 'index.html',
+                link_decore: 'Decore',
+                linkHref_decore: 'blog.html',
+                text: ''
 
             }]
         }
@@ -21,14 +29,14 @@ Vue.component('articles', {
         <img class="paper__first_img" :src="article.img" :alt="article.alt">
         <div class="date__breadcrumbs">
             <div class="date">
-                <p></p>
+                <p>{{ article.date }}</p>
             </div>
             <div class="breadcrumbs">
-                <a class="breadcrumbs__link" href="index.html">Interior</a>
-                <span class="breadcrumbs__link"> / </span>
-                <a class="breadcrumbs__link" href="index.html">Home</a>
-                <span class="breadcrumbs__link"> / </span>
-                <a class="breadcrumbs__link" href="blog.html"> Decore</a>
+                <a class="breadcrumbs__link" :href="article.linkHref_interior">{{ article.link_interior }}</a>
+                <span class="breadcrumbs__link">{{ article.span }}</span>
+                <a class="breadcrumbs__link" :href="article.linkHref_home">{{ article.link_home }}</a>
+                <span class="breadcrumbs__link">{{ article.span }}</span>
+                <a class="breadcrumbs__link" :href="article.linkHref_decore">{{ article.link_decore }}</a>
             </div>
         </div>
         <p class="paper__first_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
