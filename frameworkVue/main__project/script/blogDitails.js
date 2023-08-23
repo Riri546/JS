@@ -18,7 +18,6 @@ Vue.component('articles', {
                 linkHref_decore: 'blog.html',
                 text1: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.",
                 text2: "Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
-
             }]
         }
     },
@@ -40,8 +39,8 @@ Vue.component('articles', {
                 <a class="breadcrumbs__link" :href="article.linkHref_decore">{{ article.link_decore }}</a>
             </div>
         </div>
-        <p class="paper__first_text">{{ article.text }}</p>
-        <p class="paper__first_text">{{ article.text }}</p>
+        <p class="paper__first_text">{{ article.text1 }}</p>
+        <p class="paper__first_text">{{ article.text2 }}</p>
         <blockquote class="quote">
             <h2 class="quote__title"><svg width="74" height="56" viewBox="0 0 74 56" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
