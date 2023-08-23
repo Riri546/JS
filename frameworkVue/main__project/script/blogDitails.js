@@ -21,6 +21,7 @@ Vue.component('articles', {
             subtitle: 'Design sprints are great',
             second_text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             list_text: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+            second_img:'img/blogDitails/Photo2.jpg',
         }
 
     },
@@ -63,10 +64,8 @@ Vue.component('articles', {
             <li class="paper__second_list">{{ list_text }}</li>
             <li class="paper__second_list">{{ list_text }}</li>
         </ol>
-        <img class="paper__second_img" src="img/blogDitails/Photo2.jpg" alt="photo">
-        <p class="paper__second_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-            turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem
-            Ipsum available, but the majority have suffered.</p>
+        <img class="paper__second_img" :src="second_img" :alt="photo">
+        <p class="paper__second_text">{{ second_text }}</p>
     </article>
 </section>`,
 });
