@@ -33,9 +33,17 @@
         <header class="subhead__img">
             <img src="img/blogDitails/subhead.jpg" alt="subhead img">
         </header>
-        <div class="content" id="app">
-            <articles></articles>
-            <!-- <section class="paper">
+        <main class="main-blog-details">
+            <section class="blog-details__intro">
+                <img src="../img/blog-details-intro.png" alt="photo">
+            </section>
+            <div id="blogdetails" class="blog-details__box center">
+                <blogs></blogs>
+            </div>
+        </main>
+        <!-- <div class="content" id="app">
+            <articles></articles> -->
+        <!-- <section class="paper">
                 <article class="paper__first">
                     <h1 class="paper__first_title">Let’s Get Solution for Building
                         Construction Work</h1>
@@ -93,7 +101,7 @@
                         Ipsum available, but the majority have suffered.</p>
                 </article>
             </section> -->
-            <section class="tags">
+        <!-- <section class="tags">
                 <h2 class="tags__title">Tags</h2>
                 <div class="button">
                     <button class="tags__button">Kitchen</button>
@@ -103,8 +111,8 @@
                     <button class="tags__button">Kitchen Planning</button>
                     <button class="tags__button">Bedroom</button>
                 </div>
-            </section>
-        </div>
+            </section> -->
+        <!-- </div> -->
         <footer class="foot">
             <section class="foot__about">
                 <a href="index.html" class="foot__logo"><svg width="178" height="50" viewBox="0 0 178 50" fill="none"
@@ -165,24 +173,11 @@
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <script src="script/blogDitails.js"></script>
         <script>
-            new Vue({
-                el: '#app',
-                data: {
-                    massage: 'text massage'
+            Vue.createApp({
+                components: {
+                    blogs
                 },
-                methods: {
-                    newInfo() {
-                        console.log('hello methods');
-                    }
-                },
-                computed: {
-                    newCompy() {
-                        return this.massage;
-                    },
-
-                },
-            })
-
+            }).mount('#blogdetails');
         </script>
     </div>
 </body>
