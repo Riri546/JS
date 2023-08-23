@@ -3,52 +3,47 @@ Vue.component('articles', {
 
     data() {
         return {
-            sortedArray: {
-                id: 'Kitchen',
-                title: 'Let’s Get Solution for Building Construction Work',
-                img: "img/blogDitails/Photo.jpg",
-                alt: 'photo',
-                date: '26 December,2022',
-                link_interior: 'Interior',
-                linkHref_interior: 'index.html',
-                span: ' / ',
-                link_home: 'Home',
-                linkHref_home: 'index.html',
-                link_decore: 'Decore',
-                linkHref_decore: 'blog.html',
-                text1: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.",
-                text2: "Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.",
-                quotes_text: 'The details are not the details.They make the design.',
-                subtitle: 'Design sprints are great',
-            },
+            id: 'Kitchen',
+            title: 'Let’s Get Solution for Building Construction Work',
+            img: "img/blogDitails/Photo.jpg",
+            alt: 'photo',
+            date: '26 December,2022',
+            link_interior: 'Interior',
+            linkHref_interior: 'index.html',
+            span: ' / ',
+            link_home: 'Home',
+            linkHref_home: 'index.html',
+            link_decore: 'Decore',
+            linkHref_decore: 'blog.html',
+            text_one: "Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don't look even slightly believable.",
+            text_two: "Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.",
+            quotes_text: 'The details are not the details.They make the design.',
+            subtitle: 'Design sprints are great',
+            second_text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
+            list_text: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
         }
+
     },
     template: `
     <section class="paper">
-    <article class="paper__first" v-for="article in sortedArray" :key="article.id" :id="article.id">
-        <h1 class="paper__first_title">{{ article.title }}</h1>
-        <img class="paper__first_img" src="img/blogDitails/Photo.jpg
-            " alt="photo">
+    <article class="paper__first">
+        <h1 class="paper__first_title">{{ title }}</h1>
+        <img class="paper__first_img" :src="img" :alt="photo">
         <div class="date__breadcrumbs">
             <div class="date">
-                <p>26 December,2022</p>
+                <p>{{ date }}</p>
             </div>
             <div class="breadcrumbs">
-                <a class="breadcrumbs__link" href="index.html">Interior</a>
-                <span class="breadcrumbs__link"> / </span>
-                <a class="breadcrumbs__link" href="index.html">Home</a>
-                <span class="breadcrumbs__link"> / </span>
-                <a class="breadcrumbs__link" href="blog.html"> Decore</a>
+                <a class="breadcrumbs__link" :href="linkHref_interior">{{ link_interior }}</a>
+                <span class="breadcrumbs__link"> {{ span }} </span>
+                <a class="breadcrumbs__link" :href="linkHref_home">{{ link_home }}</a>
+                <span class="breadcrumbs__link"> {{ span }} </span>
+                <a class="breadcrumbs__link" :href="linkHref_decore">{{ link_decore }}</a>
             </div>
         </div>
-        <p class="paper__first_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-            turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem
-            Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or
-            randomised words which don't look even slightly believable. <br>
+        <p class="paper__first_text"> {{ text_one }}</p>
+        <p class="paper__first_text"> {{ text_two }}</p>
 
-            <br>Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-            tend to repeat predefined chunks as necessary.
-        </p>
         <blockquote class="quote">
             <h2 class="quote__title"><svg width="74" height="56" viewBox="0 0 74 56" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -57,23 +52,16 @@ Vue.component('articles', {
                         fill="#CDA274" />
                 </svg>
             </h2>
-            <p class="quote__text">The details are not the details.
-                They make the design.</p>
+            <p class="quote__text">{{ quotes_text }}</p>
         </blockquote>
     </article>
     <article class="paper__second">
-        <h2 class="paper__second_title">Design sprints are great</h2>
-        <p class="paper__second_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
-            turpmaximus.posuere in.Contrary to
-            popular belief.There are many variations of passages of Lorem Ipsum available, but the majority
-            have suffered.</p>
+        <h2 class="paper__second_title">{{ subtitle }}</h2>
+        <p class="paper__second_text">{{ second_text }}</p>
         <ol>
-            <li class="paper__second_list">Contrary to popular belief.There are many variations of passages
-                of Lorem Ipsum available, but the majority have suffered.</li>
-            <li class="paper__second_list">Contrary to popular belief.There are many variations of passages
-                of Lorem Ipsum available, but the majority have suffered.</li>
-            <li class="paper__second_list">Contrary to popular belief.There are many variations of passages
-                of Lorem Ipsum available, but the majority have suffered.</li>
+            <li class="paper__second_list">{{ list_text }}</li>
+            <li class="paper__second_list">{{ list_text }}</li>
+            <li class="paper__second_list">{{ list_text }}</li>
         </ol>
         <img class="paper__second_img" src="img/blogDitails/Photo2.jpg" alt="photo">
         <p class="paper__second_text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae
