@@ -1,4 +1,4 @@
-Vue.component('articles', {
+Vue.component('blog-details', {
     props: {},
 
     data() {
@@ -29,7 +29,7 @@ Vue.component('articles', {
     <section class="paper">
     <article class="paper__first">
         <h1 class="paper__first_title">{{ title }}</h1>
-        <img class="paper__first_img" :src="img" :alt="photo">
+        <img class="paper__first_img" :src="img" :alt="alt">
         <div class="date__breadcrumbs">
             <div class="date">
                 <p>{{ date }}</p>
@@ -64,7 +64,7 @@ Vue.component('articles', {
             <li class="paper__second_list">{{ list_text }}</li>
             <li class="paper__second_list">{{ list_text }}</li>
         </ol>
-        <img class="paper__second_img" :src="second_img" :alt="photo">
+        <img class="paper__second_img" :src="second_img" :alt="alt">
         <p class="paper__second_text">{{ second_text }}</p>
     </article>
 </section>`,
