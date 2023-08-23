@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <div id="app">
+        <test></test>
+    </div>
+    </div>
+
+    <!-- версия для разработки, отображает полезные предупреждения в консоли -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="test.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                massage: 'text massage'
+            },
+            methods: {
+                newInfo(){
+                    console.log('hello methods');
+                }
+            },
+            computed: {
+                newCompy() {
+                    return this.massage;
+                },
+
+            },
+        })
+
+    </script>
+</body>
+
+
+</html>
