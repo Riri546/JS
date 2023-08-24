@@ -75,19 +75,20 @@ Vue.component('blog_list', {
 
     data() {
         return {
-            componentsArray: [
+            buttons: [
                 { id: 'kitchen', name: 'Kitchen' },
-                { id: 'bedroom', name: 'bedroom' },
-                { id: 'building', name: 'building' },
+                { id: 'bedroom', name: 'Bedroom' },
+                { id: 'building', name: 'Building' },
                 { id: 'architecture', name: 'Architecture' },
                 { id: 'kitchen_planning', name: 'Kitchen Planning' },
                 { id: 'bedroom', name: 'Bedroom' },],
-            articlesData: [
+            articles: [
                 { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
                 { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-            ]
+            ],
+            filterArticles:[]
         };
 
     },
@@ -100,23 +101,34 @@ Vue.component('blog_list', {
         //     document.getElementById
         //     console.log(targetId); // returns 'foo'
         // }
-        sortedId: function () {
-            if (componentsArray.id === articlesData.id) {
+
+        // sortId: function (e) {
+        //     if (articlesData.id === e.target.dataset.id) {
+        //         this.articlesData.filter(articlesData)
+        //     }
+            
+        // },
+        sortedId: function (button, article) {
+            this.buttons = button;
+            this.articlesData = article;
+            if (button.target.dataset.id === article.id) {
                 console.log('yes');
             }
         },
+    
     },
 
-    template: ` <section class="tags">
+    template: `
+    <section class="tags">
     <h2 class="tags__title">Tags</h2>
     <div class="button">
-        <div v-for="component in componentsArray">
-            <button class="tags__button" @click="sortedId">{{component.name}}</button>
+        <div v-for="button in buttons">
+            <button class="tags__button" :id="button.id" @click="sortedId">{{ button.name }}</button>
         </div>
     </div>
     <article class="blog">
     <div class="blog__list_items" id="cardbox-container">
-        <div class="blog__item" v-for="article in articlesData" :key="article.id">
+        <div class="blog__item" v-for="article in articles" :key="article.id">
             <img :src="article.src" :alt="article.alt" class="blog__list_img">
             <h3 class="blog__list_text">{{article.title}}</h3>
             <div class="blog__list_content">
@@ -135,5 +147,4 @@ Vue.component('blog_list', {
     </div>
 </article>
 </section>
-`
-});
+`});
