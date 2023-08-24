@@ -36,18 +36,14 @@
         <div class="content" id="app">
             <blog-details></blog-details>
             <div id="toReplace">
-                <div :is="currentComponent">
-                </div>
                 <section class="tags">
                     <h2 class="tags__title">Tags</h2>
                     <div class="button" v-show="!currentComponent" v-for="component in componentsArray">
                         <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
                     </div>
                 </section>
-                <!-- </div>
-            <button @click="swapComponent(null)">Close</button>
-        </div> -->
             </div>
+
         </div>
         <footer class="foot">
             <section class="foot__about">
@@ -111,14 +107,14 @@
             new Vue({
                 el: '#toReplace',
                 data: {
-                    currentComponent: null,
+                    // currentComponent: null,
                     componentsArray: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom']
                 },
                 components: {
                     'Kitchen': {
                         template: `<h2 class="blog__header">Articles & News</h2>`
                     },
-                    'bar': {
+                    'Bedroom': {
                         template: '<h1>Bar component</h1>'
                     }
                 },
