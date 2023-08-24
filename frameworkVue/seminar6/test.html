@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
 </head>
 
 <body>
-    <div id="app">
-        <test></test>
+    <div id="toReplace">
+        <div :is="currentComponent"></div>
+        <section class="tags">
+            <h2 class="tags__title">Tags</h2>
+            <div class="button">
+                <button class="tags__button">Kitchen</button>
+                <button class="tags__button">Bedroom</button>
+                <button class="tags__button">Building</button>
+                <button class="tags__button">Architecture</button>
+                <button class="tags__button">Kitchen Planning</button>
+                <button class="tags__button">Bedroom</button>
+            </div>
+        </section>
+    
+        <div v-show="!currentComponent" v-for="component in componentsArray">
+            <button @click="swapComponent(component)">{{component}}</button>
+        </div>
     </div>
+    <button @click="swapComponent(null)">Close</button>
     </div>
 
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="test.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <!-- <script src="test.js"></script> -->
     <script>
         new Vue({
-            el: '#app',
+            el: 'body',
             data: {
-                massage: 'text massage'
+                currentComponent: null,
+                componentsArray: ['foo', 'bar']
             },
-            methods: {
-                newInfo(){
-                    console.log('hello methods');
+            components: {
+                'foo': {
+                    template: '<h1>Foo component</h1>'
+                },
+                'bar': {
+                    template: '<h1>Bar component</h1>'
                 }
             },
-            computed: {
-                newCompy() {
-                    return this.massage;
-                },
-
-            },
+            methods: {
+                swapComponent: function (component) {
+                    this.currentComponent = component;
+                }
+            }
         })
-
     </script>
 </body>
 
