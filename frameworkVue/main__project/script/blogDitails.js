@@ -88,12 +88,11 @@ Vue.component('blog_list', {
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
             ],
-            filterArticles:[]
+            filterArticles: []
         };
 
     },
-    methods: {
-    },
+
 
     template: `
     <section class="tags">
@@ -123,5 +122,9 @@ Vue.component('blog_list', {
         </div>
     </div>
 </article>
+<h3>filtered</h3>
+<div v-for="article in filteredArticles">
+{{article}}
+</div>
 </section>
 `});
