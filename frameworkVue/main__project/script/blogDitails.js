@@ -92,6 +92,16 @@ Vue.component('blog_list', {
         };
 
     },
+    computed:{
+        filteredArticles(){
+            if (buttons.id === articles.id) {
+                console.log('Урааа');
+            }
+        }
+        // filteredArticles(){
+        //     return this.articles.filter(article => article.incLudes(this.filterArticles));
+        // }
+    },
 
 
     template: `
