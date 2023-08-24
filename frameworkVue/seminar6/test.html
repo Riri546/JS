@@ -9,27 +9,20 @@
 
 <body>
     <div id="toReplace">
-        <div :is="currentComponent"></div>
+        <div :is="currentComponent">
+        </div>
         <section class="tags">
             <h2 class="tags__title">Tags</h2>
-            <div class="button">
-                <button class="tags__button">Kitchen</button>
-                <button class="tags__button">Bedroom</button>
-                <button class="tags__button">Building</button>
-                <button class="tags__button">Architecture</button>
-                <button class="tags__button">Kitchen Planning</button>
-                <button class="tags__button">Bedroom</button>
+            <div class="button" v-show="!currentComponent" v-for="component in componentsArray">
+                <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
             </div>
         </section>
-    
-        <div v-show="!currentComponent" v-for="component in componentsArray">
-            <button @click="swapComponent(component)">{{component}}</button>
-        </div>
+
     </div>
     <button @click="swapComponent(null)">Close</button>
     </div>
 
-    
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.16/vue.js"></script>
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
@@ -40,22 +33,57 @@
             el: 'body',
             data: {
                 currentComponent: null,
-                componentsArray: ['foo', 'bar']
+                componentsArray: ['Kitchen', 'Bedroom', 'Building', 'Architecture', 'Kitchen Planning', 'Bedroom']
             },
             components: {
-                'foo': {
-                    template: '<h1>Foo component</h1>'
+                'Kitchen': {
+                    data() {
+                        return {
+                            articlesData: [
+                                { id: 1, src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                                { id: 2, src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                                { id: 3, src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                                { id: 4, src: 'img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                                { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                                { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+                            ]
+                        };
+                    },
+                    methods: {
+                        
+                        },
+                        template: `<section class="blog">
+            <h2 class="blog__header">Articles & News</h2>
+            <div class="blog__items" id="cardbox-container">
+                <div class="blog__item" v-for="article in articlesData" :key="article.id">
+                    <img :src="article.src" :alt="article.alt" class="blog__item_img">
+                    <h3 class="blog__item_text">{{article.title}}</h3>
+                    <div class="blog__item_content">
+                        <p class="blog__item_content-date">{{article.date}}</p>
+                        <a href="blog.html" class="blog__item_content-elem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"
+                                fill="none">
+                                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="blogDitails.html" class="blog__item_tag">{{article.button}}</a>
+                </div>
+            </div>
+        </section>`
+                    },
+                    'bar': {
+                        template: '<h1>Bar component</h1>'
+                    }
                 },
-                'bar': {
-                    template: '<h1>Bar component</h1>'
+                methods: {
+                    swapComponent: function (component) {
+                        this.currentComponent = component;
+                    }
                 }
-            },
-            methods: {
-                swapComponent: function (component) {
-                    this.currentComponent = component;
-                }
-            }
-        })
+            })
     </script>
 </body>
 
