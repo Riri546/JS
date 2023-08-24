@@ -34,15 +34,19 @@
             <img src="img/blogDitails/subhead.jpg" alt="subhead img">
         </header>
         <div class="content" id="app">
-            <blog-details></blog-details>
+            <blog_details></blog_details>
             <div id="toReplace">
                 <section class="tags">
                     <h2 class="tags__title">Tags</h2>
-                    <div class="button" v-show="!currentComponent" v-for="component in componentsArray">
-                        <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
+                    <div class="button">
+                        <div v-show="!currentComponent" v-for="component in componentsArray">
+                            <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
+                        </div>
                     </div>
+
                 </section>
             </div>
+            <!-- <blog_list></blog_list> -->
 
         </div>
         <footer class="foot">

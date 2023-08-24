@@ -1,4 +1,4 @@
-Vue.component('blog-details', {
+Vue.component('blog_details', {
     props: {},
 
     data() {
@@ -21,7 +21,7 @@ Vue.component('blog-details', {
             subtitle: 'Design sprints are great',
             second_text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
             list_text: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.',
-            second_img:'img/blogDitails/Photo2.jpg',
+            second_img: 'img/blogDitails/Photo2.jpg',
         }
 
     },
@@ -67,5 +67,45 @@ Vue.component('blog-details', {
         <img class="paper__second_img" :src="second_img" :alt="alt">
         <p class="paper__second_text">{{ second_text }}</p>
     </article>
+</section>`,
+});
+
+Vue.component('blog_list', {
+    props: {},
+
+    data() {
+        return {
+            articlesData: [
+                { id: 1, src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 2, src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 3, src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                { id: 4, src: 'img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+            ]
+        };
+
+    },
+
+    template: `<section class="blog">
+    <h2 class="blog__header">Articles & News</h2>
+    <div class="blog__items" id="cardbox-container">
+        <div class="blog__item" v-for="article in articlesData" :key="article.id">
+            <img :src="article.src" :alt="article.alt" class="blog__item_img">
+            <h3 class="blog__item_text">{{article.title}}</h3>
+            <div class="blog__item_content">
+                <p class="blog__item_content-date">{{article.date}}</p>
+                <a href="blog.html" class="blog__item_content-elem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"
+                        fill="none">
+                        <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                        <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+            <a href="blogDitails.html" class="blog__item_tag">{{article.button}}</a>
+        </div>
+    </div>
 </section>`,
 });

@@ -136,17 +136,17 @@
     }
 
     .tags {
-        &__title {
-            @extend %mediumTitle;
-            padding-bottom: 24px;
-            letter-spacing: 0.5px;
-        }
-
-        .button {
+        .button{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             gap: 10px;
+        }
+
+        &__title {
+            @extend %mediumTitle;
+            padding-bottom: 24px;
+            letter-spacing: 0.5px;
         }
 
         &__button {
@@ -161,7 +161,7 @@
             transition: 0.7s;
         }
 
-        &__button:hover{
+        &__button:hover {
             color: $colorButton;
             border-color: $colorSelectText;
             background: $colorSelectText;
