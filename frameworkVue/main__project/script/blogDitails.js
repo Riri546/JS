@@ -93,37 +93,14 @@ Vue.component('blog_list', {
 
     },
     methods: {
-        // sortArticles(e) {
-        //     this.articlesData.filter(articlesData => articlesData.id === e.target.dataset.id);
-        // },\
-        // select: function(event) {
-        //     targetId = event.currentTarget.id;
-        //     document.getElementById
-        //     console.log(targetId); // returns 'foo'
-        // }
-
-        // sortId: function (e) {
-        //     if (articlesData.id === e.target.dataset.id) {
-        //         this.articlesData.filter(articlesData)
-        //     }
-            
-        // },
-        sortedId: function (button, article) {
-            this.buttons = button;
-            this.articlesData = article;
-            if (button.target.dataset.id === article.id) {
-                console.log('yes');
-            }
-        },
-    
     },
 
     template: `
     <section class="tags">
     <h2 class="tags__title">Tags</h2>
     <div class="button">
-        <div v-for="button in buttons">
-            <button class="tags__button" :id="button.id" @click="sortedId">{{ button.name }}</button>
+        <div v-for="button in buttons" v-model="filterArticles">
+            <button class="tags__button" :id="button.id">{{ button.name }}</button>
         </div>
     </div>
     <article class="blog">
