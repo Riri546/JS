@@ -75,12 +75,13 @@ Vue.component('blog_list', {
 
     data() {
         return {
-            componentsArray: [{ id: 'kitchen', name: 'Kitchen' },
-            { id: 'bedroom', name: 'bedroom' },
-            { id: 'building', name: 'building' },
-            { id: 'architecture', name: 'Architecture' },
-            { id: 'kitchen_planning', name: 'Kitchen Planning' },
-            { id: 'bedroom', name: 'Bedroom' },],
+            componentsArray: [
+                { id: 'kitchen', name: 'Kitchen' },
+                { id: 'bedroom', name: 'bedroom' },
+                { id: 'building', name: 'building' },
+                { id: 'architecture', name: 'Architecture' },
+                { id: 'kitchen_planning', name: 'Kitchen Planning' },
+                { id: 'bedroom', name: 'Bedroom' },],
             articlesData: [
                 { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
                 { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
@@ -91,33 +92,26 @@ Vue.component('blog_list', {
 
     },
     methods: {
-        // if(condition) {
-
-        // },
-        sortArticles(e) {
-            this.articlesData.filter(articlesData => articlesData.id === e.target.dataset.id);
+        // sortArticles(e) {
+        //     this.articlesData.filter(articlesData => articlesData.id === e.target.dataset.id);
+        // },\
+        // select: function(event) {
+        //     targetId = event.currentTarget.id;
+        //     document.getElementById
+        //     console.log(targetId); // returns 'foo'
+        // }
+        sortedId: function () {
+            if (componentsArray.id === articlesData.id) {
+                console.log('yes');
+            }
         },
-        // sortedID: function () {
-        //     this.products.sort((a, b) => {
-        //         const idA = a.id.toUpperCase(); // ignore upper and lowercase
-        //         const idsB = b.id.toUpperCase(); // ignore upper and lowercase
-        //         if (brandsA < brandsB) {
-        //             return -1;
-        //         }
-        //         if (brandsA > brandsB) {
-        //             return 1;
-        //         }
-        //         // names must be equal
-        //         return 0;
-        //     })
-        // },
     },
 
     template: ` <section class="tags">
     <h2 class="tags__title">Tags</h2>
     <div class="button">
         <div v-for="component in componentsArray">
-            <button class="tags__button" @click="sortArticles(component)">{{component.name}}</button>
+            <button class="tags__button" @click="sortedId">{{component.name}}</button>
         </div>
     </div>
     <article class="blog">
