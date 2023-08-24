@@ -38,14 +38,14 @@
 
             </blog_details>
             <div id="toReplace">
-                <section class="tags">
+                <!-- <section class="tags">
                     <h2 class="tags__title">Tags</h2>
                     <div class="button">
                         <div v-for="component in componentsArray">
                             <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
                         </div>
                     </div>
-                </section>
+                </section> -->
                 <blog_list></blog_list>
             </div>
         </div>
@@ -110,7 +110,7 @@
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script/blogDitails.js"></script>
-    <script>
+    <!-- <script>
         new Vue({
             el: '#toReplace',
             data: {
@@ -126,25 +126,10 @@
                 }
             },
             methods: {
-                methods: {
-                    sortedID: function () {
-                        this.products.sort((a, b) => {
-                            const brandsA = a.brands.toUpperCase(); // ignore upper and lowercase
-                            const brandsB = b.brands.toUpperCase(); // ignore upper and lowercase
-                            if (brandsA < brandsB) {
-                                return -1;
-                            }
-                            if (brandsA > brandsB) {
-                                return 1;
-                            }
-                            // names must be equal
-                            return 0;
-                        });
-                    },
-                }
+              
             }
         });
-    </script>
+    </script> -->
     <script>
         new Vue({
             el: '#app',
