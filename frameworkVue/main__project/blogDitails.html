@@ -106,7 +106,7 @@
             </sectionc>
         </footer>
     </div>
-    
+
     <!-- версия для разработки, отображает полезные предупреждения в консоли -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script src="script/blogDitails.js"></script>
@@ -126,19 +126,30 @@
                 }
             },
             methods: {
-                swapComponent: function (component) {
-                    this.currentComponent = component;
+                methods: {
+                    sortedBrands: function () {
+                        this.products.sort((a, b) => {
+                            const brandsA = a.brands.toUpperCase(); // ignore upper and lowercase
+                            const brandsB = b.brands.toUpperCase(); // ignore upper and lowercase
+                            if (brandsA < brandsB) {
+                                return -1;
+                            }
+                            if (brandsA > brandsB) {
+                                return 1;
+                            }
+                            // names must be equal
+                            return 0;
+                        });
+                    },
                 }
             }
-        })
+        });
     </script>
     <script>
         new Vue({
             el: '#app',
         })
-            // new Vue({
-            //     el: '#app-2',
-            // })
+
 
     </script>
 
