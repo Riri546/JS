@@ -91,27 +91,33 @@ Vue.component('blog_list', {
 
     },
     methods: {
-        sortedID: function () {
-            this.products.sort((a, b) => {
-                const idA = a.id.toUpperCase(); // ignore upper and lowercase
-                const idsB = b.id.toUpperCase(); // ignore upper and lowercase
-                if (brandsA < brandsB) {
-                    return -1;
-                }
-                if (brandsA > brandsB) {
-                    return 1;
-                }
-                // names must be equal
-                return 0;
-            });
+        // if(condition) {
+
+        // },
+        sortArticles(e) {
+            this.articlesData.filter(articlesData => articlesData.id === e.target.dataset.id);
         },
+        // sortedID: function () {
+        //     this.products.sort((a, b) => {
+        //         const idA = a.id.toUpperCase(); // ignore upper and lowercase
+        //         const idsB = b.id.toUpperCase(); // ignore upper and lowercase
+        //         if (brandsA < brandsB) {
+        //             return -1;
+        //         }
+        //         if (brandsA > brandsB) {
+        //             return 1;
+        //         }
+        //         // names must be equal
+        //         return 0;
+        //     })
+        // },
     },
 
     template: ` <section class="tags">
     <h2 class="tags__title">Tags</h2>
     <div class="button">
         <div v-for="component in componentsArray">
-            <button class="tags__button" @click="swapComponent(component)">{{component.name}}</button>
+            <button class="tags__button" @click="sortArticles(component)">{{component.name}}</button>
         </div>
     </div>
     <article class="blog">
