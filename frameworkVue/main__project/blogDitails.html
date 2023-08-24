@@ -31,7 +31,7 @@
             </nav>
         </header>
         <header class="subhead__img">
-            <img src="img/blogDitails/subhead.jpg" alt="subhead img">
+            <img class="subhead__img_photo" src="img/blogDitails/subhead.jpg" alt="subhead img">
         </header>
         <div class="content" id="app">
             <blog_details></blog_details>
@@ -43,12 +43,10 @@
                             <button class="tags__button" @click="swapComponent(component)">{{component}}</button>
                         </div>
                     </div>
-
                 </section>
             </div>
-            <!-- <blog_list></blog_list> -->
-
         </div>
+        <blog_list></blog_list>
         <footer class="foot">
             <section class="foot__about">
                 <a href="index.html" class="foot__logo"><svg width="178" height="50" viewBox="0 0 178 50" fill="none"

@@ -1,6 +1,9 @@
 .subhead__img {
-    width: 100vw;
     padding-bottom: 200px;
+
+    &_photo {
+        width: 100vw;
+    }
 }
 
 .content {
@@ -136,7 +139,7 @@
     }
 
     .tags {
-        .button{
+        .button {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
