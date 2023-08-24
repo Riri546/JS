@@ -80,20 +80,19 @@ Vue.component('blog_list', {
                 { id: 2, src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
                 { id: 3, src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 4, src: 'img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+                // { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
             ]
         };
 
     },
 
     template: `<section class="blog">
-    <h2 class="blog__header">Articles & News</h2>
-    <div class="blog__items" id="cardbox-container">
+    <div class="blog__list_items" id="cardbox-container">
         <div class="blog__item" v-for="article in articlesData" :key="article.id">
-            <img :src="article.src" :alt="article.alt" class="blog__item_img">
-            <h3 class="blog__item_text">{{article.title}}</h3>
-            <div class="blog__item_content">
+            <img :src="article.src" :alt="article.alt" class="blog__list_img">
+            <h3 class="blog__list_text">{{article.title}}</h3>
+            <div class="blog__list_content">
                 <p class="blog__item_content-date">{{article.date}}</p>
                 <a href="blog.html" class="blog__item_content-elem">
                     <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"

@@ -171,4 +171,30 @@
         }
     }
 
+    .blog__list_items {
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        gap: 25px;
+
+        .blog__list_img {
+            max-width: 310px;
+            margin-bottom: 15px;
+            border-radius: 60px 60px 0px 0px;
+        }
+
+        .blog__list_text {
+            color: #292F36;
+            font-family: "DM Serif Display", serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 125%;
+        }
+        .blog__list_content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
+}
+
 }
