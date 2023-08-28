@@ -4,7 +4,7 @@
       <nav class="head__navigation">
         <!-- Логотип с сылкой на главную страницу -->
         <div class="head__logo">
-          <a href="index.html"> <img src="img/Logo.svg" alt="Logo"></a>
+          <a href="index.html"> <img :src="img__src" alt="Logo"></a>
         </div>
 
         <!-- Иконки навигации -->
@@ -261,7 +261,7 @@ export default {
   }, 
   data() {
     return {
-      img__src: [],
+      img__src: ['../assets/img/logo.svg',],
     };
   },
 }
