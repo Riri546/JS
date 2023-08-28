@@ -8,10 +8,8 @@
         </div>
 
         <!-- Иконки навигации -->
-        <div class="head__icon">
-          <a class="head__icon_link" href="HomePage.vue">Home</a>
-          <a class="head__icon_link" href="prodject.html">Project</a>
-          <a class="head__icon_link" href="blog.html">Blog</a>
+        <div class="head__icon" v-for="head__icon in head__icons" :key="head__icon.id">
+          <a class="head__icon_link" href="HomePage.vue">{{ head__icon }}</a>
         </div>
       </nav>
     </header>
@@ -257,7 +255,10 @@ export default {
   },
   data() {
     return {
-      // imgs__src: '',
+      head__icons: [
+        { link: 'HomePage.vue', name: 'Home', alt: 'photo' },
+        { link: 'HomePage.vue', name: 'Project', alt: 'photo' },
+        { link: 'HomePage.vue', name: 'Blog', alt: 'photo' }]
     };
   },
 }
