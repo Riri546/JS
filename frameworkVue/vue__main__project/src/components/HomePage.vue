@@ -674,12 +674,13 @@ a {
 }
 
 .foot__link {
-  color: $colortext;
-  font-family: $fontText;
-  font-size: $fontSizeMedium;
-  font-style: $fontStyle;
-  font-weight: $fontWeightRegular;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 300%;
+  /* 66px */
   letter-spacing: 0.22px;
   transition: 0.7s;
 }
