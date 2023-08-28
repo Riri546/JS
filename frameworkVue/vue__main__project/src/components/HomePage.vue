@@ -669,7 +669,13 @@ a {
 }
 
 .foot__title {
-  @extend %mediumTitle;
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 31.25px */
   padding-bottom: 9px;
 }
 
