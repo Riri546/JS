@@ -547,20 +547,35 @@ a {
 }
 
 .blog__item_tag {
-  @extend %smallText;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
   position: absolute;
   width: 124px;
   top: 247px;
   left: 40px;
   letter-spacing: 0.16px;
-  background-color: $colorButton;
+  background-color: #fff;
   border-radius: 8px 8px 8px 0px;
   padding: 7px 9px 10px 11px;
   transition: 0.7s;
 }
 
 .blog__item_text {
-  @extend %mediumTitle;
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 31.25px */
+  letter-spacing: 0.5px;
   display: flex;
   width: 305px;
   height: 70px;
