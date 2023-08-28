@@ -97,7 +97,7 @@ Vue.component('blog_list', {
                 { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
             ],
 
-            articles_building:[
+            articles_building: [
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
@@ -114,15 +114,8 @@ Vue.component('blog_list', {
         };
 
     },
-    computed: {
-        filteredArticles() {
-            if (buttons.id === articles.id) {
-                console.log('Урааа');
-            }
-        }
-        // filteredArticles(){
-        //     return this.articles.filter(article => article.incLudes(this.filterArticles));
-        // }
+    methods: {
+
     },
 
 
@@ -130,29 +123,30 @@ Vue.component('blog_list', {
     <section class="tags">
     <h2 class="tags__title">Tags</h2>
     <div class="button">
-        <div v-for="button in buttons" v-model="filterArticles">
-            <button class="tags__button" :id="button.id">{{ button.name }}</button>
+        <div v-for="button in buttons">
+            <button class="tags__button" :id="button.id" v-on:click="isHidden = !isHidden">{{ button.name }}</button>
         </div>
     </div>
-    <article class="blog">
-    <div class="blog__list_items" id="cardbox-container">
-        <div class="blog__item" v-for="article in articles" :key="article.id">
-            <img :src="article.src" :alt="article.alt" class="blog__list_img">
-            <h3 class="blog__list_text">{{article.title}}</h3>
-            <div class="blog__list_content">
-                <p class="blog__item_content-date">{{article.date}}</p>
-                <a href="blog.html" class="blog__item_content-elem">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"
-                        fill="none">
-                        <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                        <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </a>
-            </div>
-            <a href="blogDitails.html" class="blog__item_tag">{{article.button}}</a>
+    <article class="blog" <template v-if="isHidden"><div class="blog__list_items" id="cardbox-container">
+    <div class="blog__item" v-for="article in articles" :key="article.id">
+        <img :src="article.src" :alt="article.alt" class="blog__list_img">
+        <h3 class="blog__list_text">{{article.title}}</h3>
+        <div class="blog__list_content">
+            <p class="blog__item_content-date">{{article.date}}</p>
+            <a href="blog.html" class="blog__item_content-elem">
+                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"
+                    fill="none">
+                    <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                    <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
         </div>
+        <a href="blogDitails.html" class="blog__item_tag">{{article.button}}</a>
     </div>
+</div></template>
+    <template v-else>Click to Hide the Images</template>
+    
 </article>
 <h3>filtered</h3>
 <div v-for="article in filteredArticles">
