@@ -261,7 +261,7 @@ export default {
   }, 
   data() {
     return {
-      property: 'value',
+      img__src: [],
     };
   },
 }
