@@ -634,7 +634,14 @@ a {
 }
 
 .foot__text {
-  @extend %text;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
   padding-bottom: 31px;
   letter-spacing: 0.22px;
   max-width: 393px;
