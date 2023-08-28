@@ -54,7 +54,7 @@
         </figcaption>
       </figure>
     </section>
-<section class="company">
+    <section class="company">
       <article class="item" v-for="item in items" :key="item.id">
         <h2 class="company__title">{{ item.title }}</h2>
         <p class="company__text">{{ item.text }}</p>
@@ -69,7 +69,7 @@
         <p class="company__text"></p>
       </article>
     </section>
-        <!-- <section class="blog">
+    <!-- <section class="blog">
       <h2 class="blog__title">
         Articles & News
       </h2>
@@ -219,11 +219,11 @@ export default {
         { class: 'catalog__img2', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img3', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img4', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', }],
-        items: [
-          {title: '12', text:'Years Of Experiance'},
-          {title: '85', text:'Success Project'},
-          {title: '15', text:'Active Project'},
-          {title: '95', text:'Happy CUstomers'}]
+      items: [
+        { title: '12', text: 'Years Of Experiance' },
+        { title: '85', text: 'Success Project' },
+        { title: '15', text: 'Active Project' },
+        { title: '95', text: 'Happy CUstomers' }]
 
     };
   },
@@ -478,5 +478,51 @@ a {
 
 .catalog__link_color:hover {
   fill: #FFF;
+}
+
+.company {
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
+  display: grid;
+  grid-template-columns: repeat(4, 246px);
+  justify-content: space-between;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  background-color: #F4F0EC;
+}
+
+.item {
+  border-right: 1px solid #CDA274;
+  max-width: 246px;
+}
+
+.item__none {
+  border-right: none;
+}
+
+.company__title {
+  padding-bottom: 16px;
+  max-width: 192px;
+  text-align: center;
+  color: #CDA274;
+  font-family: DM Serif Display;
+  font-size: 85px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 106.25px */
+  letter-spacing: 1.7px;
+}
+
+.company__text {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
+  letter-spacing: 0.22px;
 }
 </style>
