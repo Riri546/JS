@@ -334,4 +334,36 @@ a {
   padding-left: calc(50% - 1200px/2);
   padding-right: calc(50% - 1200px/2);
 }
+
+.top__info_content {
+  border-radius: 70px;
+  background: url(../assets/img/top__info_bac.svg), lightgray 50%/ cover no-repeat;
+  padding: 200px 0px 210px 35px;
+}
+
+.top__info_title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 81.25px */
+  max-width: 434px;
+  padding-bottom: 18px;
+}
+
+.top__info_text {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
+  padding-bottom: 21px;
+  letter-spacing: 0.22px;
+  max-width: 434px;
+}
 </style>
