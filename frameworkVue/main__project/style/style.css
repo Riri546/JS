@@ -482,6 +482,13 @@
   padding-right: 5px;
 }
 
+.subhead__img {
+  padding-bottom: 200px;
+}
+.subhead__img_photo {
+  width: 100vw;
+}
+
 .blog-details {
   width: 799px;
 }
