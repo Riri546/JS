@@ -3,28 +3,29 @@
     <header class="head">
       <nav class="head__navigation">
         <!-- Логотип с сылкой на главную страницу -->
-        <div class="head__logo">
-          <a href="HomePage.vue"> <img src="../assets/img/logo.svg" alt="Logo"></a>
+        <div class="head__logo" v-for="head in head__logo" :key="head.id">
+          <a :href="head.link"> <img src="../assets/img/logo.svg" :alt="head.alt"></a>
         </div>
 
         <!-- Иконки навигации -->
-        <div class="head__icon" v-for="head__icon in head__icons" :key="head__icon.id">
-          <a class="head__icon_link" :href="head__icon.link">{{ head__icon.name }}</a>
+        <div class="head__icon">
+          <div v-for="head__icon in head__icons" :key="head__icon.id">
+            <a class="head__icon_link" :href="head__icon.link">{{ head__icon.name }}</a>
+          </div>
         </div>
       </nav>
     </header>
-    <!-- <section class="top__info">
+    <section class="top__info" v-for="info in top__info" :key="info.id">
       <div class="top__info_content">
-        <h1 class="top__info_title">Let Your Home Be Unique</h1>
-        <p class="top__info_text">There are many variations of the passages of lorem Ipsum fromavailable,
-          majority.</p>
+        <h1 class="top__info_title">{{ info.title }}</h1>
+        <p class="top__info_text">{{ info.text }}</p>
         <div class="button">
           <button class="button__top__info">Get Started <span class="button__img"></span>
           </button>
         </div>
       </div>
     </section>
-    <header class="products">
+    <!-- <header class="products">
       <h1 class="products__title">Follow Our Projects</h1>
       <p class="products__text">It is a long established fact that a reader will be distracted by the of readable
         content of page lookings at its layouts points.</p>
@@ -255,10 +256,14 @@ export default {
   },
   data() {
     return {
+      head__logo: [
+        { link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
         { link: 'HomePage.vue', name: 'Project' },
-        { link: 'HomePage.vue', name: 'Blog' }]
+        { link: 'HomePage.vue', name: 'Blog' }],
+      top__info: [
+        {title: 'Let Your Home Be Unique', text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.',}]
     };
   },
 }
