@@ -4,7 +4,7 @@
       <nav class="head__navigation">
         <!-- Логотип с сылкой на главную страницу -->
         <div class="head__logo" v-for="head in head__logo" :key="head.id">
-          <a :href="head.link"> <img :src="head.img" :alt="head.alt"></a>
+          <a :href="head.link"> <img src="../assets/img/logo.svg" :alt="head.alt"></a>
         </div>
 
         <!-- Иконки навигации -->
@@ -44,63 +44,6 @@
             </div>
             <div class="link">
               <a class="catalog__link" :href="element.link"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
-                  viewBox="0 0 70 70" fill="none">
-                  <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
-                  <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></a>
-            </div>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="element">
-        <img class="catalog__img2" src="../assets/img/catalog/Photo (1).jpg" alt="photo catalog">
-        <figcaption class="catalog__about">
-          <div class="catalog__about__link">
-            <div class="about">
-              <h2 class="catalog__title">Modern Kitchan</h2>
-              <p class="catalog__text">Decor / Artchitecture</p>
-            </div>
-            <div class="link">
-              <a href="prodject.html" class="catalog__link"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
-                  viewBox="0 0 70 70" fill="none">
-                  <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
-                  <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></a>
-            </div>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="element">
-        <img class="catalog__img3" src="../assets/img/catalog/Photo (2).jpg" alt="photo catalog">
-        <figcaption class="catalog__about">
-          <div class="catalog__about__link">
-            <div class="about">
-              <h2 class="catalog__title">Modern Kitchan</h2>
-              <p class="catalog__text">Decor / Artchitecture</p>
-            </div>
-            <div class="link">
-              <a href="prodject.html" class="catalog__link"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
-                  viewBox="0 0 70 70" fill="none">
-                  <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
-                  <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg></a>
-            </div>
-          </div>
-        </figcaption>
-      </figure>
-      <figure class="element">
-        <img class="catalog__img4" src="../assets/img/catalog/Photo (3).jpg" alt="photo catalog">
-        <figcaption class="catalog__about">
-          <div class="catalog__about__link">
-            <div class="about">
-              <h2 class="catalog__title">Modern Kitchan</h2>
-              <p class="catalog__text">Decor / Artchitecture</p>
-            </div>
-            <div class="link">
-              <a href="prodject.html" class="catalog__link"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
                   viewBox="0 0 70 70" fill="none">
                   <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                   <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
@@ -260,7 +203,7 @@ export default {
   data() {
     return {
       head__logo: [
-        { link: 'HomePage.vue', img: "@/assets/img/logo.svg", alt: 'logo' }],
+        { link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
         { link: 'HomePage.vue', name: 'Project' },
