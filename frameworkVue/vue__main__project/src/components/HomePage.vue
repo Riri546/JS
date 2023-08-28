@@ -495,14 +495,30 @@ a {
 }
 
 .blog__title {
-  @extend %smallTitle;
+  color: #292F36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 62.5px */
+  letter-spacing: 1px;
   margin-bottom: 10px;
   text-align: center;
   letter-spacing: 1px;
 }
 
 .blog__text {
-  @extend %text;
+  color: #4D5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
   margin-bottom: 52px;
   width: 811px;
   text-align: center;
