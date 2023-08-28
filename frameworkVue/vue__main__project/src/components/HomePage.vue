@@ -65,13 +65,13 @@
     <section class="blog" v-for="blog in blogs" :key="blog.id">
       <h2 class="blog__title">{{ blog.title }}</h2>
       <p class="blog__text">{{ blog.text }}</p>
-      <div class="blog__items">
+      <div class="blog__items" v-for="content in blog__items" :key="content.id">
         <div class="blog__item">
-          <img src="../assets/img/Image_blog1.svg" :alt="blog.alt" class="blog__item_img">
-          <a :href="blog.link" class="blog__item_tag">{{ blog.tag }}</a>
-          <p class="blog__item_text">{{ blog.item__text }}</p>
+          <img src="../assets/img/Image_blog1.svg" :alt="content.alt" class="blog__item_img">
+          <a :href="blog.link" class="blog__item_tag">{{ content.tag }}</a>
+          <p class="blog__item_text">{{ content.item__text }}</p>
           <div class="blog__item_content">
-            <div class="blog__item_content-date">{{ blog.date }}</div>
+            <div class="blog__item_content-date">{{ content.date }}</div>
             <a href="blog.html" class="blog__item_content-elem">
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
                 <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
@@ -79,45 +79,9 @@
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </a>
+            </div>
           </div>
         </div>
-        <div class="blog__item">
-          <img src="../assets/img/Image_blog2.svg" alt="photo" class="blog__item_img">
-          <a href="blog.html" class="blog__item_tag">Living Design</a>
-          <p class="blog__item_text">
-            Low Cost Latest Invented Interior Designing
-            Ideas.
-          </p>
-          <div class="blog__item_content">
-            <div class="blog__item_content-date">22 December,2022 </div>
-            <a href="blog.html" class="blog__item_content-elem">
-              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div class="blog__item">
-          <img src="../assets/img/Image_blog3.svg" alt="photo" class="blog__item_img">
-          <a href="blog.html" class="blog__item_tag"></a>
-          <p class="blog__item_text">
-            Best For Any Office & Business Interior
-            Solution
-          </p>
-          <div class="blog__item_content">
-            <div class="blog__item_content-date">25 December,2022 </div>
-            <a href="blog.html" class="blog__item_content-elem">
-              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
-                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- <footer class="foot">
       <section class="foot__about">
@@ -210,12 +174,13 @@ export default {
         { title: '85', text: 'Success Project' },
         { title: '15', text: 'Active Project' },
         { class: 'item__none', title: '95', text: 'Happy CUstomers' }],
-      blogs: [
-        { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.', stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' },
-        { stc: '../assets/img/Image_blog2.svg', alt: 'photo', link: 'blog.html', tag: 'Interior Design', item__text: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022' },
-        { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Best For Any Office & Business Interior Solution', date: '25 December,2022' },
 
-      ]
+      blogs: { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.'},
+
+      blog__items: [
+        { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' },
+        { stc: '../assets/img/Image_blog2.svg', alt: 'photo', link: 'blog.html', tag: 'Interior Design', item__text: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022' },
+        { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Best For Any Office & Business Interior Solution', date: '25 December,2022' }]
 
     };
   },
