@@ -85,36 +85,48 @@ Vue.component('blog_list', {
 
             articles_kithen: [
                 { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'kitchen', src: 'img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
             ],
 
             articles_bedroom: [
                 { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
+                // { id: 'bedroom', src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
             ],
 
             articles_building: [
                 { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
-                { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
-                { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
-                { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                // { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                // { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
+                // { id: 'building', src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
             ],
 
             articles_architecture: [
-                { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
-                { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 'architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                // { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                // { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                // { id: 'Architecture', src: 'img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
             ],
 
         };
 
     },
     methods: {
+        Sort: function () {
+            if ((more_is_checked).click){}
+        }
+        // Sort: function () {
+        //     var kitchen = $("#kitchen");
+
+        //     $(kitchen).click(function () {
+        //         var target = $(this).data('articles_kithen');
+        //         alert(target)
+        //     });
+        // }
+
 
     },
 
@@ -124,11 +136,11 @@ Vue.component('blog_list', {
     <h2 class="tags__title">Tags</h2>
     <div class="button">
         <div v-for="button in buttons">
-            <button class="tags__button" :id="button.id" v-on:click="isHidden = !isHidden">{{ button.name }}</button>
+            <button class="tags__button" :id="button.id" @clik="Sort">{{ button.name }}</button>
         </div>
     </div>
-    <article class="blog" <template v-if="isHidden"><div class="blog__list_items" id="cardbox-container">
-    <div class="blog__item" v-for="article in articles" :key="article.id">
+    <article class="blog"
+    <div class="blog__item" v-for="article in articles_architecture" :key="article.id">
         <img :src="article.src" :alt="article.alt" class="blog__list_img">
         <h3 class="blog__list_text">{{article.title}}</h3>
         <div class="blog__list_content">
@@ -144,13 +156,7 @@ Vue.component('blog_list', {
         </div>
         <a href="blogDitails.html" class="blog__item_tag">{{article.button}}</a>
     </div>
-</div></template>
-    <template v-else>Click to Hide the Images</template>
-    
-</article>
-<h3>filtered</h3>
-<div v-for="article in filteredArticles">
-{{article}}
 </div>
+    
 </section>
 `});
