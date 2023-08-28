@@ -113,7 +113,7 @@
           </a>
         </div>
       </section>
-      <section class="foot__navigation" >
+      <section class="foot__navigation">
         <h2 class="foot__title" v-for="foot in foot__title" :key="foot.id">{{ foot.title }}</h2>
         <div v-for="foot__nav in foot__navigations" :key="foot__nav.id">
           <nav>
@@ -174,7 +174,7 @@ export default {
 
       footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
 
-      foot__title:[{title: 'Psge'}],
+      foot__title: [{ title: 'Psge' }],
 
       foot__navigations: [
         { link: 'HomePage.vue', link__name: 'Home' },
