@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+
+        <h1>Click the Button to Show or Hide</h1>
+        <button class="btn-primary" v-on:click="isHidden = !isHidden">
+          <template v-if="isHidden">Click to Show the Images</template>
+          <template v-else>Click to Hide the Images</template>
+        </button>
+      
+        <img src="images/7.jpg" v-if="!isHidden">
+        <img src="images/8.jpg" v-if="!isHidden">
+        <img src="images/9.jpg" v-if="!isHidden">
+      
+      </div>
+      
+      <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          isHidden: true
+        }
+      });
+      </script>
+</body>
+</html>
