@@ -101,7 +101,7 @@
         </div>
         <div class="blog__item">
           <img src="../assets/img/Image_blog3.svg" alt="photo" class="blog__item_img">
-          <a href="blog.html" class="blog__item_tag">Interior Design</a>
+          <a href="blog.html" class="blog__item_tag"></a>
           <p class="blog__item_text">
             Best For Any Office & Business Interior
             Solution
@@ -211,7 +211,10 @@ export default {
         { title: '15', text: 'Active Project' },
         { class: 'item__none', title: '95', text: 'Happy CUstomers' }],
       blogs: [
-        { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.', stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' }
+        { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.', stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' },
+        { stc: '../assets/img/Image_blog2.svg', alt: 'photo', link: 'blog.html', tag: 'Interior Design', item__text: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022' },
+        { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Best For Any Office & Business Interior Solution', date: '25 December,2022' },
+
       ]
 
     };
