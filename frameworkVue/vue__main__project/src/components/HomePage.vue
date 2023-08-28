@@ -119,16 +119,16 @@
           <a :href="foot__nav.link" class="foot__link">{{ foot__nav.link__name }}</a>
         </nav>
       </section>
-      <sectionc class="foot__contact">
-        <h2 class="foot__title">Contact</h2>
+      <sectionc class="foot__contact" v-for="foot__cont in foot__contacts" :key="foot__cont.id">
+        <h2 class="foot__title">{{ foot__cont.title }}</h2>
         <article class="foot__info">
-          <p>55 East Birchwood Ave. Brooklyn, New York 11201</p>
+          <p>{{ foot__cont.address }}</p>
         </article>
         <article class="foot__info">
-          <a class="foot__link" href="#">contact@interno.com</a>
+          <a class="foot__link" href="#">{{ foot__cont.mail }}</a>
         </article>
         <article class="foot__info">
-          <p>(123) 456 - 7890</p>
+          <p>{{ foot__cont.tel }}</p>
         </article>
       </sectionc>
     </footer>
@@ -178,8 +178,9 @@ export default {
       foot__navigations: [
         { title: 'Page', link: 'HomePage.vue', link__name: 'Home' },
         { link: 'prodject.html', link__name: 'Project' },
-        { link: 'blog.html', link__name: 'Blog' },
-      ],
+        { link: 'blog.html', link__name: 'Blog' }],
+
+      foot__contacts: [{title: 'Contact', address: '55 East Birchwood Ave. Brooklyn, New York 11201', mail: 'contact@interno.com', tel: '(123) 456 - 7890'}]
     };
   },
 }
