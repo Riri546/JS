@@ -138,9 +138,6 @@
 <script>
 export default {
   name: 'HomePage',
-  props: {
-    msg: String
-  },
   data() {
     return {
       head__logo: [{ link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
@@ -180,7 +177,7 @@ export default {
         { link: 'prodject.html', link__name: 'Project' },
         { link: 'blog.html', link__name: 'Blog' }],
 
-      foot__contacts: [{title: 'Contact', address: '55 East Birchwood Ave. Brooklyn, New York 11201', mail: 'contact@interno.com', tel: '(123) 456 - 7890'}]
+      foot__contacts: [{ title: 'Contact', address: '55 East Birchwood Ave. Brooklyn, New York 11201', mail: 'contact@interno.com', tel: '(123) 456 - 7890' }]
     };
   },
 }
