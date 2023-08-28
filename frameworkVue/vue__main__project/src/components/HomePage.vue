@@ -619,4 +619,77 @@ a {
 .blog__item:hover circle {
   fill: #fff;
 }
+
+.foot {
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  justify-content: space-between;
+  padding-bottom: 134px;
+}
+
+.foot__logo {
+  padding-bottom: 18px;
+}
+
+.foot__text {
+  @extend %text;
+  padding-bottom: 31px;
+  letter-spacing: 0.22px;
+  max-width: 393px;
+}
+
+.foot__navigation {
+  padding-left: 80px;
+}
+
+.foot__social {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 54px;
+}
+
+.foot__social_icon {
+  transition: 0.7s;
+}
+
+.foot__social_icon:hover {
+  fill: $colorOrange;
+  ;
+}
+
+.foot__title {
+  @extend %mediumTitle;
+  padding-bottom: 9px;
+}
+
+.foot__link {
+  color: $colortext;
+  font-family: $fontText;
+  font-size: $fontSizeMedium;
+  font-style: $fontStyle;
+  font-weight: $fontWeightRegular;
+  line-height: 300%;
+  letter-spacing: 0.22px;
+  transition: 0.7s;
+}
+
+.foot__link:hover {
+  color: $colorOrange;
+}
+
+
+.foot__contact {
+  padding-left: 90px;
+}
+
+.foot__info {
+  @extend %text;
+  padding-top: 17px;
+  letter-spacing: 0.22px;
+  max-width: 258px;
+}
 </style>
