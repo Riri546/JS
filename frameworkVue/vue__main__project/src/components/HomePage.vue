@@ -9,7 +9,7 @@
 
         <!-- Иконки навигации -->
         <div class="head__icon" v-for="head__icon in head__icons" :key="head__icon.id">
-          <a class="head__icon_link" href="HomePage.vue">{{ head__icon }}</a>
+          <a class="head__icon_link" :href="head__icon.link">{{ head__icon.name }}</a>
         </div>
       </nav>
     </header>
@@ -256,9 +256,9 @@ export default {
   data() {
     return {
       head__icons: [
-        { link: 'HomePage.vue', name: 'Home', alt: 'photo' },
-        { link: 'HomePage.vue', name: 'Project', alt: 'photo' },
-        { link: 'HomePage.vue', name: 'Blog', alt: 'photo' }]
+        { link: 'HomePage.vue', name: 'Home' },
+        { link: 'HomePage.vue', name: 'Project' },
+        { link: 'HomePage.vue', name: 'Blog' }]
     };
   },
 }
