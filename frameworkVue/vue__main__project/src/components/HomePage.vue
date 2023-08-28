@@ -65,8 +65,8 @@
     <section class="blog" v-for="blog in blogs" :key="blog.id">
       <h2 class="blog__title">{{ blog.title }}</h2>
       <p class="blog__text">{{ blog.text }}</p>
-      <div class="blog__items" v-for="content in blog__items" :key="content.id">
-        <div class="blog__item">
+      <div class="blog__items">
+        <div class="blog__item" v-for="content in blog__items" :key="content.id">
           <img src="../assets/img/Image_blog1.svg" :alt="content.alt" class="blog__item_img">
           <a :href="blog.link" class="blog__item_tag">{{ content.tag }}</a>
           <p class="blog__item_text">{{ content.item__text }}</p>
