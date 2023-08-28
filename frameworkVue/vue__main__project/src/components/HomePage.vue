@@ -20,7 +20,11 @@
         <h1 class="top__info_title">{{ info.title }}</h1>
         <p class="top__info_text">{{ info.text }}</p>
         <div class="button">
-          <button class="button__top__info">{{ info.button_name }}<span class="button__img"></span>
+          <button class="button__top__info">{{ info.button_name }}<span class="button__img"><svg
+                xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
+                <path d="M2 8.43542L15.7232 8.29857M10.6182 1.91138L17.1412 8.43436L10.4868 15.0887" stroke="#CDA274"
+                  stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+              </svg></span>
           </button>
         </div>
       </div>
@@ -263,9 +267,10 @@ export default {
         { link: 'HomePage.vue', name: 'Project' },
         { link: 'HomePage.vue', name: 'Blog' }],
       top__info: [{
-        title: 'Let Your Home Be Unique', 
-        text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.', 
-        button_name: 'Get Started'}]
+        title: 'Let Your Home Be Unique',
+        text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.',
+        button_name: 'Get Started'
+      }]
 
     };
   },
@@ -323,5 +328,4 @@ a {
 
 .head__icon_link:hover {
   color: #CDA274;
-}
-</style>
+}</style>
