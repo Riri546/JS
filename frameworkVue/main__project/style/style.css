@@ -51,7 +51,7 @@
   line-height: 150%;
 }
 
-.articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.blog-details, .articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }

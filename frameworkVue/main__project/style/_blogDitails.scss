@@ -6,13 +6,8 @@
     }
 }
 
-
-
-
-
-
-
 .blog-details {
+    @extend %center;
     width: 799px;
 
     &__intro {
@@ -257,6 +252,12 @@
         letter-spacing: 0.5px;
     }
 }
+
+
+
+
+
+
 
 
 
