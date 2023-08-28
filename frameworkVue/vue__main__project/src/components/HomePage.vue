@@ -54,25 +54,22 @@
         </figcaption>
       </figure>
     </section>
-    <!-- <section class="company">
-      <article class="item">
-        <h2 class="company__title">12</h2>
-        <p class="company__text">Years Of Experiance</p>
+<section class="company">
+      <article class="item" v-for="item in items" :key="item.id">
+        <h2 class="company__title">{{ item.title }}</h2>
+        <p class="company__text">{{ item.text }}</p>
       </article>
-      <article class="item">
-        <h2 class="company__title">85</h2>
-        <p class="company__text">Success Project</p>
-      </article>
+
       <article class="item">
         <h2 class="company__title">15</h2>
-        <p class="company__text">Active Project</p>
+        <p class="company__text"></p>
       </article>
       <article class="item item__none">
         <h2 class="company__title">95</h2>
-        <p class="company__text">Happy CUstomers</p>
+        <p class="company__text"></p>
       </article>
     </section>
-    <section class="blog">
+        <!-- <section class="blog">
       <h2 class="blog__title">
         Articles & News
       </h2>
@@ -221,10 +218,12 @@ export default {
         { class: 'catalog__img1', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img2', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img3', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
-        { class: 'catalog__img4', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
-
-
-      ]
+        { class: 'catalog__img4', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', }],
+        items: [
+          {title: '12', text:'Years Of Experiance'},
+          {title: '85', text:'Success Project'},
+          {title: '15', text:'Active Project'},
+          {title: '95', text:'Happy CUstomers'}]
 
     };
   },
