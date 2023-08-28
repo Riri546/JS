@@ -4,7 +4,7 @@
       <nav class="head__navigation">
         <!-- Логотип с сылкой на главную страницу -->
         <div class="head__logo" v-for="head in head__logo" :key="head.id">
-          <a :href="head.link"> <img src="../assets/img/logo.svg" :alt="head.alt"></a>
+          <a :href="head.link"> <img :src="head.img" :alt="head.alt"></a>
         </div>
 
         <!-- Иконки навигации -->
@@ -33,17 +33,17 @@
       <h1 class="products__title">{{ product.title }}</h1>
       <p class="products__text">{{ product.text }}</p>
     </header>
-    <!-- <section class="catalog">
-      <figure class="element">
-        <img class="catalog__img1" src="../assets/img/catalog/Photo.jpg" alt="photo catalog">
+    <section class="catalog">
+      <figure class="element" v-for="element in elements" :key="element.id">
+        <img :class="element.class" src="../assets/img/catalog/Photo.jpg" :alt="alt">
         <figcaption class="catalog__about">
           <div class="catalog__about__link">
             <div class="about">
-              <h2 class="catalog__title">Modern Kitchan</h2>
-              <p class="catalog__text">Decor / Artchitecture</p>
+              <h2 class="catalog__title">{{ element.title }}</h2>
+              <p class="catalog__text">{{ element.text }}</p>
             </div>
             <div class="link">
-              <a class="catalog__link" href="prodject.html"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+              <a class="catalog__link" :href="element.link"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
                   viewBox="0 0 70 70" fill="none">
                   <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                   <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
@@ -111,7 +111,7 @@
         </figcaption>
       </figure>
     </section>
-    <section class="company">
+    <!-- <section class="company">
       <article class="item">
         <h2 class="company__title">12</h2>
         <p class="company__text">Years Of Experiance</p>
@@ -260,7 +260,7 @@ export default {
   data() {
     return {
       head__logo: [
-        { link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
+        { link: 'HomePage.vue', img: "@/assets/img/logo.svg", alt: 'logo' }],
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
         { link: 'HomePage.vue', name: 'Project' },
@@ -273,7 +273,15 @@ export default {
       products: [{
         title: 'Follow Our Projects',
         text: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.'
-      }]
+      }],
+      elements: [
+        { class: 'catalog__img1', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
+        { class: 'catalog__img2', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
+        { class: 'catalog__img3', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
+        { class: 'catalog__img4', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
+
+
+      ]
 
     };
   },
@@ -439,4 +447,5 @@ a {
   text-align: center;
   letter-spacing: 0.22px;
   max-width: 737px;
-}</style>
+}
+</style>
