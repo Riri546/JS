@@ -79,9 +79,9 @@
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </a>
-            </div>
           </div>
         </div>
+      </div>
     </section>
     <!-- <footer class="foot">
       <section class="foot__about">
@@ -175,7 +175,7 @@ export default {
         { title: '15', text: 'Active Project' },
         { class: 'item__none', title: '95', text: 'Happy CUstomers' }],
 
-      blogs: { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.'},
+      blogs: { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.' },
 
       blog__items: [
         { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' },
@@ -481,5 +481,107 @@ a {
   /* 33px */
   letter-spacing: 0.22px;
   letter-spacing: 0.22px;
+}
+
+.blog {
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 96px;
+  margin-bottom: 96px;
+}
+
+.blog__title {
+  @extend %smallTitle;
+  margin-bottom: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.blog__text {
+  @extend %text;
+  margin-bottom: 52px;
+  width: 811px;
+  text-align: center;
+  letter-spacing: 0.22px;
+}
+
+.blog__items {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.blog__item {
+  position: relative;
+  padding: 20px;
+  border-radius: 62px;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+  transition: 0.7s;
+}
+
+.blog__item_img {
+  margin-bottom: 21px;
+  border-radius: 60px 60px 0px 0px;
+}
+
+.blog__item_tag {
+  @extend %smallText;
+  position: absolute;
+  width: 124px;
+  top: 247px;
+  left: 40px;
+  letter-spacing: 0.16px;
+  background-color: $colorButton;
+  border-radius: 8px 8px 8px 0px;
+  padding: 7px 9px 10px 11px;
+  transition: 0.7s;
+}
+
+.blog__item_text {
+  @extend %mediumTitle;
+  display: flex;
+  width: 305px;
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.blog__item_content {
+  display: flex;
+  width: 340px;
+  align-items: center;
+  gap: 65px;
+}
+
+.blog__item_content-date {
+  @extend %smallText;
+  display: flex;
+  width: 223px;
+  height: 33px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
+}
+
+.circle {
+  transition: 0.7s;
+}
+
+.blog__item:hover {
+  background: #F4F0EC;
+}
+
+.blog__item:hover circle {
+  fill: $colorButton;
 }
 </style>
