@@ -6,8 +6,11 @@
     }
 }
 
-.blog-details {
+.main-blog-details {
     @extend %center;
+}
+
+.blog-details {
     width: 799px;
 
     &__intro {
@@ -15,7 +18,6 @@
     }
 
     &__box {
-        padding-top: 191px;
         margin-bottom: 96px;
         display: flex;
         flex-direction: row;

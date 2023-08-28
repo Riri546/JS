@@ -51,7 +51,7 @@
   line-height: 150%;
 }
 
-.blog-details, .articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
+.main-blog-details, .articles__pagination, .articles, .latestPost, .top .foot, .top .blog, .top .company, .top .catalog, .top .products, .top__info, .top .head {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
@@ -496,7 +496,6 @@
   margin-top: 45px;
 }
 .blog-details__box {
-  padding-top: 191px;
   margin-bottom: 96px;
   display: flex;
   flex-direction: row;
