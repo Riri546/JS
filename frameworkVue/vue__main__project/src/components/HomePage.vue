@@ -4,7 +4,7 @@
       <nav class="head__navigation">
         <!-- Логотип с сылкой на главную страницу -->
         <div class="head__logo">
-          <a href="index.html"> <img :src="img__src" alt="Logo"></a>
+          <a href="index.html"> <img src="../assets/img/logo.svg" alt="Logo"></a>
         </div>
 
         <!-- Иконки навигации -->
@@ -37,7 +37,7 @@
     </header>
     <section class="catalog">
       <figure class="element">
-        <img class="catalog__img1" src="img/catalog/Photo.jpg" alt="photo catalog">
+        <img class="catalog__img1" src="../assets/img/catalog/Photo.jpg" alt="photo catalog">
         <figcaption class="catalog__about">
           <div class="catalog__about__link">
             <div class="about">
@@ -56,7 +56,7 @@
         </figcaption>
       </figure>
       <figure class="element">
-        <img class="catalog__img2" src="img/catalog/Photo (1).jpg" alt="photo catalog">
+        <img class="catalog__img2" src="../assets/img/catalog/Photo (1).jpg" alt="photo catalog">
         <figcaption class="catalog__about">
           <div class="catalog__about__link">
             <div class="about">
@@ -75,7 +75,7 @@
         </figcaption>
       </figure>
       <figure class="element">
-        <img class="catalog__img3" src="img/catalog/Photo (2).jpg" alt="photo catalog">
+        <img class="catalog__img3" src="../assets/img/catalog/Photo (2).jpg" alt="photo catalog">
         <figcaption class="catalog__about">
           <div class="catalog__about__link">
             <div class="about">
@@ -94,7 +94,7 @@
         </figcaption>
       </figure>
       <figure class="element">
-        <img class="catalog__img4" src="img/catalog/Photo (3).jpg" alt="photo catalog">
+        <img class="catalog__img4" src="../assets/img/catalog/Photo (3).jpg" alt="photo catalog">
         <figcaption class="catalog__about">
           <div class="catalog__about__link">
             <div class="about">
@@ -141,7 +141,7 @@
       </p>
       <div class="blog__items">
         <div class="blog__item">
-          <img src="img/Image_blog1.svg" alt="photo" class="blog__item_img">
+          <img src="../assets/img/Image_blog1.svg" alt="photo" class="blog__item_img">
           <a href="blog.html" class="blog__item_tag">Kitchan Design</a>
           <p class="blog__item_text">
             Let’s Get Solution For Building Construction Work
@@ -158,7 +158,7 @@
           </div>
         </div>
         <div class="blog__item">
-          <img src="img/Image_blog2.svg" alt="photo" class="blog__item_img">
+          <img src="../assets/img/Image_blog2.svg" alt="photo" class="blog__item_img">
           <a href="blog.html" class="blog__item_tag">Living Design</a>
           <p class="blog__item_text">
             Low Cost Latest Invented Interior Designing
@@ -176,7 +176,7 @@
           </div>
         </div>
         <div class="blog__item">
-          <img src="img/Image_blog3.svg" alt="photo" class="blog__item_img">
+          <img src="../assets/img/Image_blog3.svg" alt="photo" class="blog__item_img">
           <a href="blog.html" class="blog__item_tag">Interior Design</a>
           <p class="blog__item_text">
             Best For Any Office & Business Interior
@@ -261,7 +261,7 @@ export default {
   }, 
   data() {
     return {
-      img__src: ['../assets/img/logo.svg',],
+      imgs__src: '',
     };
   },
 }
