@@ -328,4 +328,10 @@ a {
 
 .head__icon_link:hover {
   color: #CDA274;
-}</style>
+}
+
+.top__info {
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
+}
+</style>
