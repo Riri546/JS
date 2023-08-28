@@ -118,12 +118,6 @@
         <nav>
           <a :href="foot__nav.link" class="foot__link">{{ foot__nav.link__name }}</a>
         </nav>
-        <nav>
-          <a href="prodject.html" class="foot__link">Project</a>
-        </nav>
-        <nav>
-          <a href="blog.html" class="foot__link">Blog</a>
-        </nav>
       </section>
       <sectionc class="foot__contact">
         <h2 class="foot__title">Contact</h2>
@@ -182,7 +176,9 @@ export default {
       footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.' }],
 
       foot__navigations: [
-        { title: 'Page', link: 'HomePage', link__name: 'Home' }
+        { title: 'Page', link: 'HomePage.vue', link__name: 'Home' },
+        { link: 'prodject.html', link__name: 'Project' },
+        { link: 'blog.html', link__name: 'Blog' },
       ],
     };
   },
