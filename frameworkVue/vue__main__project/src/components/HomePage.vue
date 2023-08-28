@@ -62,23 +62,16 @@
         </div>
       </article>
     </section>
-    <section class="blog">
-      <h2 class="blog__title">
-        Articles & News
-      </h2>
-      <p class="blog__text">
-        It is a long established fact that a reader will be distracted by the of readable content of a page when
-        lookings at its layouts the points of using.
-      </p>
+    <section class="blog" v-for="blog in blogs" :key="blog.id">
+      <h2 class="blog__title">{{ blog.title }}</h2>
+      <p class="blog__text">{{ blog.text }}</p>
       <div class="blog__items">
         <div class="blog__item">
-          <img src="../assets/img/Image_blog1.svg" alt="photo" class="blog__item_img">
-          <a href="blog.html" class="blog__item_tag">Kitchan Design</a>
-          <p class="blog__item_text">
-            Let’s Get Solution For Building Construction Work
-          </p>
+          <img src="../assets/img/Image_blog1.svg" :alt="blog.alt" class="blog__item_img">
+          <a :href="blog.link" class="blog__item_tag">{{ blog.tag }}</a>
+          <p class="blog__item_text">{{ blog.item__text }}</p>
           <div class="blog__item_content">
-            <div class="blog__item_content-date">26 December,2022 </div>
+            <div class="blog__item_content-date">{{ blog.date }}</div>
             <a href="blog.html" class="blog__item_content-elem">
               <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
                 <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
@@ -216,7 +209,10 @@ export default {
         { title: '12', text: 'Years Of Experiance' },
         { title: '85', text: 'Success Project' },
         { title: '15', text: 'Active Project' },
-        { class: 'item__none', title: '95', text: 'Happy CUstomers' }]
+        { class: 'item__none', title: '95', text: 'Happy CUstomers' }],
+      blogs: [
+        { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.', stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' }
+      ]
 
     };
   },
