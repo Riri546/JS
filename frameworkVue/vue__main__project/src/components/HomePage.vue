@@ -274,10 +274,10 @@ export default {
   padding: 0;
 }
 
-/* body {
-  font-family: $fontText;
-  font-family: $fontTitle;
-} */
+body {
+  font-family: 'Jost', sans-serif;
+  font-family: 'DM Serif Display', serif;
+}
 
 a {
   text-decoration: none;
