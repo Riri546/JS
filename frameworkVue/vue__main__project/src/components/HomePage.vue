@@ -115,9 +115,11 @@
       </section>
       <section class="foot__navigation" v-for="foot__nav in foot__navigations" :key="foot__nav.id">
         <h2 class="foot__title">{{ foot__nav.title }}</h2>
-        <nav>
-          <a :href="foot__nav.link" class="foot__link">{{ foot__nav.link__name }}</a>
-        </nav>
+        <div>
+          <nav>
+            <a :href="foot__nav.link" class="foot__link">{{ foot__nav.link__name }}</a>
+          </nav>
+        </div>
       </section>
       <sectionc class="foot__contact" v-for="foot__cont in foot__contacts" :key="foot__cont.id">
         <h2 class="foot__title">{{ foot__cont.title }}</h2>
@@ -173,7 +175,8 @@ export default {
       footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.' }],
 
       foot__navigations: [
-        { title: 'Page', link: 'HomePage.vue', link__name: 'Home' },
+        // { title: 'Page'},
+        { link: 'HomePage.vue', link__name: 'Home' },
         { link: 'prodject.html', link__name: 'Project' },
         { link: 'blog.html', link__name: 'Blog' }],
 
