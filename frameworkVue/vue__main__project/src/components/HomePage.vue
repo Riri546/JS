@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <!-- <footer class="foot">
+    <footer class="foot">
       <section class="foot__about">
         <a href="index.html" class="foot__logo"><svg width="178" height="50" viewBox="0 0 178 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +137,7 @@
           <p>(123) 456 - 7890</p>
         </article>
       </sectionc>
-    </footer> -->
+    </footer>
   </div>
 </template>
 
@@ -151,31 +151,36 @@ export default {
     return {
       head__logo: [
         { link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
+
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
         { link: 'HomePage.vue', name: 'Project' },
         { link: 'HomePage.vue', name: 'Blog' }],
+
       top__info: [{
         title: 'Let Your Home Be Unique',
         text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.',
         button_name: 'Get Started'
       }],
+
       products: [{
         title: 'Follow Our Projects',
         text: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.'
       }],
+
       elements: [
         { class: 'catalog__img1', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img2', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img3', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
         { class: 'catalog__img4', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', }],
+
       items: [
         { title: '12', text: 'Years Of Experiance' },
         { title: '85', text: 'Success Project' },
         { title: '15', text: 'Active Project' },
         { class: 'item__none', title: '95', text: 'Happy CUstomers' }],
 
-      blogs: { title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.' },
+      blogs: [{ title: 'Articles & News', text: 'It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.' }],
 
       blog__items: [
         { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022' },
@@ -187,7 +192,7 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 * {
   margin: 0px;
