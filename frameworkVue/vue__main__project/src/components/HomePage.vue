@@ -393,76 +393,91 @@ a {
 }
 
 .catalog {
-  @extend %center;
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
   padding-bottom: 95px;
   display: grid;
   grid-template-columns: repeat(2, 552px);
   justify-content: space-between;
   justify-items: center;
   gap: 56px;
+}
 
-  .element {
-    transition: 1.2s;
-  }
+.element {
+  transition: 1.2s;
+}
 
-  .element:hover {
-    transform: scale(1.1);
-  }
+.element:hover {
+  transform: scale(1.1);
+}
 
-  &__img1 {
-    border-radius: 0px 70px 0px 0px;
-  }
+.catalog__img1 {
+  border-radius: 0px 70px 0px 0px;
+}
 
-  &__img2 {
-    border-radius: 70px 0px 0px 0px;
-  }
+.catalog__img2 {
+  border-radius: 70px 0px 0px 0px;
+}
 
-  &__img3 {
-    border-radius: 0px 0px 70px 0px;
-  }
+.catalog__img3 {
+  border-radius: 0px 0px 70px 0px;
+}
 
-  &__img4 {
-    border-radius: 0px 0px 0px 70px;
-  }
+.catalog__img4 {
+  border-radius: 0px 0px 0px 70px;
+}
 
-  &__about {
-    padding-top: 24px;
-    max-width: 547px;
+.catalog__about {
+  padding-top: 24px;
+  max-width: 547px;
+}
 
-    &__link {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-  }
+.catalog__link {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  &__title {
-    @extend %mediumTitle;
-    padding-bottom: 4px;
-    letter-spacing: 0.5px;
-  }
+.catalog__title {
+  color: #292F36;
+  font-family: DM Serif Display;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 31.25px */
+  letter-spacing: 0.5px;
+  padding-bottom: 4px;
+  letter-spacing: 0.5px;
+}
 
-  &__text {
-    @extend %text;
-    letter-spacing: 0.22px;
-  }
+.catalog__text {
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
+  letter-spacing: 0.22px;
+}
 
-  .catalog__link {
+.catalog__link {
+  transition: 0.7s;
+
+  .catalog__link_color {
     transition: 0.7s;
-
-    .catalog__link_color {
-      transition: 0.7s;
-    }
   }
+}
 
-  &__link:hover {
-    stroke: $colorSelectText;
+&__link:hover {
+  stroke: $colorSelectText;
 
-    .catalog__link_color {
-      fill: $colorButton;
-    }
+  .catalog__link_color {
+    fill: $colorButton;
   }
 }
 </style>
