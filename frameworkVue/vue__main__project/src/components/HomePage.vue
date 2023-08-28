@@ -664,7 +664,7 @@ a {
 }
 
 .foot__social_icon:hover {
-  fill: $colorOrange;
+  fill: #CDA274;
   ;
 }
 
