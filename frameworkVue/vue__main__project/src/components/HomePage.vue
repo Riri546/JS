@@ -439,5 +439,4 @@ a {
   text-align: center;
   letter-spacing: 0.22px;
   max-width: 737px;
-}
-</style>
+}</style>
