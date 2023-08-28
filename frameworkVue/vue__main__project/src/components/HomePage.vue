@@ -84,7 +84,7 @@
       </div>
     </section>
     <footer class="foot">
-      <section class="foot__about" v-for="foot in footers" :key="footer.id">
+      <section class="foot__about" v-for="foot in footers" :key="foot.id">
         <a :href="foot.link" class="foot__logo"><svg width="178" height="50" viewBox="0 0 178 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path
@@ -114,7 +114,7 @@
         </div>
       </section>
       <section class="foot__navigation">
-        <h2 class="foot__title">Pages</h2>
+        <h2 class="foot__title">{{ foot.title }}</h2>
         <nav>
           <a href="index.html" class="foot__link">Home</a>
         </nav>
@@ -149,24 +149,16 @@ export default {
   },
   data() {
     return {
-      head__logo: [
-        { link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
+      head__logo: [{ link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
 
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
         { link: 'HomePage.vue', name: 'Project' },
         { link: 'HomePage.vue', name: 'Blog' }],
 
-      top__info: [{
-        title: 'Let Your Home Be Unique',
-        text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.',
-        button_name: 'Get Started'
-      }],
+      top__info: [{ title: 'Let Your Home Be Unique', text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.', button_name: 'Get Started' }],
 
-      products: [{
-        title: 'Follow Our Projects',
-        text: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.'
-      }],
+      products: [{ title: 'Follow Our Projects', text: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.' }],
 
       elements: [
         { class: 'catalog__img1', alt: 'photo catalog', title: 'Modern Kitchan', text: 'Decor / Artchitecture', link: 'prodject.html', },
@@ -187,9 +179,11 @@ export default {
         { stc: '../assets/img/Image_blog2.svg', alt: 'photo', link: 'blog.html', tag: 'Interior Design', item__text: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022' },
         { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Best For Any Office & Business Interior Solution', date: '25 December,2022' }],
 
-      footers: [
-        { link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.' }
-      ]
+      footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Pages' }],
+
+      foot__navigation: [
+        {}
+      ],
     };
   },
 }
