@@ -30,9 +30,9 @@
       </div>
     </section>
     <header class="products" v-for="product in products" :key="product.id">
-            <h1 class="products__title">{{ product.title }}</h1>
-            <p class="products__text">{{ product.text }}</p>
-        </header>
+      <h1 class="products__title">{{ product.title }}</h1>
+      <p class="products__text">{{ product.text }}</p>
+    </header>
     <!-- <section class="catalog">
       <figure class="element">
         <img class="catalog__img1" src="../assets/img/catalog/Photo.jpg" alt="photo catalog">
@@ -396,5 +396,48 @@ a {
 
 .button__img {
   padding-left: 10px
+}
+
+.products {
+  padding-left: calc(50% - 1200px/2);
+  padding-right: calc(50% - 1200px/2);
+  padding-top: 95px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+}
+
+.products__title {
+  color: #292F36;
+  text-align: center;
+  font-family: DM Serif Display;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 125%;
+  /* 62.5px */
+  letter-spacing: 1px;
+  padding-bottom: 8px;
+  text-align: center;
+  letter-spacing: 1px;
+  max-width: 737px;
+}
+
+.products__text {
+  color: #4D5053;
+  text-align: center;
+  font-family: Jost;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 33px */
+  letter-spacing: 0.22px;
+  padding-bottom: 93px;
+  text-align: center;
+  letter-spacing: 0.22px;
+  max-width: 737px;
 }
 </style>
