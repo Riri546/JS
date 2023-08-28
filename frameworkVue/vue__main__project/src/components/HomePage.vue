@@ -593,7 +593,15 @@ a {
 }
 
 .blog__item_content-date {
-  @extend %smallText;
+  color: #4D5053;
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 24px */
+  letter-spacing: 0.16px;
+  text-transform: capitalize;
   display: flex;
   width: 223px;
   height: 33px;
@@ -613,6 +621,6 @@ a {
 }
 
 .blog__item:hover circle {
-  fill: $colorButton;
+  fill: #fff;
 }
 </style>
