@@ -113,9 +113,9 @@
           </a>
         </div>
       </section>
-      <section class="foot__navigation" v-for="foot__nav in foot__navigations" :key="foot__nav.id">
-        <h2 class="foot__title">{{ foot__nav.title }}</h2>
-        <div>
+      <section class="foot__navigation" >
+        <h2 class="foot__title" v-for="foot in foot__title" :key="foot.id">{{ foot.title }}</h2>
+        <div v-for="foot__nav in foot__navigations" :key="foot__nav.id">
           <nav>
             <a :href="foot__nav.link" class="foot__link">{{ foot__nav.link__name }}</a>
           </nav>
@@ -172,10 +172,11 @@ export default {
         { stc: '../assets/img/Image_blog2.svg', alt: 'photo', link: 'blog.html', tag: 'Interior Design', item__text: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022' },
         { stc: '../assets/img/Image_blog1.svg', alt: 'photo', link: 'blog.html', tag: 'Kitchan Design', item__text: 'Best For Any Office & Business Interior Solution', date: '25 December,2022' }],
 
-      footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.' }],
+      footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
+
+      foot__title:[{title: 'Psge'}],
 
       foot__navigations: [
-        // { title: 'Page'},
         { link: 'HomePage.vue', link__name: 'Home' },
         { link: 'prodject.html', link__name: 'Project' },
         { link: 'blog.html', link__name: 'Blog' }],
