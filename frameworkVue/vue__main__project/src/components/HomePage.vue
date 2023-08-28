@@ -56,20 +56,13 @@
     </section>
     <section class="company">
       <article class="item" v-for="item in items" :key="item.id">
-        <h2 class="company__title">{{ item.title }}</h2>
-        <p class="company__text">{{ item.text }}</p>
-      </article>
-
-      <article class="item">
-        <h2 class="company__title">15</h2>
-        <p class="company__text"></p>
-      </article>
-      <article class="item item__none">
-        <h2 class="company__title">95</h2>
-        <p class="company__text"></p>
+        <div :class="item.class">
+          <h2 class="company__title">{{ item.title }}</h2>
+          <p class="company__text">{{ item.text }}</p>
+        </div>
       </article>
     </section>
-    <!-- <section class="blog">
+    <section class="blog">
       <h2 class="blog__title">
         Articles & News
       </h2>
@@ -133,7 +126,7 @@
         </div>
       </div>
     </section>
-    <footer class="foot">
+    <!-- <footer class="foot">
       <section class="foot__about">
         <a href="index.html" class="foot__logo"><svg width="178" height="50" viewBox="0 0 178 50" fill="none"
             xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +216,7 @@ export default {
         { title: '12', text: 'Years Of Experiance' },
         { title: '85', text: 'Success Project' },
         { title: '15', text: 'Active Project' },
-        { title: '95', text: 'Happy CUstomers' }]
+        { class: 'item__none', title: '95', text: 'Happy CUstomers' }]
 
     };
   },
