@@ -366,4 +366,32 @@ a {
   letter-spacing: 0.22px;
   max-width: 434px;
 }
+
+.button__top__info {
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 125%;
+  /* 22.5px */
+  letter-spacing: 0.36px;
+  border-radius: 18px;
+  background: #292F36;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  padding: 26px 49px;
+  text-align: center;
+  letter-spacing: 0.36px;
+  transition: 0.7s;
+}
+
+.button__top__info:hover {
+  background: #FFF;
+  color: #292F36;
+}
+
+.button__img {
+  padding-left: 10px
+}
 </style>
