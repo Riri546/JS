@@ -29,12 +29,11 @@
         </div>
       </div>
     </section>
-    <!-- <header class="products">
-      <h1 class="products__title">Follow Our Projects</h1>
-      <p class="products__text">It is a long established fact that a reader will be distracted by the of readable
-        content of page lookings at its layouts points.</p>
-    </header>
-    <section class="catalog">
+    <header class="products" v-for="product in products" :key="product.id">
+            <h1 class="products__title">{{ product.title }}</h1>
+            <p class="products__text">{{ product.text }}</p>
+        </header>
+    <!-- <section class="catalog">
       <figure class="element">
         <img class="catalog__img1" src="../assets/img/catalog/Photo.jpg" alt="photo catalog">
         <figcaption class="catalog__about">
@@ -270,6 +269,10 @@ export default {
         title: 'Let Your Home Be Unique',
         text: 'There are many variations of the passages of lorem Ipsum fromavailable,majority.',
         button_name: 'Get Started'
+      }],
+      products: [{
+        title: 'Follow Our Projects',
+        text: 'It is a long established fact that a reader will be distracted by the of readable content of page lookings at its layouts points.'
       }]
 
     };
