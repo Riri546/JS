@@ -467,17 +467,17 @@ a {
 
 .catalog__link {
   transition: 0.7s;
-
-  .catalog__link_color {
-    transition: 0.7s;
-  }
 }
 
-&__link:hover {
-  stroke: $colorSelectText;
+.catalog__link_color {
+  transition: 0.7s;
+}
 
-  .catalog__link_color {
-    fill: $colorButton;
-  }
+.catalog__link:hover {
+  stroke: #292F36;
+}
+
+.catalog__link_color:hover {
+  fill: #FFF;
 }
 </style>
