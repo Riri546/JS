@@ -56,7 +56,7 @@
                 <h2 class="blog__header">Articles & News</h2>
                 <div class="blog__items" id="cardbox-container">
                     <div class="blog__item" v-for="article in articlesData" :key="article.id">
-                        <img :src="article.src" :alt="article.alt" class="blog__item_img">
+                        <img :src="'../assets/img/' + article.src" :alt="article.alt" class="blog__item_img">
                         <h3 class="blog__item_text">{{ article.title }}</h3>
                         <div class="blog__item_content">
                             <p class="blog__item_content-date">{{ article.date }}</p>
@@ -151,7 +151,7 @@ export default {
                 { link: 'HomePage.vue', name: 'Blog' }],
 
             articlesData: [
-                { id: 1, src: '../assets/img/Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
+                { id: 1, src: 'Image_blog1.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
                 { id: 2, src: '../assets/img/Image_blog2.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
                 { id: 3, src: '../assets/img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 4, src: '../assets/img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
