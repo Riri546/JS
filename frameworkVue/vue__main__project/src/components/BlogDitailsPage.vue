@@ -23,7 +23,6 @@
                 <div id="blogdetails" class="blog-details__box center">
                     <blogs></blogs>
                 </div>
-
             </main>
             <footer class="foot">
                 <section class="foot__about" v-for="foot in footers" :key="foot.id">
