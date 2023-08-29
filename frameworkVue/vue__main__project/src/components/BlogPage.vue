@@ -162,7 +162,7 @@ export default {
                 { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }],
 
             latestPosts: [
-                { title: 'Latest Post', src_img: '../assets/img/blog/post_img.jpg', alt: 'post img', subtitle: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. <br><br>Lorem Ipsum is not simply random text. It has roots in a piece of classica.', date: '26 December,2022', link_href: 'blogDitails.html' }
+                { title: 'Latest Post', src_img: '../assets/img/blog/post_img.jpg', alt: 'post img', subtitle: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. Lorem Ipsum is not simply random text. It has roots in a piece of classica.', date: '26 December,2022', link_href: 'blogDitails.html' }
             ],
 
             footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
