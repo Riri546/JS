@@ -92,6 +92,20 @@ export default {
                 { link: 'HomePage.vue', name: 'Project' },
                 { link: 'HomePage.vue', name: 'Blog' }],
 
+
+
+
+            footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
+
+            foot__title: [{ title: 'Psge' }],
+
+            foot__navigations: [
+                { link: 'HomePage.vue', link__name: 'Home' },
+                { link: 'prodject.html', link__name: 'Project' },
+                { link: 'blog.html', link__name: 'Blog' }],
+
+            foot__contacts: [{ title: 'Contact', address: '55 East Birchwood Ave. Brooklyn, New York 11201', mail: 'contact@interno.com', tel: '(123) 456 - 7890' }]
+
         };
     },
 
