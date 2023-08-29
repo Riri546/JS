@@ -22,8 +22,8 @@
                     <span class="subhead__section">
                         <h1 class="subhead__section_title">{{ subhead.title }}</h1>
                         <div>
-                            <a class="subhead__link" :href="subhead.linl_htef_one">{{ subhead.link_name_one }}</a> / <a class="subhead__link"
-                                :href="subhead.linl_htef_two">{{ subhead.link_name_two }}</a>
+                            <a class="subhead__link" :href="subhead.linl_htef_one">{{ subhead.link_name_one }}</a> / <a
+                                class="subhead__link" :href="subhead.linl_htef_two">{{ subhead.link_name_two }}</a>
                         </div>
                     </span>
                 </div>
@@ -278,114 +278,101 @@ a {
     letter-spacing: 0.22px;
 }
 
-/* // .news__date__link {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     flex-direction: row;
-//     flex-wrap: nowrap;
-// }
 
-// .latestPost {
-//     @extend %center;
-//     padding-top: 183px;
-//     padding-bottom: 150px;
 
-//     &__title {
-//         @extend %smallTitle;
-//         padding-bottom: 33px;
-//     }
 
-//     &__post {
-//         display: flex;
-//         padding: 22px;
-//         flex-direction: row;
-//         align-items: flex-start;
-//         gap: 65px;
-//         border-radius: 62px;
-//         border: 1px solid #E7E7E7;
-//         box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-//     }
 
-//     &__img {
-//         max-width: 569px;
-//         border-radius: 62px;
-//     }
+.foot {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    justify-content: space-between;
+    padding-bottom: 134px;
+}
 
-//     &__content {
-//         max-width: 463px;
-//     }
+.foot__logo {
+    padding-bottom: 18px;
+}
 
-//     &__subtitle {
-//         padding-top: 52px;
-//         padding-bottom: 22px;
-//         color: $colorSelectText;
-//         font-family: $fontTitle;
-//         font-size: 25px;
-//         font-style: $fontStyle;
-//         font-weight: $fontWeightRegular;
-//         line-height: $lineHeight;
-//         letter-spacing: 0.5px;
-//     }
+.foot__text {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+    padding-bottom: 31px;
+    letter-spacing: 0.22px;
+    max-width: 393px;
+}
 
-//     &__text {
-//         @extend %text;
-//         padding-bottom: 41px;
-//         letter-spacing: 0.22px;
-//     }
-// }
+.foot__navigation {
+    padding-left: 80px;
+}
 
-// .blog__header {
-//     @extend %smallTitle;
-//     padding-bottom: 30px
-// }
+.foot__social {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 54px;
+}
 
-// .articles {
-//     @extend %center;
-//     padding-bottom: 30px;
+.foot__social_icon {
+    transition: 0.7s;
+}
 
-//     &__title {
-//         color: $colorSelectText;
-//         font-family: $fontTitle;
-//         font-size: 50px;
-//         font-style: $fontStyle;
-//         font-weight: $fontWeightRegular;
-//         line-height: $lineHeight;
-//     }
+.foot__social_icon:hover {
+    fill: #CDA274;
+    ;
+}
 
-//     &__pagination {
-//         @extend %center;
-//         margin-bottom: 200px;
-//         display: flex;
-//         justify-content: center;
-//         gap: 20px;
-//         flex-direction: row;
-//         flex-wrap: nowrap;
+.foot__title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 31.25px */
+    padding-bottom: 9px;
+}
 
-//         &-item {
-//             padding: 14px 17px;
-//             border: 1px solid $colorOrange;
-//             box-sizing: border-box;
-//             border-radius: 100%;
-//             color: $colorSelectText;
-//             font-family: $fontText;
-//             font-size: $fontSizeVerySmal;
-//             font-style: $fontStyle;
-//             font-weight: 500;
-//             line-height: $lineHeightMax;
-//             text-transform: capitalize;
-//             transition: all 0.7s;
-//         }
+.foot__link {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 300%;
+    /* 66px */
+    letter-spacing: 0.22px;
+    transition: 0.7s;
+}
 
-//         &-item:hover {
-//             background: #F4F0EC;
-//             border: 1px solid #F4F0EC;
-//         }
+.foot__link:hover {
+    color: #CDA274;
+}
 
-//         &-svg {
-//             padding-left: 5px;
-//             padding-right: 5px;
-//         }
-//     }
-// } */
+
+.foot__contact {
+    padding-left: 90px;
+}
+
+.foot__info {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+    padding-top: 17px;
+    letter-spacing: 0.22px;
+    max-width: 258px;
+}
 </style>
