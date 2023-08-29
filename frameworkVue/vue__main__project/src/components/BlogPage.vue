@@ -278,7 +278,63 @@ a {
     letter-spacing: 0.22px;
 }
 
+.news__date__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 
+.latestPost {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    padding-top: 183px;
+    padding-bottom: 150px;
+
+    &__title {
+        @extend %smallTitle;
+        padding-bottom: 33px;
+    }
+
+    &__post {
+        display: flex;
+        padding: 22px;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 65px;
+        border-radius: 62px;
+        border: 1px solid #E7E7E7;
+        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+    }
+
+    &__img {
+        max-width: 569px;
+        border-radius: 62px;
+    }
+
+    &__content {
+        max-width: 463px;
+    }
+
+    &__subtitle {
+        padding-top: 52px;
+        padding-bottom: 22px;
+        color: $colorSelectText;
+        font-family: $fontTitle;
+        font-size: 25px;
+        font-style: $fontStyle;
+        font-weight: $fontWeightRegular;
+        line-height: $lineHeight;
+        letter-spacing: 0.5px;
+    }
+
+    &__text {
+        @extend %text;
+        padding-bottom: 41px;
+        letter-spacing: 0.22px;
+    }
+}
 
 
 
