@@ -25,7 +25,7 @@
                         <article class="blog-detailsart" v-for="article in sortedArray" :key="article.id" :id="article.id">
                             <h2 class="blog-details__title">{{ article.title }}</h2>
                             <div class="blog-details__image-data-box">
-                                <img :src="article.src" alt="article.alt" class="blog-details__image">
+                                <img alt="article.alt" class="blog-details__image" src="../assets/img/blogDitails/Photo.jpg">
                                 <div class="blog-details__date-box">
                                     <p class="blog-details__date">{{ article.date }}</p>
                                     <p class="blog-details__links">{{ article.link }}</p>
@@ -46,11 +46,11 @@
                             </div>
                             <h3 class="blog-details__subtitle">{{ article.subtitle }}</h3>
                             <p class="blog-details__sub-prgth">{{ article.thirdpargth }}</p>
-                            <div v-for="numberandtext in numbersandtexts" class="blog-details__sub-box">
+                            <div class="blog-details__sub-box" v-for="numberandtext in numbersandtexts" :key="numberandtext.id">
                                 <p class="blog-details__number">{{ numberandtext.number }}</p>
                                 <p class="blog-details__text">{{ numberandtext.text }}</p>
                             </div>
-                            <img class="blog-details__image-bottom" :src="article.secondsrc" :alt="article.alt">
+                            <img class="blog-details__image-bottom" src="../assets/img/blogDitails/Photo2.jpg" :alt="article.alt">
                             <p class="blog-details__prgth-bottom">{{ article.thirdpargth }}</p>
                         </article>
                     </div>
@@ -58,7 +58,7 @@
                     <div class="blog-details__aside">
                         <h3 class="blog-details__aside-title">{{ title }}</h3>
                         <div class="blog-details__buttons">
-                            <div v-for="button in buttons" class="blog-details__button">
+                            <div class="blog-details__button" v-for="button in buttons" :key="button.id">
                                 <label :data-id="button.id" @change="sortArticles"><input :data-id="button.id"
                                         @click="filters" class="blog-details__input" type="radio" name="radio">
                                     {{ button.text }}</label>
