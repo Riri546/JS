@@ -28,23 +28,21 @@
                     </span>
                 </div>
             </header>
-            <section class="latestPost">
-                <h1 class="latestPost__title">Latest Post</h1>
+            <section class="latestPost" v-for="latestPost in latestPosts" :key="latestPost.id">
+                <h1 class="latestPost__title">{{ latestPost.title }}</h1>
                 <article class="latestPost__post">
-                    <img class="latestPost__img" src="img/blog/post_img.jpg" alt="post img">
+                    <img class="latestPost__img" src="../assets/img/blog/post_img.jpg" :alt="latestPost.alt">
                     <div class="latestPost__content">
-                        <h2 class="latestPost__subtitle">Low Cost Latest Invented Interior Designing Ideas</h2>
-                        <p class="latestPost__text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis
-                            dignissim maximus.posuere in.Contrary to popular belief. <br>
-                            <br>Lorem Ipsum is not simply random text. It has roots in a piece of classica.
-                        </p>
+                        <h2 class="latestPost__subtitle">{{ latestPost.subtitle }}</h2>
+                        <p class="latestPost__text">{{ latestPost.text }}</p>
                         <div class="news__date__link">
                             <div class="date">
-                                <p class="date__text">26 December,2022</p>
+                                <p class="date__text">{{ latestPost.date }}</p>
                             </div>
                             <div class="link">
-                                <a href="blogDitails.html" class="catalog__link"><svg xmlns="http://www.w3.org/2000/svg"
-                                        width="70" height="70" viewBox="0 0 70 70" fill="none">
+                                <a :href="latestPost.link_href" class="catalog__link"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                        fill="none">
                                         <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                         <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round" />
@@ -158,11 +156,13 @@ export default {
                 { id: 3, src: 'img/Image_blog3.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' },
                 { id: 4, src: 'img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
                 { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
-                { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
-            ],
+                { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }],
 
             subheader: [
-                { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }
+                { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }],
+
+            latestPosts: [
+                { title: 'Latest Post', src_img: '../assets/img/blog/post_img.jpg', alt: 'post img', subtitle: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. <br><br>Lorem Ipsum is not simply random text. It has roots in a piece of classica.', date: '26 December,2022', link_href: 'blogDitails.html' }
             ],
 
             footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
