@@ -23,6 +23,7 @@
                 <div id="blogdetails" class="blog-details__box center">
                     <blogs></blogs>
                 </div>
+
             </main>
             <footer class="foot">
                 <section class="foot__about" v-for="foot in footers" :key="foot.id">
@@ -85,6 +86,12 @@ export default {
 
     data() {
         return {
+            head__logo: [{ link: './../public/index.html', img: "../assets/img/logo.svg", alt: 'logo' }],
+
+            head__icons: [
+                { link: 'HomePage.vue', name: 'Home' },
+                { link: 'HomePage.vue', name: 'Project' },
+                { link: 'HomePage.vue', name: 'Blog' }],
 
         };
     },
