@@ -2,6 +2,8 @@
   <div id="app">
     <HomePage/>
     <BlogPage/>
+
+    hi
   </div>
 </template>
 
