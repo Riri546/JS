@@ -179,90 +179,56 @@ export default {
 </script>
 
 <style lang="css" scoped>
-/* $marginNone: 0;
-$paddingNone: 0;
-$widthSite: 1200px;
-$colorSelectText: #292F36;
-$colortext: #4D5053;
-$colorButton: #FFF;
-$colorOrange: #CDA274;
-$fontText: 'Jost', sans-serif;
-$fontTitle: 'DM Serif Display', serif;
-$fontSizeVerySmal: 16px;
-$fontSizeSmal: 18px;
-$fontSizeMedium: 22px;
-$fontSizeMediumMax: 25px;
-$fontSizeSmallTitle: 50px;
-$fontSizeTitle: 65px;
-$fontStyle: normal;
-$fontWeightRegular: 400;
-$fontWeightSemiBold: 600;
-$lineHeight: 125%;
-$lineHeightMax: 150%;
-
-%maxTitle {
-    color: $colorSelectText;
-    font-family: $fontTitle;
-    font-size: $fontSizeTitle;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeight;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-%mediumTitle {
-    color: $colorSelectText;
-    font-family: $fontTitle;
-    font-size: $fontSizeMediumMax;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeight;
+body {
+    font-family: 'Jost', sans-serif;
+    font-family: 'DM Serif Display', serif;
 }
 
-%smallTitle {
-    color: $colorSelectText;
-    font-family: $fontTitle;
-    font-size: $fontSizeSmallTitle;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeight;
+a {
+    text-decoration: none;
 }
 
-%text {
-    color: $colortext;
-    font-family: $fontText;
-    font-size: $fontSizeMedium;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeightMax;
+.head {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    padding-top: 53px;
+    padding-bottom: 65px;
 }
 
-%smallText {
-    color: $colorButton;
-    font-family: $fontText;
-    font-size: $fontSizeSmal;
-    font-style: $fontStyle;
-    font-weight: $fontWeightSemiBold;
-    $lineHeight: $lineHeight;
+.head__navigation {
+    font-family: 'Jost', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-%smallText {
-    color: $colortext;
-    font-family: $fontText;
-    font-size: $fontSizeVerySmal;
-    font-style: $fontStyle;
-    font-weight: $fontWeightRegular;
-    line-height: $lineHeightMax;
+.head__icon {
+    display: flex;
+    gap: 40px;
 }
 
-%center{
-    padding-left: calc(50% - $widthSite/2);
-    padding-right: calc(50% - $widthSite/2);
+.head__icon_link {
+    color: #292F36;
+    text-align: center;
+    font-family: Jost;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 25px */
+    transition: 0.7s;
 }
 
-%news__img{
-    border-radius: 30px 30px 0px 0px;
-    min-height: 293px;
-} */
+.head__icon_link:hover {
+    color: #CDA274;
+}
 
 .subhead__img {
     position: relative;
