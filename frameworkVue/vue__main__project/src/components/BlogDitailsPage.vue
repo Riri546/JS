@@ -17,7 +17,7 @@
                 </nav>
             </header>
             <header class="subhead__img">
-                <img class="subhead__img_photo" src="img/blogDitails/subhead.jpg" alt="subhead img">
+                <img class="subhead__img_photo" src="../assets/img/blogDitails/subhead.jpg" alt="subhead img">
             </header>
             <main class="main-blog-details">
                 <div id="blogdetails" class="blog-details__box center">
