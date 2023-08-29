@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'JSBlogPage',
+    name: 'BlogPage',
 
     data() {
         return {
