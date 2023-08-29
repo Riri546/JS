@@ -56,7 +56,7 @@
                 <h2 class="blog__header">Articles & News</h2>
                 <div class="blog__items" id="cardbox-container">
                     <div class="blog__item" v-for="article in articlesData" :key="article.id">
-                        <img :src="'../src/assets/img/' + article.src" :alt="article.alt" class="blog__item_img">
+                        <img src="../assets/img/Image_blog1.svg" :alt="article.alt" class="blog__item_img">
                         <h3 class="blog__item_text">{{ article.title }}</h3>
                         <div class="blog__item_content">
                             <p class="blog__item_content-date">{{ article.date }}</p>
@@ -180,7 +180,9 @@ export default {
     },
 
     computed: {
-        
+        imgUrl() {
+            return require(`@/assets/img/${this.result.img}`)
+        }
     }
 };
 </script>
