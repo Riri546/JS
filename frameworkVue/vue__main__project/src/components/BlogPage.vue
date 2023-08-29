@@ -18,7 +18,7 @@
             </header>
             <header class="subhead">
                 <div class="subhead__img">
-                    <img class="subhead__img_photo" src="img/blog/Image_laceholder.jpg" alt="img blog ditails">
+                    <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" alt="img blog ditails">
                     <span class="subhead__section">
                         <h1 class="subhead__section_title">Articles & News</h1>
                         <div>
