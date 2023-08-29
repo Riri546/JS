@@ -16,14 +16,14 @@
                     </div>
                 </nav>
             </header>
-            <header class="subhead">
+            <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
                 <div class="subhead__img">
-                    <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" alt="img blog ditails">
+                    <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" :alt="subhead.alt">
                     <span class="subhead__section">
-                        <h1 class="subhead__section_title">Articles & News</h1>
+                        <h1 class="subhead__section_title">{{ subhead.title }}</h1>
                         <div>
-                            <a class="subhead__link" href="index.html">Home</a> / <a class="subhead__link"
-                                href="blogDitails.html">Blog</a>
+                            <a class="subhead__link" :href="subhead.linl_htef_one">{{ subhead.link_name_one }}</a> / <a class="subhead__link"
+                                :href="subhead.linl_htef_two">{{ subhead.link_name_two }}</a>
                         </div>
                     </span>
                 </div>
@@ -159,6 +159,10 @@ export default {
                 { id: 4, src: 'img/Image_blog4.svg', alt: 'interior', title: 'Let’s Get Solution For Building Construction Work', date: '26 December,2022', button: 'Kitchan Design' },
                 { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
                 { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
+            ],
+
+            subheader: [
+                { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }
             ],
 
             footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
