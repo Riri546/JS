@@ -425,6 +425,13 @@ a {
   transition: 0.7s;
 }
 
+.catalog__about__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
 .catalog__link_color {
   transition: 0.7s;
 }

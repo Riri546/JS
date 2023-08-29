@@ -497,7 +497,6 @@ a {
     fill: #fff;
 }
 
-
 .blog__header {
     color: #292F36;
     font-family: DM Serif Display;
@@ -518,13 +517,11 @@ a {
 
 .articles__title {
     color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 25px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
-    /* 31.25px */
-    letter-spacing: 0.5px;
 }
 
 .articles__pagination {
@@ -538,6 +535,30 @@ a {
     flex-wrap: nowrap;
 }
 
+.articles__pagination-item {
+    padding: 14px 17px;
+    border: 1px solid #CDA274;
+    box-sizing: border-box;
+    border-radius: 100%;
+    color: #292F36;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    transition: all 0.7s;
+}
+
+.articles__pagination-item:hover {
+    background: #F4F0EC;
+    border: 1px solid #F4F0EC;
+}
+
+.articles__pagination-svg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
 .foot {
     padding-left: calc(50% - 1200px/2);
