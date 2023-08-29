@@ -142,7 +142,7 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      head__logo: [{ link: 'HomePage.vue', img: "../assets/img/logo.svg", alt: 'logo' }],
+      head__logo: [{ link: './../public/index.html', img: "../assets/img/logo.svg", alt: 'logo' }],
 
       head__icons: [
         { link: 'HomePage.vue', name: 'Home' },
