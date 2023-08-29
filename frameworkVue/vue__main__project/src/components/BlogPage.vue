@@ -160,7 +160,7 @@ export default {
                 { id: 5, src: 'img/Image_blog5.svg', alt: 'interior', title: 'Low Cost Latest Invented Interior Designing Ideas.', date: '22 December,2022', button: 'Living Design' },
                 { id: 6, src: 'img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }
             ],
-            
+
             footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
 
             foot__title: [{ title: 'Psge' }],
@@ -178,9 +178,8 @@ export default {
 
 </script>
 
-<!-- <style lang="scss" scoped>
-
-$marginNone: 0;
+<style lang="css" scoped>
+/* $marginNone: 0;
 $paddingNone: 0;
 $widthSite: 1200px;
 $colorSelectText: #292F36;
@@ -263,155 +262,160 @@ $lineHeightMax: 150%;
 %news__img{
     border-radius: 30px 30px 0px 0px;
     min-height: 293px;
+} */
+
+.subhead__img {
+    position: relative;
+    display: inline-block;
 }
 
-.subhead {
-    &__img {
-        position: relative;
-        display: inline-block;
-
-        &_photo {
-            width: 100vw;
-        }
-    }
-
-    &__section {
-        border-radius: 37px 37px 0px 0px;
-        background: $colorButton;
-        position: absolute;
-        bottom: 1px;
-        display: flex;
-        width: 503px;
-        margin-left: 28%;
-        padding: 41px 78px;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-
-        &_title {
-            color: $colorSelectText;
-            font-family: $fontTitle;
-            font-size: 50px;
-            font-style: $fontStyle;
-            font-weight: $fontWeightRegular;
-            line-height: $lineHeight;
-        }
-    }
-
-    &__link {
-        @extend %text;
-        letter-spacing: 0.22px;
-    }
+.subhead__img_photo {
+    width: 100vw;
 }
 
-.news__date__link {
+.subhead__section {
+    border-radius: 37px 37px 0px 0px;
+    background: #FFF;
+    position: absolute;
+    bottom: 1px;
     display: flex;
-    justify-content: space-between;
+    width: 503px;
+    margin-left: 28%;
+    padding: 41px 78px;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    gap: 10px;
 }
 
-.latestPost {
-    @extend %center;
-    padding-top: 183px;
-    padding-bottom: 150px;
-
-    &__title {
-        @extend %smallTitle;
-        padding-bottom: 33px;
-    }
-
-    &__post {
-        display: flex;
-        padding: 22px;
-        flex-direction: row;
-        align-items: flex-start;
-        gap: 65px;
-        border-radius: 62px;
-        border: 1px solid #E7E7E7;
-        box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
-    }
-
-    &__img {
-        max-width: 569px;
-        border-radius: 62px;
-    }
-
-    &__content {
-        max-width: 463px;
-    }
-
-    &__subtitle {
-        padding-top: 52px;
-        padding-bottom: 22px;
-        color: $colorSelectText;
-        font-family: $fontTitle;
-        font-size: 25px;
-        font-style: $fontStyle;
-        font-weight: $fontWeightRegular;
-        line-height: $lineHeight;
-        letter-spacing: 0.5px;
-    }
-
-    &__text {
-        @extend %text;
-        padding-bottom: 41px;
-        letter-spacing: 0.22px;
-    }
+.subhead__section_title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 62.5px */
 }
 
-.blog__header {
-    @extend %smallTitle;
-    padding-bottom: 30px
+.subhead__link {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
 }
 
-.articles {
-    @extend %center;
-    padding-bottom: 30px;
+/* // .news__date__link {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     flex-direction: row;
+//     flex-wrap: nowrap;
+// }
 
-    &__title {
-        color: $colorSelectText;
-        font-family: $fontTitle;
-        font-size: 50px;
-        font-style: $fontStyle;
-        font-weight: $fontWeightRegular;
-        line-height: $lineHeight;
-    }
+// .latestPost {
+//     @extend %center;
+//     padding-top: 183px;
+//     padding-bottom: 150px;
 
-    &__pagination {
-        @extend %center;
-        margin-bottom: 200px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-direction: row;
-        flex-wrap: nowrap;
+//     &__title {
+//         @extend %smallTitle;
+//         padding-bottom: 33px;
+//     }
 
-        &-item {
-            padding: 14px 17px;
-            border: 1px solid $colorOrange;
-            box-sizing: border-box;
-            border-radius: 100%;
-            color: $colorSelectText;
-            font-family: $fontText;
-            font-size: $fontSizeVerySmal;
-            font-style: $fontStyle;
-            font-weight: 500;
-            line-height: $lineHeightMax;
-            text-transform: capitalize;
-            transition: all 0.7s;
-        }
+//     &__post {
+//         display: flex;
+//         padding: 22px;
+//         flex-direction: row;
+//         align-items: flex-start;
+//         gap: 65px;
+//         border-radius: 62px;
+//         border: 1px solid #E7E7E7;
+//         box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+//     }
 
-        &-item:hover {
-            background: #F4F0EC;
-            border: 1px solid #F4F0EC;
-        }
+//     &__img {
+//         max-width: 569px;
+//         border-radius: 62px;
+//     }
 
-        &-svg {
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-    }
-}
-</style> -->
+//     &__content {
+//         max-width: 463px;
+//     }
+
+//     &__subtitle {
+//         padding-top: 52px;
+//         padding-bottom: 22px;
+//         color: $colorSelectText;
+//         font-family: $fontTitle;
+//         font-size: 25px;
+//         font-style: $fontStyle;
+//         font-weight: $fontWeightRegular;
+//         line-height: $lineHeight;
+//         letter-spacing: 0.5px;
+//     }
+
+//     &__text {
+//         @extend %text;
+//         padding-bottom: 41px;
+//         letter-spacing: 0.22px;
+//     }
+// }
+
+// .blog__header {
+//     @extend %smallTitle;
+//     padding-bottom: 30px
+// }
+
+// .articles {
+//     @extend %center;
+//     padding-bottom: 30px;
+
+//     &__title {
+//         color: $colorSelectText;
+//         font-family: $fontTitle;
+//         font-size: 50px;
+//         font-style: $fontStyle;
+//         font-weight: $fontWeightRegular;
+//         line-height: $lineHeight;
+//     }
+
+//     &__pagination {
+//         @extend %center;
+//         margin-bottom: 200px;
+//         display: flex;
+//         justify-content: center;
+//         gap: 20px;
+//         flex-direction: row;
+//         flex-wrap: nowrap;
+
+//         &-item {
+//             padding: 14px 17px;
+//             border: 1px solid $colorOrange;
+//             box-sizing: border-box;
+//             border-radius: 100%;
+//             color: $colorSelectText;
+//             font-family: $fontText;
+//             font-size: $fontSizeVerySmal;
+//             font-style: $fontStyle;
+//             font-weight: 500;
+//             line-height: $lineHeightMax;
+//             text-transform: capitalize;
+//             transition: all 0.7s;
+//         }
+
+//         &-item:hover {
+//             background: #F4F0EC;
+//             border: 1px solid #F4F0EC;
+//         }
+
+//         &-svg {
+//             padding-left: 5px;
+//             padding-right: 5px;
+//         }
+//     }
+// } */
+</style>
