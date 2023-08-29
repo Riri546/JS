@@ -351,6 +351,46 @@ a {
     letter-spacing: 0.22px;
 }
 
+.blog__header {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 62.5px */
+    letter-spacing: 1px;
+    padding-bottom: 30px
+}
+
+.articles {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    padding-bottom: 30px;
+}
+
+.articles__title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 31.25px */
+    letter-spacing: 0.5px;
+}
+
+.articles__pagination {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 
 .foot {
     padding-left: calc(50% - 1200px/2);
