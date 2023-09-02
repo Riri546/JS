@@ -9,7 +9,7 @@ a {
 }
 
 .conteiner {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 16px;
   background-color: antiquewhite;
   color: darkslateblue;
@@ -55,14 +55,14 @@ a {
 
 .user button {
   padding: 1rem 2rem;
-  background-color: rgba(238, 136, 255, 0.6);
+  background-color: #e8f9;
   height: 50px;
   border: none;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  font-family: "Trebuchet MS", sans-serif;
+  font-family: 'Trebuchet MS', sans-serif;
   font-size: 16px;
   line-height: normal;
   font-weight: 600;
@@ -96,4 +96,4 @@ a {
 .dogs img {
   width: 680px;
   transition: all 0.5;
-}/*# sourceMappingURL=style.css.map */
+}
