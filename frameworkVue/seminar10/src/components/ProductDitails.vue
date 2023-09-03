@@ -1,10 +1,10 @@
 <template>
     <div>
-        <div v-for="item in items" :key="item.id">
-            <img src="../assets/dresser.jpg" alt="photo">
-            <H1></H1>
-            <p></p>
-            <p></p>
+        <div v-for="product in products" :key="product.id">
+            <img src="../assets/dresser.jpg" :alt="product.alt">
+            <h1>{{ product.name }}</h1>
+            <p>{{  }}</p>
+            <h2></h2>
             <p></p>
         </div>
     </div>
@@ -17,6 +17,7 @@ export default {
     data() {
         return {
             products: [{
+                alt:'photo',
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price: 'Price:',
