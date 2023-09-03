@@ -29,6 +29,7 @@ export default {
     HomePage,
     BlogPage,
     BlogDitailsPage,
+    ProductDitailsPage,
     CompFooter
   }
 }
