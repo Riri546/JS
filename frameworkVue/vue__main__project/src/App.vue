@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    
+    <CompHeader/>
     <HomePage />
     <BlogPage />
     <BlogDitailsPage />
@@ -8,9 +8,11 @@
 </template>
 
 <script>
+import CompHeader from './components/CompHeader.vue';
 import HomePage from './components/HomePage.vue'
 import BlogPage from './components/BlogPage.vue'
 import BlogDitailsPage from './components/BlogDitailsPage.vue'
+
 
 
 export default {
@@ -18,8 +20,9 @@ export default {
   components: {
     HomePage,
     BlogPage,
-    BlogDitailsPage
-  }
+    BlogDitailsPage,
+    CompHeader
+}
 }
 </script>
 
