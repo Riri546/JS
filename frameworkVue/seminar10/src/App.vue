@@ -17,6 +17,6 @@ export default {
 
 <style>
 body {
-  fill: #F4F0EC;
+  background: #F4F0EC;
 }
 </style>
