@@ -5,9 +5,9 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <div>
+                <div class="product__subinfo">
                     <h2 class="product__subtitle">{{ product.price_name }}</h2>
-                    <p>{{ product.price_sum }}</p>
+                    <p class="product__text">{{ formattedPrice }}</p>
                 </div>
                 <div class="product__subinfo">
                     <h2 class="product__subtitle"> {{ product.status_name }}</h2>
@@ -30,26 +30,27 @@ export default {
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price_name: 'Price:',
-                price_sum: 99.99,
                 status_name: 'Status:',
-                status_value: 'true',
                 available: 'Available',
                 available_none: 'Out of stock'
-            }]
+            }],
+
+            status_value: 'true',
+            price_sum: 99.99,
         };
     },
     computed: {
         formattedPrice() {
-            // this.products.price_sum += '$';
-            return '$' + this.products.price_sum
+            return '$' + this.price_sum;
         }
     },
 
-    // methods: {
-    //     vailabilityStatus() {
-    //         this.products.status = 'false';
-    //     }
-    // },
+    methods: {
+        vailabilityStatus() {
+            this.status_value = 'false';
+            return this.status_value;
+        }
+    },
 }
 // }.mount('#app');
 </script>
