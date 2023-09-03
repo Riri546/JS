@@ -10,7 +10,7 @@
                     <p>{{ product.available }}</p>
                 </template>
                 <template v-else="fals">
-                    <p></p>
+                    <p>{{ product.available_none }}</p>
                 </template>
                 <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
@@ -36,7 +36,9 @@ export default {
     },
 
     methods: {
+        status() {
 
+        }
     },
 };
 </script>
