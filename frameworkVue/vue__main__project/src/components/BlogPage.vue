@@ -89,18 +89,6 @@ export default {
             latestPosts: [
                 { title: 'Latest Post', src_img: '../assets/img/blog/post_img.jpg', alt: 'post img', subtitle: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. Lorem Ipsum is not simply random text. It has roots in a piece of classica.', date: '26 December,2022', link_href: 'blogDitails.html' }
             ],
-
-            footers: [{ link: 'HomePage.vue', text: 'It is a long established fact that a reader will be distracted lookings.', title: 'Page' }],
-
-            foot__title: [{ title: 'Psge' }],
-
-            foot__navigations: [
-                { link: 'HomePage.vue', link__name: 'Home' },
-                { link: 'prodject.html', link__name: 'Project' },
-                { link: 'blog.html', link__name: 'Blog' }],
-
-            foot__contacts: [{ title: 'Contact', address: '55 East Birchwood Ave. Brooklyn, New York 11201', mail: 'contact@interno.com', tel: '(123) 456 - 7890' }]
-
         };
     },
 
