@@ -74,7 +74,5 @@ export default {
 .head__icon_link:hover {
     color: #CDA274;
 }
-
-
 </style>
   
