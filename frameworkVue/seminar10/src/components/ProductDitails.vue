@@ -5,7 +5,7 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <h2 class="product__subtitle">{{ product.price_name }}{{ product.price_sum }} </h2>
+                <h2 class="product__subtitle">{{ product.price_name }} {{ addPrice }}</h2>
                 <div>
                     <h2 class="product__subtitle color" v-if="product.status = true">
                         {{ product.available }}</h2>
@@ -41,17 +41,17 @@ export default {
             this.price_sum = sum;
             sum = 99.99;
             sum += '$'
-            return sum
+            return this.price_sum.push
         }
     },
 
     methods: {
         vailabilityStatus() {
-            this.status.push = false;
-
+            this.status.push = true;
         }
     },
-}.mount('#app');
+}
+// }.mount('#app');
 </script>
 
 <style lang="css" scoped>
