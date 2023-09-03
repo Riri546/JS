@@ -1,23 +1,23 @@
 <template>
     <div>
-        <div v-for="product in products" :key="product.id">
-            <img src="../assets/dresser.jpg" :alt="product.alt">
-            <h1>{{ product.name }}</h1>
-            <p>{{ product.about }}</p>
-            <h2>{{ product.price }}</h2>
-            <input type="checkbox" checked/>
+        <div class="product" v-for="product in products" :key="product.id">
+            <img class="product__img" src="../assets/dresser.jpg" :alt="product.alt">
+            <h1 class="product__title">{{ product.name }}</h1>
+            <p class="product__text">{{ product.about }}</p>
+            <h2 class="product__subtitle">{{ product.price }}</h2>
+            <input class="product__input" type="checkbox" checked />
         </div>
     </div>
 </template>
 
 <script>
 export default {
-    name: 'JSProductDitails',
+    name: 'ProductDitails',
 
     data() {
         return {
             products: [{
-                alt:'photo',
+                alt: 'photo',
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price: 'Price:',
@@ -36,4 +36,30 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.top__info_title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 81.25px */
+    max-width: 434px;
+    padding-bottom: 18px;
+}
+
+.top__info_text {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+    padding-bottom: 21px;
+    letter-spacing: 0.22px;
+    max-width: 434px;
+}
+</style>
