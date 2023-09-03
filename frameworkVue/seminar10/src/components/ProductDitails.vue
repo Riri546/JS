@@ -6,10 +6,10 @@
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price }}</h2>
-                <template v-if="true">
+                <template v-if="this.status = true">
                     <p>{{ product.available }}</p>
                 </template>
-                <template v-else="fals">
+                <template v-else="this.status = false">
                     <p>{{ product.available_none }}</p>
                 </template>
                 <!-- <input class="product__input" type="rad/io" checked > -->
@@ -29,6 +29,7 @@ export default {
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price: 'Price:',
+                status: '',
                 available: 'Available',
                 available_none: 'Out of stock'
             }]
@@ -36,8 +37,8 @@ export default {
     },
 
     methods: {
-        status() {
-
+        фvailabilityStatus() {
+            this.status = true;
         }
     },
 };
