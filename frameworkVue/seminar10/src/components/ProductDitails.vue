@@ -23,13 +23,10 @@ export default {
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price: 'Price:',
-                available: 'checked'
+                available: 'Available',
+                available_none: 'Out of stock'
             }]
         };
-    },
-
-    mounted() {
-
     },
 
     methods: {
@@ -39,8 +36,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
-.product{
+.product {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +44,13 @@ export default {
     flex-wrap: wrap;
 }
 
-.product__info{
+.product__info {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 .product__title {
     color: #292F36;
     font-family: DM Serif Display;
