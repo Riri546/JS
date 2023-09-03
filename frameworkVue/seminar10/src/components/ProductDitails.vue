@@ -6,7 +6,13 @@
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price }}</h2>
-                <input class="product__input" type="radio" checked />
+                <template v-if="true">
+                    <p>{{ product.available }}</p>
+                </template>
+                <template v-else="fals">
+                    <p></p>
+                </template>
+                <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
         </div>
     </div>
