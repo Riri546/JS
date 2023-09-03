@@ -4,7 +4,7 @@
             <img class="product__img" src="../assets/dresser.jpg" :alt="product.alt">
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
-            <div>
+            <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price }}</h2>
                 <input class="product__input" type="radio" checked />
             </div>
@@ -39,6 +39,21 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.product__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 .product__title {
     color: #292F36;
     font-family: DM Serif Display;
