@@ -5,7 +5,7 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <h2 class="product__subtitle">{{ product.price }}</h2>
+                <h2 class="product__subtitle">{{ product.price_name }}{{ product.price_num }} </h2>
                 <div>
                     <h2 class="product__subtitle color" v-if="product.status = true">
                         {{ product.available }}</h2>
@@ -37,8 +37,7 @@ export default {
         };
     },
     computed: {
-        // a computed getter
-        publishedBooksMessage() {
+       addPrice() {
             // `this` points to the vm instance
             return this.author.books.length > 0 ? 'Yes' : 'No'
         }
