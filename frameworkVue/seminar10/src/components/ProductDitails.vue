@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.top__info_title {
+.product__title {
     color: #292F36;
     font-family: DM Serif Display;
     font-size: 65px;
@@ -49,7 +49,19 @@ export default {
     padding-bottom: 18px;
 }
 
-.top__info_text {
+.product__title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 65px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 81.25px */
+    max-width: 434px;
+    padding-bottom: 18px;
+}
+
+.product__text {
     color: #4D5053;
     font-family: Jost;
     font-size: 22px;
