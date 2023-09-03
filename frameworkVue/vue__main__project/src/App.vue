@@ -2,7 +2,9 @@
   <div id="app">
     <CompHeader/>
     <HomePage />
+    <CompHeader/>
     <BlogPage />
+    <CompHeader/>
     <BlogDitailsPage />
   </div>
 </template>
@@ -18,10 +20,10 @@ import BlogDitailsPage from './components/BlogDitailsPage.vue'
 export default {
   name: 'App',
   components: {
+    CompHeader,
     HomePage,
     BlogPage,
     BlogDitailsPage,
-    CompHeader
 }
 }
 </script>

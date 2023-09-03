@@ -1,21 +1,6 @@
 <template>
     <div>
         <div class="top">
-            <header class="head">
-                <nav class="head__navigation">
-                    <!-- Логотип с сылкой на главную страницу -->
-                    <div class="head__logo" v-for="head in head__logo" :key="head.id">
-                        <a :href="head.link"> <img src="../assets/img/logo.svg" :alt="head.alt"></a>
-                    </div>
-
-                    <!-- Иконки навигации -->
-                    <div class="head__icon">
-                        <div v-for="head__icon in head__icons" :key="head__icon.id">
-                            <a class="head__icon_link" :href="head__icon.link">{{ head__icon.name }}</a>
-                        </div>
-                    </div>
-                </nav>
-            </header>
             <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
                 <div class="subhead__img">
                     <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" :alt="subhead.alt">
