@@ -3,9 +3,9 @@
         <div v-for="product in products" :key="product.id">
             <img src="../assets/dresser.jpg" :alt="product.alt">
             <h1>{{ product.name }}</h1>
-            <p>{{  }}</p>
-            <h2></h2>
-            <p></p>
+            <p>{{ product.about }}</p>
+            <h2>{{ product.price }}</h2>
+            <p>{{ product.status }}</p>
         </div>
     </div>
 </template>
