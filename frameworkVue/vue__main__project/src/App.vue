@@ -5,8 +5,10 @@
     <CompFooter />
     <CompHeader />
     <BlogPage />
+    <CompFooter />
     <CompHeader />
     <BlogDitailsPage />
+    <CompFooter />
   </div>
 </template>
 
