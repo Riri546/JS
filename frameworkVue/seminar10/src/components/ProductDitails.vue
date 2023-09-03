@@ -4,8 +4,10 @@
             <img class="product__img" src="../assets/dresser.jpg" :alt="product.alt">
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
-            <h2 class="product__subtitle">{{ product.price }}</h2>
-            <input class="product__input" type="checkbox" checked />
+            <div>
+                <h2 class="product__subtitle">{{ product.price }}</h2>
+                <input class="product__input" type="radio" checked />
+            </div>
         </div>
     </div>
 </template>
@@ -36,7 +38,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="css" scoped>
 .product__title {
     color: #292F36;
     font-family: DM Serif Display;
@@ -49,10 +51,10 @@ export default {
     padding-bottom: 18px;
 }
 
-.product__title {
+.product__subtitle {
     color: #292F36;
     font-family: DM Serif Display;
-    font-size: 65px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%;
