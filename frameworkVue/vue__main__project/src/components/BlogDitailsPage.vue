@@ -61,13 +61,6 @@ export default {
 
     data() {
         return {
-            head__logo: [{ link: './../public/index.html', img: "../assets/img/logo.svg", alt: 'logo' }],
-
-            head__icons: [
-                { link: 'HomePage.vue', name: 'Home' },
-                { link: 'HomePage.vue', name: 'Project' },
-                { link: 'HomePage.vue', name: 'Blog' }],
-
             sortedArray: [
                 { id: 'kitchen', title: 'Let’s Get Solution for Building Construction Work', date: '26 December,2022', link: 'Interior / Home / Decore', firstpargth: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injecthumour, or randomised words which don’t look even slightly believable.', secondpargth: 'Embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.', src: 'img/blogDitails/Photo.jpg', alt: 'photo', quote: 'The details are not the details. They make the design.', subtitle: 'Design sprints are great', thirdpargth: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.', firstnumber: '1', secondnumber: '2', thirdnumber: '3', fourthpargth: 'Contrary to popular belief.There are many variations of passages of Lorem Ipsum available, but the majority have suffered.', secondsrc: 'img/blogDitails/Photo2.jpg' }],
 
