@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <CompHeader/>
+    <CompHeader />
     <HomePage />
-    <CompHeader/>
+    <CompFooter />
+    <CompHeader />
     <BlogPage />
-    <CompHeader/>
+    <CompHeader />
     <BlogDitailsPage />
   </div>
 </template>
 
 <script>
 import CompHeader from './components/CompHeader.vue';
+import CompFooter from './components/CompFooter.vue';
 import HomePage from './components/HomePage.vue'
 import BlogPage from './components/BlogPage.vue'
 import BlogDitailsPage from './components/BlogDitailsPage.vue'
@@ -24,7 +26,8 @@ export default {
     HomePage,
     BlogPage,
     BlogDitailsPage,
-}
+    CompFooter
+  }
 }
 </script>
 
