@@ -5,12 +5,12 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <h2 class="product__subtitle">{{ product.price_name }} {{ addPrice }}</h2>
+                <h2 class="product__subtitle">{{ product.price_name }}</h2>
                 <div>
-                    <h2 class="product__subtitle color" v-if="product.status = true">
-                        {{ product.available }}</h2>
-                    <h2 class="product__subtitle color__none" v-if="product.status = false">{{ product.available_none }}
-                    </h2>
+                    <h2 class="product__subtitle">
+                        {{ product.status === "true" ? product.available : product.available_none }}</h2>
+                    <!-- <h2 class="product__subtitle color__none" v-else>{{ product.available_none
+                    }} </h2> -->
                 </div>
                 <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
@@ -30,26 +30,26 @@ export default {
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price_name: 'Price:',
                 price_sum: '',
-                status: '',
+                status: 'false',
                 available: 'Available',
                 available_none: 'Out of stock'
             }]
         };
     },
-    computed: {
-       addPrice(sum) {
-            this.price_sum = sum;
-            sum = 99.99;
-            sum += '$'
-            return this.price_sum.push
-        }
-    },
+    // computed: {
+    //    addPrice(sum) {
+    //         this.price_sum = sum;
+    //         sum = 99.99;
+    //         sum += '$'
+    //         return this.price_sum.push
+    //     }
+    // },
 
-    methods: {
-        vailabilityStatus() {
-            this.status.push = true;
-        }
-    },
+    // methods: {
+    //     vailabilityStatus() {
+    //         this.products.status = 'false';
+    //     }
+    // },
 }
 // }.mount('#app');
 </script>
@@ -106,13 +106,5 @@ export default {
     padding-bottom: 21px;
     letter-spacing: 0.22px;
     max-width: 434px;
-}
-
-.color {
-    color: green;
-}
-
-.color__none {
-    color: red;
 }
 </style>
