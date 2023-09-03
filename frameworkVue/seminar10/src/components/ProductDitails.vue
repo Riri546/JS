@@ -64,8 +64,7 @@ export default {
 
 .product__info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
