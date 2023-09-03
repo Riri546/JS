@@ -38,19 +38,6 @@
   
   
   <style scoped>
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-  
-  body {
-    font-family: 'Jost', sans-serif;
-    font-family: 'DM Serif Display', serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
   
   .head {
     padding-left: calc(50% - 1200px/2);
