@@ -11,8 +11,10 @@
                 </div>
                 <div class="product__subinfo">
                     <h2 class="product__subtitle"> {{ product.status_name }}</h2>
-                    <p class="product__text">{{ product.status_value === "true" ? product.available : product.available_none
-                    }}</p>
+                    <div>
+                        <p class="product__text color" v-if="status_value === 'true'">{{ product.available }}</p>
+                        <p class="product__text color_none" v-if="status_value === 'false'">{{ product.available_none }}</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,15 +46,7 @@ export default {
             return '$' + this.price_sum;
         }
     },
-
-    methods: {
-        vailabilityStatus() {
-            this.status_value = 'false';
-            return this.status_value;
-        }
-    },
 }
-// }.mount('#app');
 </script>
 
 <style lang="css" scoped>
@@ -73,7 +67,7 @@ export default {
 .product__subinfo {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: nowrap;
     gap: 15px;
 }
@@ -114,5 +108,13 @@ export default {
     padding-bottom: 21px;
     letter-spacing: 0.22px;
     max-width: 434px;
+}
+
+.color{
+    color: rgb(159, 197, 102);
+}
+
+.color_none{
+    color: rgb(196, 50, 50);
 }
 </style>
