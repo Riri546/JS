@@ -5,7 +5,10 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <h2 class="product__subtitle">{{ product.price_name }}</h2>
+                <div>
+                    <h2 class="product__subtitle">{{ product.price_name }}</h2>
+                    <p>{{ product.price_sum }}</p>
+                </div>
                 <div class="product__subinfo">
                     <h2 class="product__subtitle"> {{ product.status_name }}</h2>
                     <p class="product__text">{{ product.status_value === "true" ? product.available : product.available_none
@@ -27,7 +30,7 @@ export default {
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price_name: 'Price:',
-                price_sum: '',
+                price_sum: 99.99,
                 status_name: 'Status:',
                 status_value: 'true',
                 available: 'Available',
@@ -35,14 +38,12 @@ export default {
             }]
         };
     },
-    // computed: {
-    //    addPrice(sum) {
-    //         this.price_sum = sum;
-    //         sum = 99.99;
-    //         sum += '$'
-    //         return this.price_sum.push
-    //     }
-    // },
+    computed: {
+        formattedPrice() {
+            // this.products.price_sum += '$';
+            return '$' + this.products.price_sum
+        }
+    },
 
     // methods: {
     //     vailabilityStatus() {
@@ -85,7 +86,7 @@ export default {
     line-height: 125%;
     /* 81.25px */
     max-width: 434px;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
 }
 
 .product__subtitle {
@@ -97,7 +98,7 @@ export default {
     line-height: 125%;
     /* 81.25px */
     max-width: 434px;
-    padding-bottom: 18px;
+    padding-bottom: 10px;
 }
 
 .product__text {
