@@ -1,73 +1,71 @@
 <template>
-        <div class="top">
-            <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
-                <div class="subhead__img">
-                    <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" :alt="subhead.alt">
-                    <span class="subhead__section">
-                        <h1 class="subhead__section_title">{{ subhead.title }}</h1>
-                        <div>
-                            <a class="subhead__link" :href="subhead.linl_htef_one">{{ subhead.link_name_one }}</a> / <a
-                                class="subhead__link" :href="subhead.linl_htef_two">{{ subhead.link_name_two }}</a>
-                        </div>
-                    </span>
-                </div>
-            </header>
-            <section class="latestPost" v-for="latestPost in latestPosts" :key="latestPost.id">
-                <h1 class="latestPost__title">{{ latestPost.title }}</h1>
-                <article class="latestPost__post">
-                    <img class="latestPost__img" src="../assets/img/blog/post_img.jpg" :alt="latestPost.alt">
-                    <div class="latestPost__content">
-                        <h2 class="latestPost__subtitle">{{ latestPost.subtitle }}</h2>
-                        <p class="latestPost__text">{{ latestPost.text }}</p>
-                        <div class="news__date__link">
-                            <div class="date">
-                                <p class="date__text">{{ latestPost.date }}</p>
-                            </div>
-                            <div class="link">
-                                <a :href="latestPost.link_href" class="catalog__link"><svg
-                                        xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                        fill="none">
-                                        <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
-                                        <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg></a>
-                            </div>
-                        </div>
+    <div class="top">
+        <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
+            <div class="subhead__img">
+                <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" :alt="subhead.alt">
+                <span class="subhead__section">
+                    <h1 class="subhead__section_title">{{ subhead.title }}</h1>
+                    <div>
+                        <a class="subhead__link" :href="subhead.linl_htef_one">{{ subhead.link_name_one }}</a> / <a
+                            class="subhead__link" :href="subhead.linl_htef_two">{{ subhead.link_name_two }}</a>
                     </div>
-                </article>
-            </section>
-            <section class="blog">
-                <h2 class="blog__header">Articles & News</h2>
-                <div class="blog__items" id="cardbox-container">
-                    <div class="blog__item" v-for="article in articlesData" :key="article.id">
-                        <img src="../assets/img/Image_blog1.svg" :alt="article.alt" class="blog__item_img">
-                        <h3 class="blog__item_text">{{ article.title }}</h3>
-                        <div class="blog__item_content">
-                            <p class="blog__item_content-date">{{ article.date }}</p>
-                            <a href="blog.html" class="blog__item_content-elem">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53"
-                                    fill="none">
-                                    <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
-                                    <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36"
-                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </a>
-                        </div>
-                        <a href="blogDitails.html" class="blog__item_tag">{{ article.button }}</a>
-                    </div>
-                </div>
-            </section>
-            <div class="articles__pagination">
-                <a href="#" class="articles__pagination-item">01</a>
-                <a href="#" class="articles__pagination-item">02</a>
-                <a href="#" class="articles__pagination-item">03</a>
-                <a href="#" class="articles__pagination-item"><svg class="articles__pagination-svg" width="9" height="16"
-                        viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.55714 15L7.5 8.31429L1.55714 1.62857" stroke="#292F36" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg></a>
+                </span>
             </div>
+        </header>
+        <section class="latestPost" v-for="latestPost in latestPosts" :key="latestPost.id">
+            <h1 class="latestPost__title">{{ latestPost.title }}</h1>
+            <article class="latestPost__post">
+                <img class="latestPost__img" src="../assets/img/blog/post_img.jpg" :alt="latestPost.alt">
+                <div class="latestPost__content">
+                    <h2 class="latestPost__subtitle">{{ latestPost.subtitle }}</h2>
+                    <p class="latestPost__text">{{ latestPost.text }}</p>
+                    <div class="news__date__link">
+                        <div class="date">
+                            <p class="date__text">{{ latestPost.date }}</p>
+                        </div>
+                        <div class="link">
+                            <a :href="latestPost.link_href" class="catalog__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="70" height="70" viewBox="0 0 70 70" fill="none">
+                                    <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                    <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section class="blog">
+            <h2 class="blog__header">Articles & News</h2>
+            <div class="blog__items" id="cardbox-container">
+                <div class="blog__item" v-for="article in articlesData" :key="article.id">
+                    <img src="../assets/img/Image_blog1.svg" :alt="article.alt" class="blog__item_img">
+                    <h3 class="blog__item_text">{{ article.title }}</h3>
+                    <div class="blog__item_content">
+                        <p class="blog__item_content-date">{{ article.date }}</p>
+                        <a href="blog.html" class="blog__item_content-elem">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="53" viewBox="0 0 52 53" fill="none">
+                                <circle cx="26" cy="26.267" r="26" fill="#F4F0EC" />
+                                <path d="M23.7714 32.9527L29.7143 26.267L23.7714 19.5813" stroke="#292F36" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </div>
+                    <a href="blogDitails.html" class="blog__item_tag">{{ article.button }}</a>
+                </div>
+            </div>
+        </section>
+        <div class="articles__pagination">
+            <a href="#" class="articles__pagination-item">01</a>
+            <a href="#" class="articles__pagination-item">02</a>
+            <a href="#" class="articles__pagination-item">03</a>
+            <a href="#" class="articles__pagination-item"><svg class="articles__pagination-svg" width="9" height="16"
+                    viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.55714 15L7.5 8.31429L1.55714 1.62857" stroke="#292F36" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
         </div>
+    </div>
 </template>
 
 <script>
@@ -429,90 +427,5 @@ export default {
     grid-template-columns: repeat(3, 340px);
     justify-content: space-between;
     padding-bottom: 134px;
-}
-
-.foot__logo {
-    padding-bottom: 18px;
-}
-
-.foot__text {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    /* 33px */
-    letter-spacing: 0.22px;
-    padding-bottom: 31px;
-    letter-spacing: 0.22px;
-    max-width: 393px;
-}
-
-.foot__navigation {
-    padding-left: 80px;
-}
-
-.foot__social {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 54px;
-}
-
-.foot__social_icon {
-    transition: 0.7s;
-}
-
-.foot__social_icon:hover {
-    fill: #CDA274;
-    ;
-}
-
-.foot__title {
-    color: #292F36;
-    font-family: DM Serif Display;
-    font-size: 25px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    /* 31.25px */
-    padding-bottom: 9px;
-}
-
-.foot__link {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 300%;
-    /* 66px */
-    letter-spacing: 0.22px;
-    transition: 0.7s;
-}
-
-.foot__link:hover {
-    color: #CDA274;
-}
-
-
-.foot__contact {
-    padding-left: 90px;
-}
-
-.foot__info {
-    color: #4D5053;
-    font-family: Jost;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    /* 33px */
-    letter-spacing: 0.22px;
-    padding-top: 17px;
-    letter-spacing: 0.22px;
-    max-width: 258px;
 }
 </style>
