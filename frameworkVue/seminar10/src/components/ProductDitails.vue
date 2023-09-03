@@ -7,9 +7,9 @@
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price }}</h2>
                 <div>
-                    <h2 class="product__subtitle color" v-if="vailabilityStatus = true">
+                    <h2 class="product__subtitle color" v-if="product.status = true">
                         {{ product.available }}</h2>
-                    <h2 v-if="vailabilityStatus = false" class="product__subtitle color__none">{{ product.available_none }}
+                    <h2 class="product__subtitle color__none" v-if="product.status = false">{{ product.available_none }}
                     </h2>
                 </div>
                 <!-- <input class="product__input" type="rad/io" checked > -->
@@ -28,21 +28,29 @@ export default {
                 alt: 'photo',
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
-                price: 'Price:',
+                price_name: 'Price:',
+                price_num: '',
                 status: '',
                 available: 'Available',
                 available_none: 'Out of stock'
             }]
         };
     },
+    computed: {
+        // a computed getter
+        publishedBooksMessage() {
+            // `this` points to the vm instance
+            return this.author.books.length > 0 ? 'Yes' : 'No'
+        }
+    },
 
     methods: {
         vailabilityStatus() {
-            this.status = false;
+            this.status.push = false;
 
         }
     },
-};
+}.mount('#app');
 </script>
 
 <style lang="css" scoped>
