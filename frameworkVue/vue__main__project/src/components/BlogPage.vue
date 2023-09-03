@@ -101,57 +101,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-body {
-    font-family: 'Jost', sans-serif;
-    font-family: 'DM Serif Display', serif;
-}
-
-a {
-    text-decoration: none;
-}
-
-.head {
-    padding-left: calc(50% - 1200px/2);
-    padding-right: calc(50% - 1200px/2);
-    padding-top: 53px;
-    padding-bottom: 65px;
-}
-
-.head__navigation {
-    font-family: 'Jost', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.head__icon {
-    display: flex;
-    gap: 40px;
-}
-
-.head__icon_link {
-    color: #292F36;
-    text-align: center;
-    font-family: Jost;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 125%;
-    /* 25px */
-    transition: 0.7s;
-}
-
-.head__icon_link:hover {
-    color: #CDA274;
-}
-
 .subhead__img {
     position: relative;
     display: inline-block;
