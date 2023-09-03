@@ -4,8 +4,8 @@
             <img src="../assets/dresser.jpg" alt="photo">
             <H1>Lorem ipsum dolor sit amet.</H1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!</p>
-            <p>Цена</p>
-            <p>Статус доступности:</p>
+            <p>Price:</p>
+            <p>Availability status:</p>
         </div>
     </div>
 </template>
