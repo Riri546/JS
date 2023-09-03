@@ -6,12 +6,11 @@
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price }}</h2>
-                <template v-if="this.status = true">
-                    <p>{{ product.available }}</p>
-                </template>
-                <template v-else="this.status = false">
-                    <p>{{ product.available_none }}</p>
-                </template>
+                <div>
+                    <h2 class="product__subtitle color" v-if="vailabilityStatus = true">
+                        {{ product.available }}</h2>
+                    <h2 v-else class="product__subtitle color__none">{{ product.available_none }}</h2>
+                </div>
                 <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
         </div>
@@ -37,8 +36,9 @@ export default {
     },
 
     methods: {
-        фvailabilityStatus() {
+        vailabilityStatus() {
             this.status = true;
+
         }
     },
 };
@@ -96,5 +96,13 @@ export default {
     padding-bottom: 21px;
     letter-spacing: 0.22px;
     max-width: 434px;
+}
+
+.color {
+    color: green;
+}
+
+.color__none {
+    color: red;
 }
 </style>
