@@ -9,7 +9,8 @@
                 <div>
                     <h2 class="product__subtitle color" v-if="vailabilityStatus = true">
                         {{ product.available }}</h2>
-                    <h2 v-else class="product__subtitle color__none">{{ product.available_none }}</h2>
+                    <h2 v-if="vailabilityStatus = false" class="product__subtitle color__none">{{ product.available_none }}
+                    </h2>
                 </div>
                 <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
@@ -37,7 +38,7 @@ export default {
 
     methods: {
         vailabilityStatus() {
-            this.status = true;
+            this.status = false;
 
         }
     },
