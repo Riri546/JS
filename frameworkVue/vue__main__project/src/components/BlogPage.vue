@@ -1,5 +1,4 @@
 <template>
-    <div>
         <div class="top">
             <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
                 <div class="subhead__img">
@@ -120,7 +119,6 @@
                 </sectionc>
             </footer>
         </div>
-    </div>
 </template>
 
 <script>
