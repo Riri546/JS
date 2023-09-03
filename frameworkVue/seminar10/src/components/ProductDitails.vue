@@ -7,12 +7,10 @@
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price_name }}</h2>
                 <div>
-                    <h2 class="product__subtitle">
-                        {{ product.status === "true" ? product.available : product.available_none }}</h2>
-                    <!-- <h2 class="product__subtitle color__none" v-else>{{ product.available_none
-                    }} </h2> -->
+                    <h2 class="product__subtitle"> {{ product.status_name }}</h2>
+                    <p class="product__text">{{ product.status_value === "true" ? product.available : product.available_none
+                    }}</p>
                 </div>
-                <!-- <input class="product__input" type="rad/io" checked > -->
             </div>
         </div>
     </div>
@@ -30,7 +28,8 @@ export default {
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price_name: 'Price:',
                 price_sum: '',
-                status: 'false',
+                status_name: 'Status:',
+                status_value: 'true',
                 available: 'Available',
                 available_none: 'Out of stock'
             }]
