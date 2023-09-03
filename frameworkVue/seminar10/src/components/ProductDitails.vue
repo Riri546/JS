@@ -3,11 +3,9 @@
         <div v-for="item in items" :key="item.id">
             <img src="../assets/dresser.jpg" alt="photo">
             <H1></H1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro
-                quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda,
-                blanditiis exercitationem illum!</p>
-            <p>Price:</p>
-            <p>Availability status:</p>
+            <p></p>
+            <p></p>
+            <p></p>
         </div>
     </div>
 </template>
@@ -20,6 +18,9 @@ export default {
         return {
             products: [{
                 name: 'Lorem ipsum dolor sit amet.',
+                about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
+                price: 'Price:',
+                status: 'Availability status:'
             }]
         };
     },
