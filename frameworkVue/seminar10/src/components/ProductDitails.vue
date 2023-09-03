@@ -5,7 +5,7 @@
             <h1 class="product__title">{{ product.name }}</h1>
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
-                <h2 class="product__subtitle">{{ product.price_name }}{{ product.price_num }} </h2>
+                <h2 class="product__subtitle">{{ product.price_name }}{{ product.price_sum }} </h2>
                 <div>
                     <h2 class="product__subtitle color" v-if="product.status = true">
                         {{ product.available }}</h2>
@@ -29,7 +29,7 @@ export default {
                 name: 'Lorem ipsum dolor sit amet.',
                 about: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!',
                 price_name: 'Price:',
-                price_num: '',
+                price_sum: '',
                 status: '',
                 available: 'Available',
                 available_none: 'Out of stock'
@@ -37,9 +37,11 @@ export default {
         };
     },
     computed: {
-       addPrice() {
-            // `this` points to the vm instance
-            return this.author.books.length > 0 ? 'Yes' : 'No'
+       addPrice(sum) {
+            this.price_sum = sum;
+            sum = 99.99;
+            sum += '$'
+            return sum
         }
     },
 
