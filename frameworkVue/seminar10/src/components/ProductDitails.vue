@@ -6,7 +6,7 @@
             <p class="product__text">{{ product.about }}</p>
             <div class="product__info">
                 <h2 class="product__subtitle">{{ product.price_name }}</h2>
-                <div>
+                <div class="product__subinfo">
                     <h2 class="product__subtitle"> {{ product.status_name }}</h2>
                     <p class="product__text">{{ product.status_value === "true" ? product.available : product.available_none
                     }}</p>
@@ -66,6 +66,14 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.product__subinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 15px;
 }
 
 .product__title {
