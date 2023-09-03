@@ -1,9 +1,11 @@
 <template>
     <div>
-        <div>
+        <div v-for="item in items" :key="item.id">
             <img src="../assets/dresser.jpg" alt="photo">
-            <H1>Lorem ipsum dolor sit amet.</H1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda, blanditiis exercitationem illum!</p>
+            <H1></H1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa expedita dicta enim molestiae, inventore porro
+                quae veniam architecto, repellendus quod dolores provident recusandae. Quam consectetur animi assumenda,
+                blanditiis exercitationem illum!</p>
             <p>Price:</p>
             <p>Availability status:</p>
         </div>
@@ -16,20 +18,20 @@ export default {
 
     data() {
         return {
-            
+            products: [{
+                name: 'Lorem ipsum dolor sit amet.',
+            }]
         };
     },
 
     mounted() {
-        
+
     },
 
     methods: {
-        
+
     },
 };
 </script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>
