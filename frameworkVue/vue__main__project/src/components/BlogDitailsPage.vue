@@ -1,5 +1,4 @@
 <template>
-    <div>
         <div class="top">
             <header class="subhead__img">
                 <img class="subhead__img_photo" src="../assets/img/blogDitails/subhead.jpg" alt="subhead img">
@@ -104,7 +103,6 @@
                 </sectionc>
             </footer>
         </div>
-    </div>
 </template>
 
 <script>
