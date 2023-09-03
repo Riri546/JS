@@ -6,7 +6,7 @@
 
 <script>
 export default {
-    name: 'JSProductDitailsPage',
+    name: 'ProductDitailsPage',
 
     data() {
         return {

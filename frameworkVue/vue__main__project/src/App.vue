@@ -9,6 +9,8 @@
     <CompHeader />
     <BlogDitailsPage />
     <CompFooter />
+    <CompHeader />
+    <ProductDitailsPage />
   </div>
 </template>
 
@@ -18,8 +20,7 @@ import CompFooter from './components/CompFooter.vue';
 import HomePage from './components/HomePage.vue'
 import BlogPage from './components/BlogPage.vue'
 import BlogDitailsPage from './components/BlogDitailsPage.vue'
-
-
+import ProductDitailsPage from './components/ProductDitailsPage.vue'
 
 export default {
   name: 'App',
@@ -47,5 +48,4 @@ body {
 a {
   text-decoration: none;
 }
-
 </style>
