@@ -37,4 +37,48 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.subhead__img {
+    position: relative;
+    display: inline-block;
+}
+
+.subhead__img_photo {
+    width: 100vw;
+}
+
+.subhead__section {
+    border-radius: 37px 37px 0px 0px;
+    background: #FFF;
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    width: 503px;
+    margin-left: 28%;
+    padding: 41px 78px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.subhead__section_title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 62.5px */
+}
+
+.subhead__link {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+}
+</style>
