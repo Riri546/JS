@@ -10,12 +10,8 @@
     <BlogDitailsPage />
     <CompFooter />
     <CompHeader />
-    <ProductDitailsPage />
-    <CompFooter />
-    <CompHeader />
     <ProjectPage />
     <CompFooter />
-
   </div>
 </template>
 
@@ -26,7 +22,6 @@ import HomePage from './components/HomePage.vue';
 import BlogPage from './components/BlogPage.vue';
 import BlogDitailsPage from './components/BlogDitailsPage.vue';
 import ProjectPage from './components/ProjectPage.vue';
-import ProductDitailsPage from './components/ProductDitailsPage.vue';
 
 export default {
   name: 'App',
@@ -35,7 +30,6 @@ export default {
     HomePage,
     BlogPage,
     BlogDitailsPage,
-    ProductDitailsPage,
     ProjectPage,
     CompFooter
   }
