@@ -11,7 +11,11 @@
     <CompFooter />
     <CompHeader />
     <ProductDitailsPage />
+    <CompFooter />
+    <CompHeader />
     <ProjectPage />
+    <CompFooter />
+
   </div>
 </template>
 
