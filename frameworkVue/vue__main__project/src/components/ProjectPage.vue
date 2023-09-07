@@ -345,9 +345,7 @@ export default {
 }
 
 .articles__pagination {
-    padding-left: calc(50% - 1200px/2);
-    padding-right: calc(50% - 1200px/2);
-    margin-bottom: 200px;
+    padding: 61px calc(50% - 1200px/2) 200px calc(50% - 1200px/2);
     display: flex;
     justify-content: center;
     gap: 20px;
