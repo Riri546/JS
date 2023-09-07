@@ -265,7 +265,8 @@ export default {
     justify-content: center;
     align-items: center;
     border: 1px solid #CDA274;
-    min-width: 880px;
+    border-radius: 20px;
+    min-width: 700px;
     min-height: 75px;
 }
 
@@ -281,6 +282,16 @@ export default {
     letter-spacing: 0.36px;
 }
 
+.navigation__text:hover{
+    height: 75px;
+    width: 180px;
+    border-radius: 20px;
+    background: #CDA274;
+}
+
+.navigation__link:hover{
+    color: #FFF;
+}
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
