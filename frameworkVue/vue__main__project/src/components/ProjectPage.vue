@@ -252,6 +252,13 @@ export default {
     padding: 61px calc(50% - 1200px/2);
 }
 
+/* .project__catalog {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+} */
+
 .project__about {
     padding-top: 28px;
     display: flex;
