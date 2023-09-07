@@ -29,7 +29,7 @@
             </div>
         </section>
         <section class="project">
-            <article class="project__catalog">
+            <article class="project__catalog item1">
                 <img class="project__img" src="../assets/img/project/Photo (1).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item2">
                 <img class="project__img" src="../assets/img/project/Photo (2).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -67,7 +67,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item3">
                 <img class="project__img" src="../assets/img/project/Photo (3).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item4">
                 <img class="project__img" src="../assets/img/project/Photo (4).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item5">
                 <img class="project__img" src="../assets/img/project/Photo (5).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item6">
                 <img class="project__img" src="../assets/img/project/Photo (6).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -143,7 +143,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item7">
                 <img class="project__img" src="../assets/img/project/Photo (7).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -162,7 +162,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog">
+            <article class="project__catalog item8">
                 <img class="project__img" src="../assets/img/project/Photo (8).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -309,7 +309,7 @@ export default {
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
-    grid-template-rows: 650px;
+    grid-template-rows: repeat(5, 650px);
     gap: 33px;
     max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
@@ -343,6 +343,15 @@ export default {
     line-height: 150%;
     /* 33px */
     letter-spacing: 0.22px;
+}
+
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item5{
+    grid-row-end: 5;
 }
 
 .articles__pagination {
