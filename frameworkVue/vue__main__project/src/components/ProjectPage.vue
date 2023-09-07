@@ -12,12 +12,20 @@
                 </span>
             </div>
         </header>
-        <div>
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
-        </div>
+        <section class="navigation">
+            <nav>
+                <a href="#">Bathroom</a>
+            </nav>
+            <nav>
+                <a href="#">Bed Room</a>
+            </nav>
+            <nav>
+                <a href="#">Kitchan</a>
+            </nav>
+            <nav>
+                <a href="#">Living Area</a>
+            </nav>
+        </section>
         <section class="project">
             <article class="project__catalog">
                 <img class="project__img" src="../assets/img/project/Photo (1).png" alt="photo">
@@ -172,8 +180,6 @@
                 </div>
             </article>
         </section>
-
-
     </div>
 </template>
 
@@ -185,7 +191,6 @@ export default {
         return {
             subheader: [
                 { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
-
         };
     },
 
@@ -251,13 +256,6 @@ export default {
     max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
 }
-
-/* .project__catalog {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .project__about {
     padding-top: 28px;
