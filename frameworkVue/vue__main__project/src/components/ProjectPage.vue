@@ -13,18 +13,20 @@
             </div>
         </header>
         <section class="navigation">
-            <nav class="navigation__text">
-                <a class="navigation__link" href="#">Bathroom</a>
-            </nav>
-            <nav class="navigation__text">
-                <a class="navigation__link" href="#">Bed Room</a>
-            </nav>
-            <nav class="navigation__text">
-                <a class="navigation__link" href="#">Kitchan</a>
-            </nav>
-            <nav class="navigation__text">
-                <a class="navigation__link" href="#">Living Area</a>
-            </nav>
+            <div>
+                <nav class="navigation__text">
+                    <a class="navigation__link" href="#">Bathroom</a>
+                </nav>
+                <nav class="navigation__text">
+                    <a class="navigation__link" href="#">Bed Room</a>
+                </nav>
+                <nav class="navigation__text">
+                    <a class="navigation__link" href="#">Kitchan</a>
+                </nav>
+                <nav class="navigation__text">
+                    <a class="navigation__link" href="#">Living Area</a>
+                </nav>
+            </div>
         </section>
         <section class="project">
             <article class="project__catalog">
@@ -253,6 +255,9 @@ export default {
     padding-top: 200px;
     padding-left: calc(50% - 1200px/2);
     padding-right: calc(50% - 1200px/2);
+    display: flex;
+    gap: 96px;
+    justify-content: center;
 }
 
 .navigation__link {
