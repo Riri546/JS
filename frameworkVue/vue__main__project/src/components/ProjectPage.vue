@@ -134,10 +134,10 @@
                 </div>
             </article>
             <article class="project__catalog">
-                <img class="project__img" src="../assets/img/project/Photo (4).png" alt="photo">
+                <img class="project__img" src="../assets/img/project/Photo (7).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Modern Bedroom</h1>
+                        <h1 class="project__title">Modern Medroom</h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -153,7 +153,7 @@
                 </div>
             </article>
             <article class="project__catalog">
-                <img class="project__img" src="../assets/img/project/Photo (4).png" alt="photo">
+                <img class="project__img" src="../assets/img/project/Photo (8).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
                         <h1 class="project__title">Modern Bedroom</h1>
