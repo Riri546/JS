@@ -25,7 +25,64 @@
                     <div class="project__text">
                         <h1 class="project__title">Minimal Bedroom</h1>
                         <a class="project__link" href="#">Decor</a>
-                        <span class="project__link">/</span>
+                        <span class="project__link"> / </span>
+                        <a class="project__link" href="#">Artchitectur</a>
+                    </div>
+                    <div>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                fill="none">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+            <article class="project__catalog">
+                <img class="project__img" src="../assets/img/project/Photo (2).png" alt="photo">
+                <div class="project__about">
+                    <div class="project__text">
+                        <h1 class="project__title">Minimal Bedroom</h1>
+                        <a class="project__link" href="#">Decor</a>
+                        <span class="project__link"> / </span>
+                        <a class="project__link" href="#">Artchitectur</a>
+                    </div>
+                    <div>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                fill="none">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+            <article class="project__catalog">
+                <img class="project__img" src="../assets/img/project/Photo (3).png" alt="photo">
+                <div class="project__about">
+                    <div class="project__text">
+                        <h1 class="project__title">Classic Minimal Bedroom</h1>
+                        <a class="project__link" href="#">Decor</a>
+                        <span class="project__link"> / </span>
+                        <a class="project__link" href="#">Artchitectur</a>
+                    </div>
+                    <div>
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
+                                fill="none">
+                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></a>
+                    </div>
+                </div>
+            </article>
+            <article class="project__catalog">
+                <img class="project__img" src="../assets/img/project/Photo (4).png" alt="photo">
+                <div class="project__about">
+                    <div class="project__text">
+                        <h1 class="project__title">Modern Bedroom</h1>
+                        <a class="project__link" href="#">Decor</a>
+                        <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
@@ -39,6 +96,8 @@
                 </div>
             </article>
         </section>
+
+
     </div>
 </template>
 
@@ -110,10 +169,12 @@ export default {
 }
 
 .project {
+    max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
 }
 
 .project__about {
+    padding-top: 28px;
     display: flex;
     align-items: center;
     flex-direction: row;
