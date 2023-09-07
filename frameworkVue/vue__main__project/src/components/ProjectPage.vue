@@ -245,6 +245,9 @@ export default {
 }
 
 .project {
+    display: grid;
+    grid-template-columns: repeat(2, 586px);
+    gap: 33px;
     max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
 }
