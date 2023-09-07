@@ -249,6 +249,12 @@ export default {
     letter-spacing: 0.22px;
 }
 
+.navigation{
+    padding-top: 200px;
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+}
+
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
