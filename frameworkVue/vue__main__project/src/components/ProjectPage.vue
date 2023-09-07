@@ -307,16 +307,6 @@ export default {
 }
 
 .project {
-    width: 1300px;
-    display: flex;
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 586px); */
-    gap: 33px;
-    /* max-width: 590px; */
-    padding: 61px calc(50% - 1200px/2);
-    flex-direction: row;
-    align-content: flex-start;
-    flex-wrap: wrap;
     /* display: grid;
     grid-template-columns: repeat(2, 586px);
     gap: 33px;
