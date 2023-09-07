@@ -12,6 +12,13 @@
                 </span>
             </div>
         </header>
+        <div>
+            <nav></nav>
+            <nav></nav>
+            <nav></nav>
+            <nav></nav>
+        </div>
+        
     </div>
 </template>
 
