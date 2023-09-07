@@ -13,7 +13,7 @@
             </div>
         </header>
         <section class="navigation">
-            <div>
+            <div class="navigation__border">
                 <nav class="navigation__text">
                     <a class="navigation__link" href="#">Bathroom</a>
                 </nav>
@@ -256,8 +256,17 @@ export default {
     padding-left: calc(50% - 1200px/2);
     padding-right: calc(50% - 1200px/2);
     display: flex;
+    justify-content: center;
+}
+
+.navigation__border {
+    display: flex;
     gap: 96px;
     justify-content: center;
+    align-items: center;
+    border: 1px solid #CDA274;
+    max-width: 880px;
+    max-height: 75px;
 }
 
 .navigation__link {
