@@ -24,9 +24,11 @@
                 <div class="project__about">
                     <h1 class="project__title">Minimal Bedroom</h1>
                     <div class="project__text">
-                        <a class="project__link" href="#">Decor</a>
-                        <span class="project__link">/</span>
-                        <a class="project__link" href="#">Artchitecture</a>
+                        <div>
+                            <a class="project__link" href="#">Decor</a>
+                            <span class="project__link">/</span>
+                            <a class="project__link" href="#">Artchitecture</a>
+                        </div>
                         <div>
                             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                     fill="none">
