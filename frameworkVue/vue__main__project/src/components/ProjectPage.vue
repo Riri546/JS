@@ -123,4 +123,15 @@ export default {
     /* 31.25px */
     letter-spacing: 0.5px;
 }
+
+.project__link {
+    color: #4D5053;
+    font-family: Jost;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 33px */
+    letter-spacing: 0.22px;
+}
 </style>
