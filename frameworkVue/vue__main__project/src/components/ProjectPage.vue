@@ -283,6 +283,7 @@ export default {
 }
 
 .navigation__text:hover{
+    /* padding: 26px 66px; */
     height: 75px;
     width: 180px;
     border-radius: 20px;
@@ -291,6 +292,8 @@ export default {
 
 .navigation__link:hover{
     color: #FFF;
+    padding: 26px 66px;
+    
 }
 .project {
     display: grid;
