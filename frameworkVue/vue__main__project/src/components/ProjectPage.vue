@@ -13,17 +13,17 @@
             </div>
         </header>
         <section class="navigation">
-            <nav>
-                <a href="#">Bathroom</a>
+            <nav class="navigation__text">
+                <a class="navigation__link" href="#">Bathroom</a>
             </nav>
-            <nav>
-                <a href="#">Bed Room</a>
+            <nav class="navigation__text">
+                <a class="navigation__link" href="#">Bed Room</a>
             </nav>
-            <nav>
-                <a href="#">Kitchan</a>
+            <nav class="navigation__text">
+                <a class="navigation__link" href="#">Kitchan</a>
             </nav>
-            <nav>
-                <a href="#">Living Area</a>
+            <nav class="navigation__text">
+                <a class="navigation__link" href="#">Living Area</a>
             </nav>
         </section>
         <section class="project">
@@ -249,10 +249,22 @@ export default {
     letter-spacing: 0.22px;
 }
 
-.navigation{
+.navigation {
     padding-top: 200px;
     padding-left: calc(50% - 1200px/2);
     padding-right: calc(50% - 1200px/2);
+}
+
+.navigation__link {
+    color: #292F36;
+    text-align: center;
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    /* 22.5px */
+    letter-spacing: 0.36px;
 }
 
 .project {
