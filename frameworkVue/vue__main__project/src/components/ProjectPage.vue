@@ -182,6 +182,16 @@
                 </div>
             </article>
         </section>
+        <div class="articles__pagination">
+            <a href="#" class="articles__pagination-item">01</a>
+            <a href="#" class="articles__pagination-item">02</a>
+            <a href="#" class="articles__pagination-item">03</a>
+            <a href="#" class="articles__pagination-item"><svg class="articles__pagination-svg" width="9" height="16"
+                    viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.55714 15L7.5 8.31429L1.55714 1.62857" stroke="#292F36" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg></a>
+        </div>
     </div>
 </template>
 
@@ -282,7 +292,7 @@ export default {
     letter-spacing: 0.36px;
 }
 
-.navigation__text:hover{
+.navigation__text:hover {
     /* padding: 26px 66px; */
     height: 75px;
     width: 180px;
@@ -290,11 +300,12 @@ export default {
     background: #CDA274;
 }
 
-.navigation__link:hover{
+.navigation__link:hover {
     color: #FFF;
     padding: 26px 66px;
-    
+
 }
+
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
@@ -331,5 +342,41 @@ export default {
     line-height: 150%;
     /* 33px */
     letter-spacing: 0.22px;
+}
+
+.articles__pagination {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.articles__pagination-item {
+    padding: 14px 17px;
+    border: 1px solid #CDA274;
+    box-sizing: border-box;
+    border-radius: 100%;
+    color: #292F36;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: capitalize;
+    transition: all 0.7s;
+}
+
+.articles__pagination-item:hover {
+    background: #F4F0EC;
+    border: 1px solid #F4F0EC;
+}
+
+.articles__pagination-svg {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 </style>
