@@ -265,8 +265,8 @@ export default {
     justify-content: center;
     align-items: center;
     border: 1px solid #CDA274;
-    max-width: 880px;
-    max-height: 75px;
+    min-width: 880px;
+    min-height: 75px;
 }
 
 .navigation__link {
