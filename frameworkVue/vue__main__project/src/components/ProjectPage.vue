@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </article>
-            <article class="project__catalog item2">
+            <!-- <article class="project__catalog item2">
                 <img class="project__img" src="../assets/img/project/Photo (2).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -57,12 +57,12 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item3">
+            </article> -->
+            <!-- <article class="project__catalog item3">
                 <img class="project__img" src="../assets/img/project/Photo (3).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Classic Minimal Bedroom</h1>
+                        <h1 class="project__title"></h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -76,12 +76,12 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item4">
+            </article> -->
+            <!-- <article class="project__catalog item4">
                 <img class="project__img" src="../assets/img/project/Photo (4).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Modern Bedroom</h1>
+                        <h1 class="project__title"></h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -95,12 +95,12 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item5">
+            </article> -->
+            <!-- <article class="project__catalog item5">
                 <img class="project__img" src="../assets/img/project/Photo (5).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Minimal Bedroom table</h1>
+                        <h1 class="project__title"></h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -114,12 +114,12 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item6">
+            </article> -->
+            <!-- <article class="project__catalog item6">
                 <img class="project__img" src="../assets/img/project/Photo (6).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">System Table</h1>
+                        <h1 class="project__title"></h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -133,8 +133,8 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item7">
+            </article> -->
+            <!-- <article class="project__catalog item7">
                 <img class="project__img" src="../assets/img/project/Photo (7).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
@@ -152,12 +152,12 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
-            <article class="project__catalog item8">
+            </article> -->
+            <!-- <article class="project__catalog item8">
                 <img class="project__img" src="../assets/img/project/Photo (8).png" alt="photo">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Modern Bedroom</h1>
+                        <h1 class="project__title"></h1>
                         <a class="project__link" href="#">Decor</a>
                         <span class="project__link"> / </span>
                         <a class="project__link" href="#">Artchitectur</a>
@@ -171,7 +171,7 @@
                             </svg></a>
                     </div>
                 </div>
-            </article>
+            </article> -->
         </section>
         <div class="articles__pagination">
             <a href="#" class="articles__pagination-item">01</a>
@@ -221,7 +221,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (3).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'Classic Minimal Bedroom',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
@@ -231,7 +231,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (4).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'Modern Bedroom',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
@@ -241,7 +241,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (5).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'Minimal Bedroom table',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
@@ -251,7 +251,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (6).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'System Table',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
@@ -261,7 +261,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (7).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'Modern Medroom',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
@@ -271,7 +271,7 @@ export default {
                     card_id: "bedroom",
                     src: require('../assets/img/project/Photo (8).png'),
                     alt: 'photo',
-                    title: 'Minimal Bedroom',
+                    title: 'Modern Bedroom',
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
