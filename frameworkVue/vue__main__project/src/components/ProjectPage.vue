@@ -14,11 +14,16 @@
         </header>
         <section class="navigation">
             <div class="navigation__border">
-                <nav class="navigation__text" >
-                    <!-- v-for="nav in navigations" :key="nav" -->
-                    <Button class="project__buttons_item" v-for="item in buttons" :text="item" :key="item.id"
-                        @click="projectActive" />
-                    <!-- <a class="navigation__link" href="#">{{ nav }}</a> -->
+                <nav class="navigation__text" v-for="nav in navigations" :key="nav">
+                    <a class="navigation__link" href="#">{{ nav }}</a>
+                    <!-- < a  href="#">{{ nav }}</a> -->
+                    <!--  -->
+                    <!-- <Button class="project__buttons_item" v-for="item in buttons" :text="item" :key="item.id"
+                        @click="projectActive" /> -->
+                    <!-- <div class="project__buttons_item" v-for="item in buttons" :text="item" :key="item.id" @click="projectActive > {{ item.name }}</div> -->
+                    
+                    <!-- <div class="project__buttons_item" v-for="item in buttons" :text="item" :key="item.id">{{ text.name }}</div> -->
+
                 </nav>
             </div>
         </section>
@@ -57,10 +62,10 @@
 </template>
 
 <script>
-import Button from '@/components/Button.vue';
+// import Button from '@/components/Button.vue';
 
 export default {
-    name: 'JSProjectPage',
+    name: 'ProjectPage',
 
     data() {
         return {

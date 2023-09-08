@@ -1,8 +1,5 @@
-<template>
+<!-- <template>
     <div class="project__buttons_item">{{ text.name }}</div>
-    <!-- <div class="project__buttons_item">
-        <slot />
-    </div> -->
 </template>
 
 <script>
@@ -43,4 +40,4 @@ export default {
 
     }
 }
-</style>
+</style> -->
