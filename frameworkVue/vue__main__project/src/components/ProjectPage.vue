@@ -19,8 +19,8 @@
                 </nav>
             </div>
         </section>
-        <section class="project" v-for="project in projects" :key="project">
-            <article class="project__catalog item1">
+        <section class="project">
+            <article v-for="project in projects" :key="project" :class="project.class">
                 <img class="project__img" :src="project.src" :alt="project.alt">
                 <div class="project__about">
                     <div class="project__text">
@@ -205,6 +205,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item1"
                 },
                 {
                     id: "product-card2",
@@ -215,6 +216,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item2"
                 },
                 {
                     id: "product-card3",
@@ -225,6 +227,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item3"
                 },
                 {
                     id: "product-card4",
@@ -235,6 +238,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item4"
                 },
                 {
                     id: "product-card5",
@@ -245,6 +249,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item5"
                 },
                 {
                     id: "product-card6",
@@ -255,6 +260,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item6"
                 },
                 {
                     id: "product-card7",
@@ -265,6 +271,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item7"
                 },
                 {
                     id: "product-card8",
@@ -275,6 +282,7 @@ export default {
                     link_name: 'Decor',
                     span: ' / ',
                     link_name2: 'Artchitectur',
+                    class: "project__catalog item8"
                 }
             ]
         };
