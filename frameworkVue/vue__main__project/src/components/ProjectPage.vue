@@ -14,8 +14,8 @@
         </header>
         <section class="navigation">
             <div class="navigation__border">
-                <nav class="navigation__text" v-for="nav in navigations" :key="nav">
-                    <button class="navigation__link">{{ nav }}</button>
+                <nav class="navigation__text" v-for="nav in buttons" :key="nav">
+                    <button @click="projectActive" class="navigation__link">{{ nav.name }}</button>
                 </nav>
             </div>
         </section>
@@ -256,6 +256,8 @@ export default {
 }
 
 .navigation__link {
+    border: none;
+    background: none;
     color: #292F36;
     text-align: center;
     font-family: Jost;
