@@ -63,7 +63,6 @@ export default {
         return {
             subheader: [
                 { src_img: require('../assets/img/blog/Image_laceholder.jpg'), alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
-            navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area'],
             buttons: [
                 {
                     id: "bathroom",
