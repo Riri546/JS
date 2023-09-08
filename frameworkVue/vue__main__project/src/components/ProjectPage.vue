@@ -12,10 +12,10 @@
                 </span>
             </div>
         </header>
-        <section class="navigation">
+        <section class="navigation" v-for="nav in navigations" :key="nav">
             <div class="navigation__border">
                 <nav class="navigation__text">
-                    <a class="navigation__link" href="#"></a>
+                    <a class="navigation__link" href="#">{{ nav }}</a>
                 </nav>
                 <!-- <nav class="navigation__text">
                     <a class="navigation__link" href="#">Bathroom</a>
@@ -206,7 +206,7 @@ export default {
         return {
             subheader: [
                 { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
-            navigation: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area']
+            navigations: [{ name: 'Bathroom', name: 'Bed Room', name: 'Kitchan', name: 'Living Area' }]
         };
     },
 
