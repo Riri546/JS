@@ -357,11 +357,16 @@ export default {
 
 .item3 {
     grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-end: 6;
+}
+
+.item4{
+    grid-row-start: 4;
+    grid-row-end: 6;
 }
 
 .item5 {
-    grid-row-end: 5;
+    /* grid-row-end: 5; */
 }
 
 .articles__pagination {
