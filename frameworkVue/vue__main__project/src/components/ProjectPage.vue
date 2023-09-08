@@ -355,6 +355,11 @@ export default {
     grid-row-end: 3;
 }
 
+.item3 {
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
 .item5 {
     grid-row-end: 5;
 }
