@@ -19,15 +19,15 @@
                 </nav>
             </div>
         </section>
-        <section class="project">
+        <section class="project" v-for="project in projects" :key="project">
             <article class="project__catalog item1">
-                <img class="project__img" src="../assets/img/project/Photo (1).png" alt="photo">
+                <img class="project__img" :src="project.src" :alt="project.alt">
                 <div class="project__about">
                     <div class="project__text">
-                        <h1 class="project__title">Minimal Bedroom</h1>
-                        <a class="project__link" href="#">Decor</a>
-                        <span class="project__link"> / </span>
-                        <a class="project__link" href="#">Artchitectur</a>
+                        <h1 class="project__title">{{ project.title }}</h1>
+                        <a class="project__link" href="#">{{ project.link_name }}</a>
+                        <span class="project__link">{{ project.span }}</span>
+                        <a class="project__link" href="#"></a>
                     </div>
                     <div>
                         <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
@@ -193,8 +193,18 @@ export default {
     data() {
         return {
             subheader: [
-                { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
-            navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area']
+                { src_img: require('../assets/img/blog/Image_laceholder.jpg'), alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
+            navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area'],
+            projects: [
+                {
+                    src: require('../assets/img/project/Photo (1).png'),
+                    alt: 'photo',
+                    title: 'Minimal Bedroom',
+                    link_name: 'Decor',
+                    span: ' / ',
+                    link_name2: 'Artchitectur',
+                }
+            ]
         };
     },
 
