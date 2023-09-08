@@ -175,10 +175,6 @@ export default {
         };
     },
 
-    mounted() {
-
-    },
-
     methods: {
         projectActive(e) {
             if (document.querySelector(".navigation__text-active") !== null) {
