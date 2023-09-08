@@ -285,7 +285,7 @@ export default {
     padding: 26px 66px;
 }
 
-.navigation__link-active{
+.navigation__link-active {
     color: #FFF;
     padding: 26px 66px;
     border-radius: 20px;
