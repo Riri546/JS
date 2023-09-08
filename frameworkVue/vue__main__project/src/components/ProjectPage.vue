@@ -14,8 +14,11 @@
         </header>
         <section class="navigation">
             <div class="navigation__border">
-                <nav class="navigation__text" v-for="nav in navigations" :key="nav">
-                    <a class="navigation__link" href="#">{{ nav }}</a>
+                <nav class="navigation__text" >
+                    <!-- v-for="nav in navigations" :key="nav" -->
+                    <Button class="project__buttons_item" v-for="item in buttons" :text="item" :key="item.id"
+                        @click="projectActive" />
+                    <!-- <a class="navigation__link" href="#">{{ nav }}</a> -->
                 </nav>
             </div>
         </section>
@@ -54,6 +57,8 @@
 </template>
 
 <script>
+import Button from '@/components/Button.vue';
+
 export default {
     name: 'JSProjectPage',
 
@@ -62,6 +67,24 @@ export default {
             subheader: [
                 { src_img: require('../assets/img/blog/Image_laceholder.jpg'), alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
             navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area'],
+            buttons: [
+                {
+                    id: "bathroom",
+                    name: "Bathroom"
+                },
+                {
+                    id: "bedroom",
+                    name: "Bed Room"
+                },
+                {
+                    id: "kitchan",
+                    name: "Kitchan"
+                },
+                {
+                    id: "livingroom",
+                    name: "Living Area"
+                }
+            ],
             projects: [
                 {
                     id: "product-card1",
@@ -160,7 +183,13 @@ export default {
     },
 
     methods: {
+        projectActive(e) {
+            if (document.querySelector(".navigation__text-active") !== null) {
+                document.querySelector(".navigation__text-active").classList.remove("navigation__text-active");
+            }
+            e.target.classList.add("navigation__text-active");
 
+        }
     },
 };
 </script>
