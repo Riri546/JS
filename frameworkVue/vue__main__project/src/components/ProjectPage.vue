@@ -41,7 +41,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -60,7 +60,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -79,7 +79,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -98,7 +98,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -117,7 +117,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -136,7 +136,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -155,7 +155,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -174,7 +174,7 @@
                     <div>
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
                                 fill="none">
-                                <circle cx="35" cy="35" r="35" fill="#F4F0EC" />
+                                <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
                             </svg></a>
@@ -350,7 +350,7 @@ export default {
 }
 
 .project__catalog:hover {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .item1 {
@@ -382,6 +382,19 @@ export default {
     grid-row-start: 6;
     grid-row-end: 8;
 }
+
+.catalog__link_color {
+  transition: 0.7s;
+}
+
+.catalog__link:hover {
+  stroke: #292F36;
+}
+
+.catalog__link_color:hover {
+  fill: #FFF;
+}
+
 
 .articles__pagination {
     padding: 61px calc(50% - 1200px/2) 200px calc(50% - 1200px/2);
