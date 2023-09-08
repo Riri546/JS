@@ -286,6 +286,7 @@ export default {
     line-height: 125%;
     /* 22.5px */
     letter-spacing: 0.36px;
+    transition: 1s;
 }
 
 .navigation__text:hover {
