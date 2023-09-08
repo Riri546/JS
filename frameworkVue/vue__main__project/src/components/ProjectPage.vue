@@ -309,7 +309,7 @@ export default {
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
-    grid-template-rows: repeat(6, 320px);
+    grid-template-rows: repeat(10, 320px);
     gap: 33px;
     max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
@@ -360,13 +360,19 @@ export default {
     grid-row-end: 6;
 }
 
-.item4{
+.item4 {
     grid-row-start: 4;
     grid-row-end: 6;
 }
 
 .item5 {
-    /* grid-row-end: 5; */
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.item6{
+    grid-row-start: 6;
+    grid-row-end: 8;
 }
 
 .articles__pagination {
