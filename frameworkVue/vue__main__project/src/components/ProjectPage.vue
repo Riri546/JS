@@ -180,8 +180,7 @@ export default {
                 document.querySelector(".navigation__link-active").classList.remove("navigation__link-active");
             }
             e.target.classList.add("navigation__link-active");
-
-        }
+        },
     },
 };
 </script>
@@ -284,6 +283,13 @@ export default {
 .navigation__link:hover {
     color: #FFF;
     padding: 26px 66px;
+}
+
+.navigation__link-active{
+    color: #FFF;
+    padding: 26px 66px;
+    border-radius: 20px;
+    background: #CDA274;
 }
 
 .project {
