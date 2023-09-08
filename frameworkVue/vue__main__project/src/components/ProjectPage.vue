@@ -12,23 +12,11 @@
                 </span>
             </div>
         </header>
-        <section class="navigation" v-for="nav in navigations" :key="nav">
+        <section class="navigation">
             <div class="navigation__border">
-                <nav class="navigation__text">
+                <nav class="navigation__text" v-for="nav in navigations" :key="nav">
                     <a class="navigation__link" href="#">{{ nav }}</a>
                 </nav>
-                <!-- <nav class="navigation__text">
-                    <a class="navigation__link" href="#">Bathroom</a>
-                </nav> -->
-                <!-- <nav class="navigation__text">
-                    <a class="navigation__link" href="#">Bed Room</a>
-                </nav>
-                <nav class="navigation__text">
-                    <a class="navigation__link" href="#">Kitchan</a>
-                </nav>
-                <nav class="navigation__text">
-                    <a class="navigation__link" href="#">Living Area</a>
-                </nav> -->
             </div>
         </section>
         <section class="project">
@@ -206,7 +194,7 @@ export default {
         return {
             subheader: [
                 { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
-            navigations: [{ name: 'Bathroom', name: 'Bed Room', name: 'Kitchan', name: 'Living Area' }]
+            navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area']
         };
     },
 
@@ -280,8 +268,12 @@ export default {
     align-items: center;
     border: 1px solid #CDA274;
     border-radius: 20px;
-    min-width: 700px;
+    min-width: 880px;
     min-height: 75px;
+}
+
+.navigation__text {
+    transition: 1s;
 }
 
 .navigation__link {
@@ -297,9 +289,13 @@ export default {
 }
 
 .navigation__text:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     /* padding: 26px 66px; */
     height: 75px;
-    width: 180px;
+    width: 230px;
     border-radius: 20px;
     background: #CDA274;
 }
@@ -307,7 +303,6 @@ export default {
 .navigation__link:hover {
     color: #FFF;
     padding: 26px 66px;
-
 }
 
 .project {
@@ -391,6 +386,12 @@ export default {
     transition: 0.7s;
 }
 
+.articles__pagination-item:hover {
+    background: #F4F0EC;
+    border: 1px solid #F4F0EC;
+}
+
+
 .catalog__link:hover {
     stroke: #292F36;
 }
@@ -421,11 +422,6 @@ export default {
     line-height: 150%;
     text-transform: capitalize;
     transition: all 0.7s;
-}
-
-.articles__pagination-item:hover {
-    background: #F4F0EC;
-    border: 1px solid #F4F0EC;
 }
 
 .articles__pagination-svg {
