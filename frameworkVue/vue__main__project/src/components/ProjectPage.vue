@@ -15,7 +15,7 @@
         <section class="navigation">
             <div class="navigation__border">
                 <nav class="navigation__text" v-for="nav in navigations" :key="nav">
-                    <a class="navigation__link" href="#">{{ nav }}</a>
+                    <button class="navigation__link">{{ nav }}</button>
                 </nav>
             </div>
         </section>
@@ -177,10 +177,10 @@ export default {
 
     methods: {
         projectActive(e) {
-            if (document.querySelector(".navigation__text-active") !== null) {
-                document.querySelector(".navigation__text-active").classList.remove("navigation__text-active");
+            if (document.querySelector(".navigation__link-active") !== null) {
+                document.querySelector(".navigation__link-active").classList.remove("navigation__link-active");
             }
-            e.target.classList.add("navigation__text-active");
+            e.target.classList.add("navigation__link-active");
 
         }
     },
