@@ -345,6 +345,14 @@ export default {
     letter-spacing: 0.22px;
 }
 
+.project__catalog {
+    transition: 1s;
+}
+
+.project__catalog:hover {
+    transform: scale(1.2)
+}
+
 .item1 {
     grid-row-start: 1;
     grid-row-end: 4;
@@ -370,7 +378,7 @@ export default {
     grid-row-end: 9;
 }
 
-.item6{
+.item6 {
     grid-row-start: 6;
     grid-row-end: 8;
 }
