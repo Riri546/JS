@@ -345,12 +345,17 @@ export default {
     letter-spacing: 0.22px;
 }
 
-.item1{
+.item1 {
     grid-row-start: 1;
     grid-row-end: 4;
 }
 
-.item5{
+.item2 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.item5 {
     grid-row-end: 5;
 }
 
