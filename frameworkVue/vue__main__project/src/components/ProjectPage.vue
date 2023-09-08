@@ -39,8 +39,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -58,8 +58,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -77,8 +77,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -96,8 +96,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -115,8 +115,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -134,8 +134,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -153,8 +153,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -172,8 +172,8 @@
                         <a class="project__link" href="#">Artchitectur</a>
                     </div>
                     <div>
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"
-                                fill="none">
+                        <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+                                viewBox="0 0 70 70" fill="none">
                                 <circle class="catalog__link_color" cx="35" cy="35" r="35" fill="#F4F0EC" />
                                 <path d="M32 44L40 35L32 26" stroke="#292F36" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" />
@@ -384,17 +384,16 @@ export default {
 }
 
 .catalog__link_color {
-  transition: 0.7s;
+    transition: 0.7s;
 }
 
 .catalog__link:hover {
-  stroke: #292F36;
+    stroke: #292F36;
 }
 
 .catalog__link_color:hover {
-  fill: #FFF;
+    fill: #FFF;
 }
-
 
 .articles__pagination {
     padding: 61px calc(50% - 1200px/2) 200px calc(50% - 1200px/2);
