@@ -2,7 +2,7 @@
     <div class="top">
         <header class="subhead" v-for="subhead in subheader" :key="subhead.id">
             <div class="subhead__img">
-                <img class="subhead__img_photo" src="../assets/img/blog/Image_laceholder.jpg" :alt="subhead.alt">
+                <img class="subhead__img_photo" :src="subhead.src_img" :alt="subhead.alt">
                 <span class="subhead__section">
                     <h1 class="subhead__section_title">{{ subhead.title }}</h1>
                     <div>
@@ -82,7 +82,7 @@ export default {
                 { id: 6, src: '../assets/img/Image_blog6.svg', alt: 'interior', title: 'Best For Any Office & Business Interior Solution', date: '25 December,2022', button: 'Interior Design' }],
 
             subheader: [
-                { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }],
+                { src_img: require('../assets/img/blog/Image_laceholder.jpg'), alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Blog' }],
 
             latestPosts: [
                 { title: 'Latest Post', src_img: '../assets/img/blog/post_img.jpg', alt: 'post img', subtitle: 'Low Cost Latest Invented Interior Designing Ideas', text: 'Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief. Lorem Ipsum is not simply random text. It has roots in a piece of classica.', date: '26 December,2022', link_href: 'blogDitails.html' }
