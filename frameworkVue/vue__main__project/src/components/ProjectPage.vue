@@ -15,9 +15,12 @@
         <section class="navigation">
             <div class="navigation__border">
                 <nav class="navigation__text">
-                    <a class="navigation__link" href="#">Bathroom</a>
+                    <a class="navigation__link" href="#"></a>
                 </nav>
-                <nav class="navigation__text">
+                <!-- <nav class="navigation__text">
+                    <a class="navigation__link" href="#">Bathroom</a>
+                </nav> -->
+                <!-- <nav class="navigation__text">
                     <a class="navigation__link" href="#">Bed Room</a>
                 </nav>
                 <nav class="navigation__text">
@@ -25,7 +28,7 @@
                 </nav>
                 <nav class="navigation__text">
                     <a class="navigation__link" href="#">Living Area</a>
-                </nav>
+                </nav> -->
             </div>
         </section>
         <section class="project">
@@ -203,6 +206,7 @@ export default {
         return {
             subheader: [
                 { src_img: '../assets/img/blog/Image_laceholder.jpg', alr: 'img blog ditails', title: 'Articles & News', linl_htef_one: 'index.html', link_name_one: 'Home', linl_htef_two: 'blogDitails.html', link_name_two: 'Project' }],
+            navigation: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area']
         };
     },
 
