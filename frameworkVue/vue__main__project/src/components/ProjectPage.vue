@@ -309,7 +309,7 @@ export default {
 .project {
     display: grid;
     grid-template-columns: repeat(2, 586px);
-    grid-template-rows: repeat(5, 650px);
+    grid-template-rows: repeat(6, 320px);
     gap: 33px;
     max-width: 590px;
     padding: 61px calc(50% - 1200px/2);
@@ -347,7 +347,7 @@ export default {
 
 .item1{
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
 }
 
 .item5{
