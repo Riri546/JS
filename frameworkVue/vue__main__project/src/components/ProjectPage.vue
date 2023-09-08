@@ -27,7 +27,7 @@
                         <h1 class="project__title">{{ project.title }}</h1>
                         <a class="project__link" href="#">{{ project.link_name }}</a>
                         <span class="project__link">{{ project.span }}</span>
-                        <a class="project__link" href="#"></a>
+                        <a class="project__link" href="#">{{ project.link_name2 }}</a>
                     </div>
                     <div>
                         <a class="catalog__link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70"
@@ -197,6 +197,8 @@ export default {
             navigations: ['Bathroom', 'Bed Room', 'Kitchan', 'Living Area'],
             projects: [
                 {
+                    id: "product-card1",
+                    card_id: "bedroom",
                     src: require('../assets/img/project/Photo (1).png'),
                     alt: 'photo',
                     title: 'Minimal Bedroom',
