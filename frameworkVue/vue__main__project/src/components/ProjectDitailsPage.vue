@@ -1,7 +1,7 @@
 <template>
     <div>
-        <header class="subhead__img">
-            <img class="" src="" alt="">
+        <header class="subhead__img" v-for="subhead in subheader" :key="subhead">
+            <img :class="subhead.class" :src="subhead.src" :alt="subhead.alt">
         </header>
     </div>
 </template>
