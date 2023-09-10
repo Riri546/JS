@@ -6,6 +6,12 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         // начальное состояние
+        subheader: [{
+            class: 'subhead__img_photo',
+            src: require('./../assets/img/projectDitails/subhead.jpg'),
+            alt: 'subhead img'
+        }], 
+
         informations: [{
             title: 'Minimal Look Bedrooms',
             class_title: 'info__title',

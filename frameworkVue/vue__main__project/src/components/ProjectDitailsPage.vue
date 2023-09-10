@@ -35,7 +35,7 @@
                 </defs>
             </svg>
             <div>
-                <img :class="class_points" src="" alt="">
+                <img :class="info.class_points" :src="info.src_points" :alt="info.alt">
             </div>
         </section>
     </div>
@@ -48,17 +48,13 @@ export default {
 
     data() {
         return {
-            subheader: [{
-                class: 'subhead__img_photo',
-                src: require('./../assets/img/projectDitails/subhead.jpg'),
-                alt: 'subhead img'
-            }]
+
 
         };
     },
 
     computed: {
-        ...mapState(['informations'])
+        ...mapState(['subheader', 'informations'])
     },
 
     mounted() {
