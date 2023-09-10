@@ -21,6 +21,10 @@ export default {
         };
     },
 
+    computed:{
+        ...map
+    },
+
     mounted() {
 
     },
