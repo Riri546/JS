@@ -13,9 +13,9 @@ export default {
     data() {
         return {
             subheader: [{
-               class: 'subhead__img_photo',
-               src: require ('./../assets/img/projectDitails/subhead.jpg'),
-               alt: 'subhead img' 
+                class: 'subhead__img_photo',
+                src: require('./../assets/img/projectDitails/subhead.jpg'),
+                alt: 'subhead img'
             }]
 
         };
@@ -31,4 +31,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="css" scoped>
+.subhead__img {
+    padding-bottom: 200px;
+}
+
+.subhead__img_photo {
+    width: 100vw;
+}
+</style>
