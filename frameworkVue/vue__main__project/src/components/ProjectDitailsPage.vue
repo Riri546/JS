@@ -3,6 +3,9 @@
         <header class="subhead__img" v-for="subhead in subheader" :key="subhead">
             <img :class="subhead.class" :src="subhead.src" :alt="subhead.alt">
         </header>
+        <section class="project__info">
+
+        </section>
     </div>
 </template>
 
@@ -23,7 +26,7 @@ export default {
     },
 
     computed: {
-        ...mapState(['heading'])
+        ...mapState(['heading', 'text1', 'text2'])
     },
 
     mounted() {
