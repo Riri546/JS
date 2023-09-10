@@ -38,7 +38,7 @@
                 <img :class="info.class_points" :src="info.src_points" :alt="info.alt">
             </div>
         </section>
-        <nav>
+        <nav >
             <div id="1" class="active"></div>
             <div id="2"></div>
             <div id="3"></div>
