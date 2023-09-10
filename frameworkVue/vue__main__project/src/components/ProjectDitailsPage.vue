@@ -82,4 +82,9 @@ export default {
     /* 33px */
     letter-spacing: 0.22px;
 }
+
+.info__img {
+    padding: 70px calc(50% - 1200px/2);
+    border-radius: 20%;
+}
 </style>
