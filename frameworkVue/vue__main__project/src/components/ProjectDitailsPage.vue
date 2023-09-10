@@ -9,7 +9,7 @@
             <p :class="info.class_text">{{ info.text2 }}</p>
         </section>
         <section class="project__img" v-for="info in informations" :key="info">
-            <img :class="info.class_img" :src="info.src" :alt="info.alt">
+            <img id="output" :class="info.class_img" :src="info.src" :alt="info.alt">
             <svg :class="info.class_svg" width="172" height="172" viewBox="0 0 172 172" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1418_52)">
@@ -39,7 +39,7 @@
             </div>
         </section>
         <nav>
-            <div id="1"></div>
+            <div id="1" class="active"></div>
             <div id="2"></div>
             <div id="3"></div>
         </nav>
