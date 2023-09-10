@@ -70,8 +70,17 @@ export default {
             current = this;
             output.src = './../assets/img/projectDitails/'+ this.id +'.png';
             buttons.forEach ((el) => {
-                
-            })
+                if (el = this) {
+                    el.className = 'active';
+                } else {
+                    el.className = '';
+                }
+            });
+            
+            buttons.forEach(
+                (el)=> {
+                    el.addEventListener('click', showImage);
+                });
         }
     },
 };
