@@ -8,8 +8,8 @@
             <p :class="info.class_text">{{ info.text1 }}</p>
             <p :class="info.class_text">{{ info.text2 }}</p>
         </section>
-        <section class="project__img">
-            <img src="" alt="">
+        <section class="project__img" v-for="info in informations" :key="info">
+            <img :class="info.class_img" :src="info.src" :alt="info.alt">
         </section>
     </div>
 </template>
