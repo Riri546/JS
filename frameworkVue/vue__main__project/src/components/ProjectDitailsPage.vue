@@ -8,6 +8,9 @@
             <p :class="info.class_text">{{ info.text1 }}</p>
             <p :class="info.class_text">{{ info.text2 }}</p>
         </section>
+        <section class="project__img">
+            <img src="" alt="">
+        </section>
     </div>
 </template>
 
@@ -52,8 +55,8 @@ export default {
 
 .project__info {
     max-width: 658px;
-    padding-left: calc(50% - 1200px/2);
-    padding-right: calc(50% - 1200px/2);
+    padding-left: calc(50% - 580px/2);
+    padding-right: calc(50% - 580px/2);
 }
 
 .info__title {
