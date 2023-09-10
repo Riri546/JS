@@ -10,7 +10,7 @@
         </section>
         <section class="project__img" v-for="info in informations" :key="info">
             <img :class="info.class_img" :src="info.src" :alt="info.alt">
-            <svg class="info__svg" width="172" height="172" viewBox="0 0 172 172" fill="none"
+            <svg :class="info.class_svg" width="172" height="172" viewBox="0 0 172 172" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_1418_52)">
                     <circle cx="86" cy="76" r="66" fill="white" />
@@ -34,7 +34,9 @@
                     </filter>
                 </defs>
             </svg>
-
+            <div>
+                <img :class="class_points" src="" alt="">
+            </div>
         </section>
     </div>
 </template>
@@ -118,5 +120,11 @@ export default {
     position: relative;
     top: 380px;
     left: 750px;
+}
+
+.points {
+    position: relative;
+    top: 670px;
+    left: 780px;
 }
 </style>
