@@ -38,20 +38,20 @@
                 <img :class="info.class_points" :src="info.src_points" :alt="info.alt">
             </div>
         </section>
-        <nav >
+        <!-- <nav >
             <div id="1" class="active"></div>
             <div id="2"></div>
             <div id="3"></div>
-        </nav>
+        </nav> -->
     </div>
 </template>
 
 <script>
 import { mapState } from 'vuex';
 
-const output = document.getElementById('output');
-const buttons = document.querySelectorAll('nav div');
-let current = buttons[0];
+// const output = document.getElementById('output');
+// const buttons = document.querySelectorAll('nav div');
+// let current = buttons[0];
 
 export default {
     name: 'ProjectDitailsPage',
@@ -66,22 +66,22 @@ export default {
     },
 
     methods: {
-        showImage(){
-            current = this;
-            output.src = './../assets/img/projectDitails/'+ this.id +'.png';
-            buttons.forEach ((el) => {
-                if (el = this) {
-                    el.className = 'active';
-                } else {
-                    el.className = '';
-                }
-            });
+    //     showImage(){
+    //         current = this;
+    //         output.src = './../assets/img/projectDitails/'+ this.id +'.png';
+    //         buttons.forEach ((el) => {
+    //             if (el = this) {
+    //                 el.className = 'active';
+    //             } else {
+    //                 el.className = '';
+    //             }
+    //         });
             
-            buttons.forEach(
-                (el)=> {
-                    el.addEventListener('click', showImage);
-                });
-        }
+    //         buttons.forEach(
+    //             (el)=> {
+    //                 el.addEventListener('click', showImage);
+    //             });
+    //     }
     },
 };
 </script>
