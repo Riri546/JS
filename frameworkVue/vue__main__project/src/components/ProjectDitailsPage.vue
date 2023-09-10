@@ -48,6 +48,11 @@
 
 <script>
 import { mapState } from 'vuex';
+
+const output = document.getElementById('output');
+const buttons = document.querySelectorAll('nav div');
+let current = buttons[0];
+
 export default {
     name: 'ProjectDitailsPage',
 
@@ -61,9 +66,13 @@ export default {
     },
 
     methods: {
-        const output = document.getElementById('output'),
-        const buttons = document.querySelectorAll('nav div'),
-
+        showImage(){
+            current = this;
+            output.src = './../assets/img/projectDitails/'+ this.id +'.png';
+            buttons.forEach ((el) => {
+                
+            })
+        }
     },
 };
 </script>
