@@ -39,10 +39,9 @@
             </div>
         </section>
         <nav>
-            <div></div>
-            <div></div>
-            <div></div>
-
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
         </nav>
     </div>
 </template>
