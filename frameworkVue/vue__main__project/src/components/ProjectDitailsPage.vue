@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 export default {
     name: 'ProjectDitailsPage',
 
@@ -21,8 +22,8 @@ export default {
         };
     },
 
-    computed:{
-        ...map
+    computed: {
+        ...mapState(['heading'])
     },
 
     mounted() {
