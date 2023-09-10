@@ -5,6 +5,8 @@
         </header>
         <section class="project__info" v-for="info in informations" :key="info">
             <h1 :class="info.class_title">{{ info.title }}</h1>
+            <p :class="info.class_text">{{ info.text1 }}</p>
+            <p :class="info.class_text">{{ info.text2 }}</p>
         </section>
     </div>
 </template>
@@ -49,11 +51,13 @@ export default {
 }
 
 .project__info {
+    max-width: 658px;
     padding-left: calc(50% - 1200px/2);
     padding-right: calc(50% - 1200px/2);
 }
 
 .info__title {
+    padding-bottom: 11px;
     color: #292F36;
     font-family: DM Serif Display;
     font-size: 50px;
@@ -65,6 +69,7 @@ export default {
 }
 
 .info__text {
+    padding-bottom: 30px;
     color: #4D5053;
     font-family: Jost;
     font-size: 22px;
