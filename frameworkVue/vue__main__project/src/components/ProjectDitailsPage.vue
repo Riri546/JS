@@ -3,8 +3,8 @@
         <header class="subhead__img" v-for="subhead in subheader" :key="subhead">
             <img :class="subhead.class" :src="subhead.src" :alt="subhead.alt">
         </header>
-        <section class="project__info">
-
+        <section class="project__info" v-for="info in informations" :key="info">
+            <h1 :class="info.class_title">{{ info.title }}</h1>
         </section>
     </div>
 </template>
@@ -26,7 +26,7 @@ export default {
     },
 
     computed: {
-        ...mapState(['heading', 'text1', 'text2'])
+        ...mapState(['informations'])
     },
 
     mounted() {
@@ -46,5 +46,21 @@ export default {
 
 .subhead__img_photo {
     width: 100vw;
+}
+
+.project__info {
+    padding-left: calc(50% - 1200px/2);
+    padding-right: calc(50% - 1200px/2);
+}
+
+.info__title {
+    color: #292F36;
+    font-family: DM Serif Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%;
+    /* 62.5px */
+    letter-spacing: 1px;
 }
 </style>
