@@ -15,6 +15,7 @@
     <CompHeader />
     <ProjectDitailsPage />
     <CompFooter />
+
   </div>
 </template>
 
@@ -25,7 +26,7 @@ import HomePage from './components/HomePage.vue';
 import BlogPage from './components/BlogPage.vue';
 import BlogDitailsPage from './components/BlogDitailsPage.vue';
 import ProjectPage from './components/ProjectPage.vue';
-import ProjectDitailsPage  from './components/ProjectDitailsPage.vue';
+import ProjectDitailsPage from './components/ProjectDitailsPage.vue';
 
 
 export default {
