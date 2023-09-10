@@ -53,8 +53,6 @@ export default {
 
     data() {
         return {
-
-
         };
     },
 
@@ -62,11 +60,9 @@ export default {
         ...mapState(['subheader', 'informations'])
     },
 
-    mounted() {
-
-    },
-
     methods: {
+        const output = document.getElementById('output'),
+        const buttons = document.querySelectorAll('nav div'),
 
     },
 };
