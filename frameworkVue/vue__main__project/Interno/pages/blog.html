@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interno</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Jost:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../scss/style.css">
+    </head>
+    <body>
+        <header class="header center">
+            <div class="header__content">
+                <a href="#" class="header__logo">
+                    <img class="header__logo-img" src="../images/logo.svg" alt="logo">
+                </a>
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item">
+                            <a href="../index.html" class="header__navigation-link">Home</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#" class="header__navigation-link">Project</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a href="#" class="header__navigation-link">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="intro">
+            <div class="intro__content">
+                <div class="intro__title-content">
+                    <h2 class="intro__heading">Articles & News</h2>
+                    <ul class="intro__breadcrumbs">
+                        <li class="intro__breadcrumbs-item">
+                            <a href="../index.html" class="intro__breadcrumbs-link">Home</a>
+                        </li>
+                        <li class="intro__breadcrumbs-item">
+                            <a href="#" class="intro__breadcrumbs-link">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="post center">
+            <div class="post__content">
+                <h2 class="post__heading">Latest Post</h2>
+                <div class="post__subcontent-box">
+                    <img src="../images/post-photo.png" alt="post image">
+                    <article class="post__subcontent">
+                        <div class="post__subcontent-container">
+                            <h3 class="post__subcontent-heading">Low Cost Latest Invented Interior Designing Ideas</h3>
+                            <p class="post__subcontent-text">Lorem ipsum dolor sit amet, adipiscing Aliquam eu&nbsp;sem vitae turpis dignissim maximus.posuere in. Contrary to&nbsp;popular belief.</p>
+                            <p class="post__subcontent-text">Lorem Ipsum is&nbsp;not simply random text. It&nbsp;has roots in&nbsp;a&nbsp;piece of&nbsp;classica.</p>
+                        </div>
+                        <div class="post__subtitle-box">
+                            <p class="post__subcontent-subtitle">26 December,2022</p>
+                            <button class="post__button">
+                                <svg
+                                    width="9"
+                                    height="16"
+                                    viewBox="0 0 9 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1.27101 14.9525L7.21387 8.26683L1.27101 1.58112"
+                                        stroke="#292F36"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!--VUE -->
+        <section class="news center">
+            <div class="news__content">
+                <h2 class="news__heading">Articles & News</h2>
+                <div id="news-items" class="news__items" >
+                    <div v-for="item in itemsData" :key="item.id" class="news__item">
+                        <img :src="item.src" :alt="item.alt" class="news__item-image">
+                        <div class="news__item-tagbox">
+                            <p class="news__item-tag">{{item.tag}}</p>
+                        </div>
+                        <div class="item-content">
+                            <p class="item-content__title">{{item.title}}</p>
+                            <div class="item-content__box">
+                                <p class="item-content__date">{{item.date}}</p>
+                                <a href="blog-details.html" class="item-content__button">
+                                    <svg
+                                        width="9"
+                                        height="16"
+                                        viewBox="0 0 9 16"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1.27101 14.9525L7.21387 8.26683L1.27101 1.58112"
+                                            stroke="#292F36"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="news__pagination">
+                    <ul class="news__pagination-box">
+                        <a href="#" class="news__pagination-item news__pagination-item_active">01</a>
+                        <a href="#" class="news__pagination-item">02</a>
+                        <a href="#" class="news__pagination-item">03</a>
+                        <a href="#" class="news__pagination-item">
+                            <svg
+                                class="news__pagination-image"
+                                width="9"
+                                height="16"
+                                viewBox="0 0 9 16"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1.55714 15L7.5 8.31429L1.55714 1.62857"
+                                    stroke="#292F36"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer class="footer center">
+            <div class="footer__content">
+                <div class="footer__items">
+                    <div class="footer__item">
+                        <a href="#" class="footer__logo">
+                            <img class="footer__logo-img" src="../images/logo.svg" alt="logo">
+                        </a>
+                        <p class="footer__item-text">It&nbsp;is&nbsp;a&nbsp;long established fact that a&nbsp;reader will be&nbsp;distracted lookings.</p>
+                        <ul class="footer__icons-box">
+                            <li class="footer__icon-item">
+                                <a href="#" class="footer__icon-link">
+                                    <img src="../images/tweeter.svg" alt="tweeter icon" class="footer__social-img">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="footer__icon-item">
+                                <a href="#" class="footer__icon-link">
+                                    <img src="../images/linkedin.svg" alt="linkedin icon">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__item-heading">Pages</p>
+                        <nav class="footer__item-navigation">
+                            <ul class="footer__list">
+                                <li class="footer__navigation-item">
+                                    <a href="#" class="footer__navigation-link">Home</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="#" class="footer__navigation-link">Project</a>
+                                </li>
+                                <li class="footer__navigation-item">
+                                    <a href="#" class="footer__navigation-link">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__item">
+                        <p class="footer__item-heading">Contact</p>
+                        <p class="footer__contact-address">
+                            55 East Birchwood Ave. Brooklyn, New York 11201
+                        </p>
+                        <a class="footer__contact-email" href="mailto:contact@interno.com">contact@interno.com</a>
+                        <a class="footer__contact-phone" href="tel:1234567890"> (123) 456 - 7890</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="../scripts/blog.js"></script>
+    </body>
+</html>

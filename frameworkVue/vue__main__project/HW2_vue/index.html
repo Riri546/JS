@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>HW2</title>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script defer src="data.js"></script>
+    </head>
+    <body>
+        <div id="app">
+        <p>Список товаров</p>
+        <ul class="content">
+            <li v-for="product in products" :key="product.id">
+                товар: {{product.title}} - цена: {{product.price}}
+            </li>
+        </ul><br><br>
+        <button @click="sortInAscendingOrder" class="btn">Сортировать по возрастанию</button><br><br>
+        <button @click="sortInDescendingOrder" class="btn">Сортировать по убыванию</button>
+    </div>
+    
+    </body>
+</html>

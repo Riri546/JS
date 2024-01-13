@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HW1</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/vue@next"></script>
+        <script defer src="data.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <!-- Задание 1 -->
+            <button @click="reverseButtonText" class="btn">{{buttonText}}</button>
+            <!-- Задание 2 -->
+            <div class="content">
+                <button @click="addNewElementToList" class="btn">Добавить</button>
+                <ul class="list">
+                    <li v-for="element in listOfElements" @click="deleteElementFromList">{{element}}</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
